@@ -1,11 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -73,5 +76,19 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@tailwindcss/typography"),
+    plugin(function ({ addVariant }) {
+      addVariant("glow", ".glow-capture .glow-overlay &");
+    }, {
+      theme: {
+        extend: {
+          colors: {
+            glow: "color-mix(in srgb, var(--glow-color) calc(<alpha-value> * 100%), transparent)"
+          }
+        }
+      }
+    }),
+  ],
+};

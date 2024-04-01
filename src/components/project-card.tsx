@@ -6,37 +6,42 @@ import {
   CardTitle,
 } from "./ui/card";
 import { Badge } from "./ui/badge";
+import Image from "next/image";
 
 interface Props {
   title: string;
   description: string;
   tags: readonly string[];
   link?: string;
+  logo: any;
 }
 
-export function ProjectCard({ title, description, tags, link }: Props) {
+export function ProjectCard({ title, description, tags, link, logo }: Props) {
   return (
     <Card className="flex flex-col overflow-hidden border border-muted p-3">
       <CardHeader className="">
         <div className="space-y-1">
-          <CardTitle className="text-base">
-            {link ? (
-              <a
-                href={link}
-                target="_blank"
-                className="inline-flex items-center gap-1 hover:underline"
-              >
-                {title}{" "}
-                <span className="size-1 rounded-full bg-green-500"></span>
-              </a>
-            ) : (
-              title
-            )}
-          </CardTitle>
-          <div className="hidden font-mono text-xs underline print:visible">
+          <div className="flex items-center gap-2">
+            <Image className="w-8 rounded-md" alt={title} src={logo} />
+            <CardTitle className="text-base">
+              {link ? (
+                <a
+                  href={link}
+                  target="_blank"
+                  className="inline-flex items-center gap-1 hover:underline"
+                >
+                  {title}{" "}
+                  <span className="size-1 rounded-full bg-green-500"></span>
+                </a>
+              ) : (
+                title
+              )}
+            </CardTitle>
+          </div>
+          <div className="hidden text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
-          <CardDescription className="font-mono text-xs">
+          <CardDescription className="text-xs">
             {description}
           </CardDescription>
         </div>
