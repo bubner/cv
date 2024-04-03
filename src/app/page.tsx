@@ -101,7 +101,7 @@ export default function Page() {
             </Avatar>
           </div>
           <Section>
-            <h2 className="text-xl font-bold text-white print:text-black">
+            <h2 className="text-xl font-bold text-white print:text-black glow:text-glow/[.15]">
               About
             </h2>
             <p className="text-pretty text-sm text-muted-foreground">
@@ -109,16 +109,16 @@ export default function Page() {
             </p>
           </Section>
           <Section>
-            <h2 className="text-xl font-bold text-white print:text-black">
+            <h2 className="text-xl font-bold text-white print:text-black glow:text-glow/[.15]">
               Work Experience
             </h2>
             {RESUME_DATA.work.map((work) => {
               return (
-                <Card key={work.company}>
+                <Card key={work.company} className="glow glow:ring-1 glow:border-glow glow:ring-glow glow:bg-glow/[.25]">
                   <CardHeader>
                     <div className="flex items-center justify-between gap-x-2 text-base">
                       <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                        <a className="hover:underline" href={work.link}>
+                        <a className="hover:underline glow:text-glow/[.15]" href={work.link}>
                           {work.company}
                         </a>
 
@@ -149,15 +149,15 @@ export default function Page() {
             })}
           </Section>
           <Section>
-            <h2 className="text-xl font-bold text-white print:text-black">
+            <h2 className="text-xl font-bold text-white print:text-black glow:text-glow/[.15]">
               Education
             </h2>
             {RESUME_DATA.education.map((education) => {
               return (
-                <Card key={education.school}>
+                <Card key={education.school} className="glow glow:ring-1 glow:border-glow glow:ring-glow glow:bg-glow/[.25]">
                   <CardHeader>
                     <div className="flex items-center justify-between gap-x-2 text-base">
-                      <h3 className="font-semibold leading-none">
+                      <h3 className="font-semibold leading-none glow:text-glow/[.15]">
                         {education.school}
                       </h3>
                       <div className="text-sm tabular-nums text-gray-500">
@@ -171,24 +171,25 @@ export default function Page() {
             })}
           </Section>
           <Section>
-            <h2 className="text-xl font-bold text-white print:text-black">
+            <h2 className="text-xl font-bold text-white print:text-black glow:text-glow/[.15]">
               Skills
             </h2>
             <div className="flex flex-wrap gap-1">
               {RESUME_DATA.skills.map((skill) => {
-                return <Badge key={skill}>{skill}</Badge>;
+                return <Badge className="glow glow:ring-1 glow:ring-glow" key={skill}>{skill}</Badge>;
               })}
             </div>
           </Section>
 
           <Section className="print-force-new-page scroll-mb-16">
-            <h2 className="text-xl font-bold text-white print:text-black">
+            <h2 className="text-xl font-bold text-white print:text-black glow:text-glow/[.15]">
               Projects
             </h2>
             <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
               {RESUME_DATA.projects.map((project) => {
                 return (
                   <ProjectCard
+                    className="glow glow:ring-1 glow:border-glow glow:ring-glow glow:bg-glow/[.25]"
                     key={project.title}
                     title={project.title}
                     description={project.description}

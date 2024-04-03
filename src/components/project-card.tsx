@@ -14,11 +14,12 @@ interface Props {
   tags: readonly string[];
   link?: string;
   logo: any;
+  className?: string;
 }
 
-export function ProjectCard({ title, description, tags, link, logo }: Props) {
+export function ProjectCard({ title, description, tags, link, logo, className }: Props) {
   return (
-    <Card className="flex flex-col overflow-hidden border border-muted p-3">
+    <Card className={"flex flex-col overflow-hidden border border-muted p-3 " + className}>
       <CardHeader className="">
         <div className="space-y-1">
           <div className="flex items-center gap-2">
@@ -28,7 +29,7 @@ export function ProjectCard({ title, description, tags, link, logo }: Props) {
                 <a
                   href={link}
                   target="_blank"
-                  className="inline-flex items-center gap-1 hover:underline"
+                  className="inline-flex items-center gap-1 hover:underline glow:text-glow/[.15]"
                 >
                   {title}{" "}
                   <span className="size-1 rounded-full bg-green-500"></span>

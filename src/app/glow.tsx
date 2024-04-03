@@ -11,7 +11,8 @@ export default function Glow() {
     if (captures) {
       captures.forEach((c) => {
         const capture = c as HTMLElement;
-        const clonedChild = capture.children[0].cloneNode(true);
+        const clonedChild = capture.children[0].cloneNode(true) as HTMLElement;
+        clonedChild.classList.add("glow-capture-child");
         const overlay = capture.querySelector(".glow-overlay") as HTMLElement;
 
         overlay?.appendChild(clonedChild);
