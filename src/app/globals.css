@@ -111,6 +111,19 @@
   page-break-before: always;
 }
 
+.anim {
+  animation: movingBg 160s linear infinite;
+}
+
+@keyframes movingBg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
 @media print {
   .glow-capture-child {
     display: none;

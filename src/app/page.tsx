@@ -1,4 +1,3 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
@@ -8,6 +7,9 @@ import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
+import Image from "next/image";
+
+import pfp from "./apple-icon.png";
 
 import "animate.css";
 import Glow from "./glow";
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="glow-capture">
-      <main className="animate__animated animate__fadeIn print:light dark container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
+      <main className="animate__animated animate__fadeIn animate__slower print:light dark container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16">
         <section className="glow glow:ring-1 glow:border-glow glow:ring-glow glow:bg-glow/[.25] mx-auto w-full max-w-2xl space-y-8 rounded-2xl bg-black p-8 print:space-y-6">
           <div className="flex items-center justify-between">
             <div className="flex-1 space-y-1.5">
@@ -95,10 +97,14 @@ export default function Page() {
               </div>
             </div>
 
-            <Avatar className="size-28">
-              <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
-              <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
-            </Avatar>
+            <Image
+              className="relative flex h-30 w-30 shrink-0 overflow-hidden rounded-[50%] animate__animated animate__fadeIn pointer-events-none border-2 glow glow:border-glow/[.15]"
+              alt={RESUME_DATA.name}
+              src={pfp}
+              width={100}
+              height={100}
+              priority
+            />
           </div>
           <Section>
             <h2 className="text-xl font-bold text-white print:text-black glow:text-glow/[.15]">
@@ -126,7 +132,7 @@ export default function Page() {
                           {work.badges.map((badge) => (
                             <Badge
                               variant="secondary"
-                              className="align-middle text-xs"
+                              className="align-middle text-xs glow glow:border-glow/[.5]"
                               key={badge}
                             >
                               {badge}
@@ -202,20 +208,19 @@ export default function Page() {
             </div>
           </Section>
         </section>
-
-        <CommandMenu
-          links={[
-            {
-              url: RESUME_DATA.personalWebsiteUrl,
-              title: "Personal Website",
-            },
-            ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
-              url: socialMediaLink.url,
-              title: socialMediaLink.name,
-            })),
-          ]}
-        />
       </main>
+      <CommandMenu
+        links={[
+          {
+            url: RESUME_DATA.personalWebsiteUrl,
+            title: "Personal Website",
+          },
+          ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
+            url: socialMediaLink.url,
+            title: socialMediaLink.name,
+          })),
+        ]}
+      />
       <Glow />
     </div>
   );
