@@ -35,7 +35,7 @@ export function ProjectCard({ title, description, tags, link, logo, className }:
                   <span className="size-1 rounded-full bg-green-500"></span>
                 </a>
               ) : (
-                title
+                <span className="glow:text-glow/[.15]">{title}</span>
               )}
             </CardTitle>
           </div>
