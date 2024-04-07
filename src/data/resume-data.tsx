@@ -1,277 +1,203 @@
 import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ClevertechLogo,
-  ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
-  JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
+  Kennewell,
+  Bubner,
+  RoboRegistry,
+  Serve,
+  DosGames,
+  FusionChess,
+  Mind,
+  Bellower,
+  Bunyips,
 } from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
+import { GlobeIcon } from "lucide-react";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Lucas Bubner",
+  initials: "LB",
+  location: "Greater Adelaide Area, South Australia, Australia",
+  locationLink: "https://www.google.com/maps/place/Adelaide+Metropolitan+Area,+SA/@-34.9816918,138.6440441,10z/data=!3m1!4b1!4m6!3m5!1s0x6ab0ced5a8ad9dcb:0x2ee6722d74deb41e!8m2!3d-34.9536465!4d138.598804!16s%2Fg%2F11c1tb7m8s?entry=ttu",
   about:
-    "Full Stack Engineer focused on building products with extra attention to detail",
+    "A young self-driven academic student and software developer.",
   summary:
-    "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
-  personalWebsiteUrl: "https://jarocki.me",
+    "Distinguished at a national level at the 2023 AIIA iAwards, I am a software developer that takes strides into the unknown for personal growth and professional improvement. Passioniate in the fields of robotics, web development, and engineering, I develop software solutions to tackle real-world problems, advocating and promoting technical skills used in the workforce.",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "bubner@proton.me",
     social: [
       {
+        name: "Personal Website",
+        url: "https://bubner.me",
+        icon: GlobeIcon,
+      },
+      {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/bubner",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/bubner",
         icon: LinkedInIcon,
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Highbury Primary School",  
+      degree: "Primary School Education",
+      start: "2012",
+      end: "2020",
+    },
+    {
+      school: "EdX - Harvard Online",  
+      degree: "CS50's Introduction to Computer Science Certificate",
+      start: "2022",
+      end: "2022",
+    },
+    {
+      school: "Murray Bridge High School",
+      degree: "South Australian Certificate of Education (SACE) [in progress]",
+      start: "2021",
+      end: "2025",
     },
   ],
   work: [
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: ["Remote"],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
+      company: "Kennewell",
+      link: "https://oldmatedesigns.com/",
+      badges: ["Workplace Learning", "Onsite"],
+      title: "Subsidiary Web Developer",
+      logo: Kennewell,
+      start: "2023",
       description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
-      description:
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: [],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
-      description:
-        "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: [],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description: "Creating and testing software for LTE base stations",
+        "Worked on backend and frontend implementations of a subsidiary Shopify store through upgrades with improved images, graphics, visual user experience, and Fusion360 CAD animations to boost sales. Performed as Student Work Experience as part of Murray Bridge High School.",
     },
   ],
   skills: [
-    "JavaScript",
+    "Java",
+    "OOP",
+    "React",
+    "Next.js",
     "TypeScript",
-    "React/Next.js/Remix",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "WebRTC",
+    "Robotics",
+    "Web Development",
+    "Python"
   ],
   projects: [
     {
-      title: "Consultly",
+      title: "BunyipsLib",
       techStack: [
-        "Side Project",
+        "Java",
+        "Kotlin",
+        "Library",
+        "Robotics",
+        "Computer Vision",
+      ],
+      description: "A free & open-source powerful FIRST Tech Challenge utility library",
+      link: {
+        label: "BunyipsLib",
+        href: "https://github.com/Murray-Bridge-Bunyips/BunyipsLib",
+      },
+      logo: Bunyips
+    },
+    {
+      title: "Bunyip Bellower",
+      techStack: [
+        "Realtime Chat",
+        "iAwards Winner",
+        "React",
+        "Firebase",
         "TypeScript",
+      ],
+      description: "Web chat application designed for school-based social clubs",
+      logo: Bellower
+    },
+    {
+      title: "RoboRegistry",
+      techStack: [
+        "Robotics",
+        "Web Development",
+        "Python",
+        "Firebase",
+        "Flask",
+      ],
+      description: "An automated registry for recording FIRST scrimmage attendance",
+      logo: RoboRegistry,
+      link: {
+        label: "RoboRegistry",
+        href: "https://serve.bubner.me/roboregistry",
+      },
+    },
+    {
+      title: "bubner.me",
+      techStack: [
+        "Portfolio",
+        "Personal Project",
+        "TypeScript",
+        "React",
+        "Vercel",
+      ],
+      description: "My personal portfolio website", 
+      logo: Bubner,
+      link: {
+        label: "bubner.me",
+        href: "https://bubner.me/",
+      },
+    },
+    {
+      title: "Fusion Chess",
+      techStack: [
+        "Web Game",
+        "React",
+        "chess.js",
+        "stockfish.js",
+      ],
+      description: "A custom chess variant which involves fusing pieces",
+      logo: FusionChess,
+      link: {
+        label: "Fusion Chess",
+        href: "https://serve.bubner.me/fusionchess",
+      },
+    },
+    {
+      title: "Serve",
+      techStack: [
         "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-      ],
-      description: "A platform to build and grow your online business",
-      logo: ConsultlyLogo,
-      link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
-      },
-    },
-    {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
-      description:
-        "Browser extension that records everything happening in a web application",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
-      description:
-        "My personal website and blog. Built with Next.js and Notion API",
-      logo: JarockiMeLogo,
-      link: {
-        label: "github.com",
-        href: "https://jarocki.me/",
-      },
-    },
-    {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Minimalist calendars, habit trackers and planners generator",
-      logo: Minimal,
-      link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
-      },
-    },
-    {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Generates beautiful wallpapers using random shapes and gradients",
-      logo: BarepapersLogo,
-      link: {
-        label: "barepapers.com",
-        href: "https://barepapers.com/",
-      },
-    },
-    {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
-      logo: YearProgressLogo,
-      link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
-      },
-    },
-    {
-      title: "Parabol",
-      techStack: [
-        "Full Stack Developer",
-        "TypeScript",
+        "Personal Project",
         "React",
-        "Node.js",
-        "GraphQL",
+        "Vercel",
       ],
-      description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
-      logo: ParabolLogo,
+      description: "A collection of web pages for use in my personal projects",
+      logo: Serve,
       link: {
-        label: "github.com",
-        href: "https://parabol.co/",
+        label: "Serve",
+        href: "https://serve.bubner.me/",
       },
     },
     {
-      title: "Evercast",
+      title: "DosGames",
       techStack: [
-        "Lead Frontend Developer",
-
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
+        "HTML",
+        "Emulation",
+        "js-dos",
       ],
-      description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
-      logo: EvercastLogo,
+      description: "Replit award-winning DOS games emulator",
+      logo: DosGames,
       link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
+        label: "DosGames",
+        href: "https://github.com/bubner/DosGames",
       },
     },
     {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for leading virtual mobile operator in Poland",
-      logo: MobileVikingsLogo,
-      link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
-      },
-    },
-    {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Howdy is a place for you to join communities you care about",
-      logo: Howdy,
-      link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
-      },
-    },
-    {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
-      link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
-      },
-    },
-    {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
-    },
-    {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
-    },
-    {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
+      title: "Mind",
+      techStack: [
+        "Web Game",
+        "Python",
+        "Flask",
+        "JavaScript",
+      ],
+      description: "GUI-based autosave adventure game",
+      logo: Mind,
     },
   ],
 } as const;

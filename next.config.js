@@ -8,7 +8,16 @@ const nextConfig = {
             },
         ]
     },
-    reactStrictMode: false
+    reactStrictMode: false,
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'wakatime.com',
+                port: '',
+            }
+        ]
+    }
 }
 
 module.exports = nextConfig
