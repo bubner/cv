@@ -49,23 +49,22 @@ export const RESUME_DATA = {
       end: "2020",
     },
     {
-      school: "EdX - Harvard Online",  
-      degree: "CS50's Introduction to Computer Science Certificate",
-      start: "2022",
-      end: "2022",
-    },
-    {
       school: "Murray Bridge High School",
       degree: "South Australian Certificate of Education (SACE) [in progress]",
       start: "2021",
       end: "2025",
+    },
+    {
+      school: "EdX - Harvard Online",  
+      degree: "CS50's Introduction to Computer Science Certificate",
+      start: "2022",
     },
   ],
   work: [
     {
       company: "Kennewell",
       link: "https://oldmatedesigns.com/",
-      badges: ["Workplace Learning", "Onsite"],
+      badges: ["Experience", "Onsite"],
       title: "Subsidiary Web Developer",
       logo: Kennewell,
       start: "2023",
