@@ -50,7 +50,7 @@ export const RESUME_DATA = {
     },
     {
       school: "Murray Bridge High School",
-      degree: "South Australian Certificate of Education (SACE) [in progress]",
+      degree: "South Australian Certificate of Education (SACE), Multi-year Dux",
       start: "2021",
       end: "2025",
     },
