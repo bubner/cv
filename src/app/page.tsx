@@ -13,11 +13,12 @@ import pfp from "./apple-icon.png";
 
 import "animate.css";
 import Glow from "./glow";
+import { GitHubIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
   description: RESUME_DATA.summary,
-  icons: ["./favicon.ico"] 
+  icons: ["./favicon.ico"],
 };
 
 export default function Page() {
@@ -100,10 +101,10 @@ export default function Page() {
                 ) : null} */}
               </div>
             </div>
-            
+
             <a href="https://bubner.me" target="_blank">
               <Image
-                className="h-30 w-30 animate__animated animate__fadeIn glow relative flex shrink-0 overflow-hidden rounded-[50%] border-2 glow:border-glow/[.33] hover:cursor-pointer"
+                className="h-30 w-30 animate__animated animate__fadeIn glow relative flex shrink-0 overflow-hidden rounded-[50%] border-2 hover:cursor-pointer glow:border-glow/[.33]"
                 alt={RESUME_DATA.name}
                 src={pfp}
                 width={100}
@@ -113,13 +114,17 @@ export default function Page() {
             </a>
           </div>
           <Section className="print:hidden">
-            <a target="_blank" href="https://wakatime.com/@bubner" className="opacity-100 hover:opacity-50 transition-all">
+            <a
+              target="_blank"
+              href="https://wakatime.com/@bubner"
+              className="opacity-100 transition-all hover:opacity-50"
+            >
               <Image
                 alt="WakaTime activity"
                 width={600}
                 height={100}
                 placeholder="blur"
-                className="w-full h-full border-2 glow glow:border-glow rounded-2xl border-black"
+                className="glow h-full w-full rounded-2xl border-2 border-black glow:border-glow"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
                 priority
                 src="https://wakatime.com/share/@bubner/5e5091a6-e447-4c50-88f8-0c7c9205ef93.png"
@@ -145,9 +150,15 @@ export default function Page() {
                   className="glow glow:border-glow glow:bg-glow/[.25] glow:ring-1 glow:ring-glow"
                 >
                   <CardHeader>
-                    <div className="flex md:items-center justify-between gap-x-2 text-base flex-col md:flex-row">
-                      <h3 className="inline-flex items-center md:justify-center gap-x-1 font-semibold leading-none">
-                        <Image height={40} width={40} src={work.logo} className="h-6 w-6" alt={work.company} />
+                    <div className="flex flex-col justify-between gap-x-2 text-base md:flex-row md:items-center">
+                      <h3 className="inline-flex items-center gap-x-1 font-semibold leading-none md:justify-center">
+                        <Image
+                          height={40}
+                          width={40}
+                          src={work.logo}
+                          className="h-6 w-6"
+                          alt={work.company}
+                        />
                         <a
                           className="hover:underline glow:text-glow/[.15]"
                           href={work.link}
@@ -169,7 +180,9 @@ export default function Page() {
                       </h3>
                       <div className="text-sm tabular-nums text-gray-500">
                         {/* @ts-ignore */}
-                        {work.start}{work.end ? ` - ${work.end}` : ""}
+                        {work.start}
+                        {/* @ts-ignore */}
+                        {work.end ? ` - ${work.end}` : ""}
                       </div>
                     </div>
 
@@ -197,9 +210,11 @@ export default function Page() {
                       <h3 className="font-semibold leading-none glow:text-glow/[.15]">
                         {education.school}
                       </h3>
-                      <div className="text-sm tabular-nums text-gray-500 text-nowrap">
+                      <div className="text-nowrap text-sm tabular-nums text-gray-500">
                         {/* @ts-ignore */}
-                        {education.start}{education.end ? ` - ${education.end}` : ""}
+                        {education.start}
+                        {/* @ts-ignore */}
+                        {education.end ? ` - ${education.end}` : ""}
                       </div>
                     </div>
                   </CardHeader>
@@ -227,8 +242,14 @@ export default function Page() {
           </Section>
 
           <Section className="print-force-new-page scroll-mb-16">
-            <h2 className="text-xl font-bold text-white glow:text-glow/[.15] print:text-black">
-              Projects
+            <h2 className="text-xl font-bold text-white print:text-black">
+              <span className="glow:text-glow/[.15]">Projects</span>
+              &nbsp;
+              <Button className="size-8 print:hidden" variant="outline" size="icon" asChild>
+                <a href="https://github.com/bubner?tab=repositories" target="_blank">
+                  <GitHubIcon className="size-4 z-50" />
+                </a>
+              </Button>
             </h2>
             <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
               {RESUME_DATA.projects.map((project) => {

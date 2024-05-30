@@ -39,15 +39,15 @@ export function ProjectCard({ title, description, tags, link, logo, className }:
               )}
             </CardTitle>
           </div>
-          <div className="hidden text-xs underline print:visible">
-            {link?.replace("https://", "").replace("www.", "").replace("/", "")}
+          <div className="text-xs underline hidden print:block">
+            {link?.replace("https://", "").replace("www.", "")}
           </div>
           <CardDescription className="text-xs">
             {description}
           </CardDescription>
         </div>
       </CardHeader>
-      <CardContent className="mt-auto flex">
+      <CardContent className="mt-auto flex print:p-3">
         <div className="mt-2 flex flex-wrap gap-1">
           {tags.map((tag) => (
             <Badge

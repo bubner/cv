@@ -8,6 +8,15 @@ import {
   Mind,
   Bellower,
   Bunyips,
+  ThreeDots,
+  MP3,
+  Mine,
+  Cookie,
+  Calc,
+  TTT,
+  Bezier,
+  Tank,
+  Mc,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 import { GlobeIcon } from "lucide-react";
@@ -16,11 +25,11 @@ export const RESUME_DATA = {
   name: "Lucas Bubner",
   initials: "LB",
   location: "Greater Adelaide Area, South Australia, Australia",
-  locationLink: "https://www.google.com/maps/place/Adelaide+Metropolitan+Area,+SA/@-34.9816918,138.6440441,10z/data=!3m1!4b1!4m6!3m5!1s0x6ab0ced5a8ad9dcb:0x2ee6722d74deb41e!8m2!3d-34.9536465!4d138.598804!16s%2Fg%2F11c1tb7m8s?entry=ttu",
-  about:
-    "A young self-driven academic student and software developer.",
+  locationLink:
+    "https://www.google.com/maps/place/Adelaide+Metropolitan+Area,+SA/@-34.9816918,138.6440441,10z/data=!3m1!4b1!4m6!3m5!1s0x6ab0ced5a8ad9dcb:0x2ee6722d74deb41e!8m2!3d-34.9536465!4d138.598804!16s%2Fg%2F11c1tb7m8s?entry=ttu",
+  about: "A young self-driven academic student and software developer.",
   summary:
-    "Distinguished at a national level at the 2023 AIIA iAwards, I am a software developer that takes strides into the unknown for personal growth and professional improvement. Passioniate in the fields of robotics, web development, and engineering, I develop software solutions to tackle real-world problems, advocating and promoting technical skills used in the workforce.",
+    "Distinguished at a national level at the 2023 AIIA iAwards, I am a software developer that takes strides into the unknown for personal growth and professional improvement. Passioniate in the fields of robotics, web development, Unity game development, and engineering, I develop software solutions to tackle real-world problems, advocating and promoting technical skills used in the workforce.",
   contact: {
     email: "bubner@proton.me",
     social: [
@@ -43,19 +52,20 @@ export const RESUME_DATA = {
   },
   education: [
     {
-      school: "Highbury Primary School",  
+      school: "Highbury Primary School",
       degree: "Primary School Education",
       start: "2012",
       end: "2020",
     },
     {
       school: "Murray Bridge High School",
-      degree: "South Australian Certificate of Education (SACE), Multi-year Dux",
+      degree:
+        "South Australian Certificate of Education (SACE), Multi-year Dux",
       start: "2021",
       end: "2025",
     },
     {
-      school: "EdX - Harvard Online",  
+      school: "EdX - Harvard Online",
       degree: "CS50's Introduction to Computer Science Certificate",
       start: "2022",
     },
@@ -74,30 +84,29 @@ export const RESUME_DATA = {
   ],
   skills: [
     "Java",
-    "OOP",
+    "Object-Oriented Programming",
     "React",
     "Next.js",
     "TypeScript",
     "Robotics",
+    "Unity",
+    "C#",
     "Web Development",
-    "Python"
+    "Python",
+    "Linux",
+    "Photoshop"
   ],
   projects: [
     {
       title: "BunyipsLib",
-      techStack: [
-        "Java",
-        "Kotlin",
-        "Library",
-        "Robotics",
-        "Computer Vision",
-      ],
-      description: "A free & open-source powerful FIRST Tech Challenge utility library",
+      techStack: ["Java", "Kotlin", "Library", "Robotics", "Computer Vision"],
+      description:
+        "A free & open-source powerful FIRST Tech Challenge utility library",
       link: {
         label: "BunyipsLib",
         href: "https://github.com/Murray-Bridge-Bunyips/BunyipsLib",
       },
-      logo: Bunyips
+      logo: Bunyips,
     },
     {
       title: "Bunyip Bellower",
@@ -108,19 +117,15 @@ export const RESUME_DATA = {
         "Firebase",
         "TypeScript",
       ],
-      description: "Web chat application designed for school-based social clubs",
-      logo: Bellower
+      description:
+        "Web chat application designed for school-based social clubs",
+      logo: Bellower,
     },
     {
       title: "RoboRegistry",
-      techStack: [
-        "Robotics",
-        "Web Development",
-        "Python",
-        "Firebase",
-        "Flask",
-      ],
-      description: "An automated registry for recording FIRST scrimmage attendance",
+      techStack: ["Robotics", "Web Development", "Python", "Firebase", "Flask"],
+      description:
+        "An automated registry for recording FIRST scrimmage attendance",
       logo: RoboRegistry,
       link: {
         label: "RoboRegistry",
@@ -136,21 +141,16 @@ export const RESUME_DATA = {
         "React",
         "Vercel",
       ],
-      description: "My personal portfolio website", 
+      description: "My personal portfolio website",
       logo: Bubner,
       link: {
         label: "bubner.me",
-        href: "https://bubner.me/",
+        href: "https://bubner.me",
       },
     },
     {
       title: "Fusion Chess",
-      techStack: [
-        "Web Game",
-        "React",
-        "chess.js",
-        "stockfish.js",
-      ],
+      techStack: ["Web Game", "React", "chess.js", "stockfish.js"],
       description: "A custom chess variant which involves fusing pieces",
       logo: FusionChess,
       link: {
@@ -159,44 +159,120 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "Tanks",
+      techStack: ["Unity", "Game Development", "C#", "3D", "WebGL Build"],
+      description: "3D tank game in Unity with high scores, radar, and SFX",
+      logo: Tank,
+      link: {
+        label: "Tanks!",
+        href: "https://serve.bubner.me/unity/tanks",
+      },
+    },
+    {
+      title: "Bezier",
+      techStack: ["Unity", "Specialist Mathematics", "2D", "C#", "WebGL Build"],
+      description:
+        "Educational Unity app to visualise Bézier curve construction",
+      logo: Bezier,
+      link: {
+        label: "Bezier",
+        href: "https://serve.bubner.me/unity/bezier",
+      },
+    },
+
+    {
+      title: "mp3yt",
+      techStack: ["Flask", "Web App", "Python", "yt-dlp", "ffmpeg"],
+      description:
+        "yt-dlp wrapper for downloading YouTube videos through a simple web app",
+      logo: MP3,
+      // link: {
+      //   label: "mp3yt",
+      //   href: "https://github.com/bubner/mp3yt",
+      // },
+    },
+    {
+      title: "MinesweeperAI",
+      techStack: ["Python", "AI", "Pygame", "Proof of Concept"],
+      description:
+        "Minesweeper game implemented in Pygame with an AI search algorithm",
+      logo: Mine,
+      // link: {
+      //   label: "MinesweeperAI",
+      //   href: "https://github.com/bubner/MinesweeperAI",
+      // },
+    },
+    {
       title: "Serve",
-      techStack: [
-        "Next.js",
-        "Personal Project",
-        "React",
-        "Vercel",
-      ],
+      techStack: ["Next.js", "Personal Project", "React", "Vercel"],
       description: "A collection of web pages for use in my personal projects",
       logo: Serve,
       link: {
         label: "Serve",
-        href: "https://serve.bubner.me/",
+        href: "https://serve.bubner.me",
       },
+    },
+
+    {
+      title: "Cookie Clicker",
+      techStack: ["Arduino", "C++", "LCD", "Proof of Concept"],
+      description:
+        "Simple cookie clicker game for an Arduino with a 16x2 LCD screen",
+      logo: Cookie,
+      // link: {
+      //   label: "Cookie Clicker",
+      //   href: "https://github.com/bubner/Arduino-CookieClicker",
+      // },
+    },
+    {
+      title: "Calculator",
+      techStack: ["Python", "Tkinter", "Math", "Proof of Concept"],
+      description: "Scientific/graphing/trig. calculator in Tkinter",
+      logo: Calc,
+      // link: {
+      //   label: "TkinterCalculator",
+      //   href: "https://github.com/bubner/TkinterCalculator",
+      // },
+    },
+
+    {
+      title: "UltimateTTT",
+      techStack: ["Python", "CLI", "Minimax", "AI", "Proof of Concept"],
+      description: "0-2 player CLI Ultimate Tic-Tac-Toe with a concept AI",
+      logo: TTT,
+      // link: {
+      //   label: "UltimateTicTacToe",
+      //   href: "https://github.com/bubner/UltimateTicTacToe/"
+      // }
+    },    {
+      title: "Minecraft Forge",
+      techStack: ["Java", "Minecraft", "Modding", "Mini Projects"],
+      description: "Various quality-of-life Forge mods for Hypixel SkyBlock Minecraft 1.8.9",
+      logo: Mc
+    },
+
+    {
+      title: "Mind",
+      techStack: ["Python", "Flask", "JavaScript", "Web Game"],
+      description: "GUI-based autosave adventure web game",
+      logo: Mind,
     },
     {
       title: "DosGames",
-      techStack: [
-        "HTML",
-        "Emulation",
-        "js-dos",
-      ],
+      techStack: ["HTML", "Emulation", "js-dos"],
       description: "Replit award-winning DOS games emulator",
       logo: DosGames,
       link: {
         label: "DosGames",
-        href: "https://github.com/bubner/DosGames",
+        href: "https://serve.bubner.me/dosgames",
       },
     },
     {
-      title: "Mind",
-      techStack: [
-        "Web Game",
-        "Python",
-        "Flask",
-        "JavaScript",
-      ],
-      description: "GUI-based autosave adventure game",
-      logo: Mind,
+      title: "Plus more",
+      techStack: [],
+      logo: ThreeDots,
+      description:
+        "I'm always working on something new to benefit my learning and programming skills.",
     },
   ],
 } as const;
