@@ -16,6 +16,7 @@ export default function Glow() {
         const overlay = capture.querySelector(".glow-overlay") as HTMLElement;
 
         overlay?.appendChild(clonedChild);
+        overlay?.style.setProperty("transition", "opacity 250ms ease-in-out");
 
         capture.addEventListener("mousemove", (event) => {
           const e = event as MouseEvent;
@@ -25,6 +26,10 @@ export default function Glow() {
           overlay?.style.setProperty("--glow-x", `${x}px`);
           overlay?.style.setProperty("--glow-y", `${y}px`);
           overlay?.style.setProperty("--glow-opacity", "1");
+        });
+
+        window.addEventListener("scroll", () => {
+          overlay?.style.setProperty("--glow-opacity", "0");
         });
 
         capture.addEventListener("mouseleave", () => {
