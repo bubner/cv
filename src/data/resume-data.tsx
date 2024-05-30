@@ -104,7 +104,7 @@ export const RESUME_DATA = {
         "A free & open-source powerful FIRST Tech Challenge utility library",
       link: {
         label: "BunyipsLib",
-        href: "https://github.com/Murray-Bridge-Bunyips/BunyipsLib",
+        href: "https://git.bubner.me/BunyipsLib",
       },
       logo: Bunyips,
     },
