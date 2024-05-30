@@ -48,7 +48,7 @@ export function ProjectCard({ title, description, tags, link, logo, className }:
         </div>
       </CardHeader>
       <CardContent className="mt-auto flex print:p-3">
-        <div className="mt-2 flex flex-wrap gap-1">
+        <div className="mt-2 print:-mt-4 flex flex-wrap gap-1">
           {tags.map((tag) => (
             <Badge
               className="px-1 py-0 text-[10px] glow glow:border-glow/[.5]"
