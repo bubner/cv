@@ -1,86 +1,98 @@
-import * as React from "react";
 
-import { cn } from "@/lib/utils";
 
-const Card = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+import clsx from "clsx";
+import { HTMLAttributes, forwardRef } from "react";
+import { twMerge } from "tailwind-merge";
+
+const Card = forwardRef<
+    HTMLDivElement,
+    HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn("rounded-lg bg-card text-card-foreground p-4 print:p-0", className)}
-    {...props}
-  />
+    <div
+        ref={ref}
+        className={twMerge(
+            clsx(
+                "rounded-lg bg-card p-4 text-card-foreground print:p-0",
+                className,
+            ),
+        )}
+        {...props}
+    />
 ));
 Card.displayName = "Card";
 
-const CardHeader = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+const CardHeader = forwardRef<
+    HTMLDivElement,
+    HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn("flex flex-col space-y-1.5", className)}
-    {...props}
-  />
+    <div
+        ref={ref}
+        className={twMerge(clsx("flex flex-col space-y-1.5", className))}
+        {...props}
+    />
 ));
 CardHeader.displayName = "CardHeader";
 
-const CardTitle = React.forwardRef<
-  HTMLParagraphElement,
-  React.HTMLAttributes<HTMLHeadingElement>
+const CardTitle = forwardRef<
+    HTMLParagraphElement,
+    HTMLAttributes<HTMLHeadingElement>
 >(({ className, ...props }, ref) => (
-  <h3
-    ref={ref}
-    className={cn(
-      "text-2xl font-semibold leading-none tracking-tight",
-      className,
-    )}
-    {...props}
-  />
+    <h3
+        ref={ref}
+        className={twMerge(
+            clsx(
+                "text-2xl font-semibold leading-none tracking-tight",
+                className,
+            ),
+        )}
+        {...props}
+    />
 ));
 CardTitle.displayName = "CardTitle";
 
-const CardDescription = React.forwardRef<
-  HTMLParagraphElement,
-  React.HTMLAttributes<HTMLParagraphElement>
+const CardDescription = forwardRef<
+    HTMLParagraphElement,
+    HTMLAttributes<HTMLParagraphElement>
 >(({ className, ...props }, ref) => (
-  <p
-    ref={ref}
-    className={cn("text-sm text-muted-foreground", className)}
-    {...props}
-  />
+    <p
+        ref={ref}
+        className={twMerge(clsx("text-sm text-muted-foreground", className))}
+        {...props}
+    />
 ));
 CardDescription.displayName = "CardDescription";
 
-const CardContent = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+const CardContent = forwardRef<
+    HTMLDivElement,
+    HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn(
-      "text-pretty text-sm text-muted-foreground",
-      className,
-    )}
-    {...props}
-  />
+    <div
+        ref={ref}
+        className={twMerge(
+            clsx("text-pretty text-sm text-muted-foreground", className),
+        )}
+        {...props}
+    />
 ));
 CardContent.displayName = "CardContent";
 
-const CardFooter = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+const CardFooter = forwardRef<
+    HTMLDivElement,
+    HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn("flex items-center", className)} {...props} />
+    <div
+        ref={ref}
+        className={twMerge(clsx("flex items-center", className))}
+        {...props}
+    />
 ));
 CardFooter.displayName = "CardFooter";
 
 export {
-  Card,
-  CardHeader,
-  CardFooter,
-  CardTitle,
-  CardDescription,
-  CardContent,
+    Card,
+    CardHeader,
+    CardFooter,
+    CardTitle,
+    CardDescription,
+    CardContent,
 };

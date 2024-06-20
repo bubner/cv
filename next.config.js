@@ -3,21 +3,21 @@ const nextConfig = {
     rewrites: async () => {
         return [
             {
-                source: '/:path*',
-                destination: '/',
+                source: "/:path*",
+                destination: "/",
             },
-        ]
+        ];
     },
     reactStrictMode: false,
     images: {
         remotePatterns: [
             {
-                protocol: 'https',
-                hostname: 'wakatime.com',
-                port: '',
-            }
-        ]
-    }
-}
+                protocol: "https",
+                hostname: "wakatime.com",
+                port: "",
+            },
+        ],
+    },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

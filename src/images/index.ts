@@ -1,6 +1,6 @@
 import Kennewell from "./kennewell.png";
-import Bubner from "./apple-icon.png";
-import RoboRegistry from "./rrfavicon.png"
+import Bubner from "./bubner.png";
+import RoboRegistry from "./rrfavicon.png";
 import Serve from "./bg.png";
 import DosGames from "./dosgames.ico";
 import FusionChess from "./fchess.png";
@@ -16,24 +16,32 @@ import TTT from "./ttt.svg";
 import Bezier from "./bezier.svg";
 import Tank from "./tank.png";
 import Mc from "./mc.webp";
+import GitHubG from "./githubg.svg";
+import GitHubW from "./githubw.svg";
+import LinkedIn from "./linkedin.svg";
+import Globe from "./globe.svg";
 
 export {
-  Kennewell,
-  Bubner,
-  RoboRegistry,
-  Serve,
-  DosGames,
-  FusionChess,
-  Mind,
-  Bellower,
-  Bunyips,
-  ThreeDots,
-  MP3,
-  Mine,
-  Cookie,
-  Calc,
-  TTT,
-  Bezier,
-  Tank,
-  Mc
+    Kennewell,
+    Bubner,
+    RoboRegistry,
+    Serve,
+    DosGames,
+    FusionChess,
+    Mind,
+    Bellower,
+    Bunyips,
+    ThreeDots,
+    MP3,
+    Mine,
+    Cookie,
+    Calc,
+    TTT,
+    Bezier,
+    Tank,
+    Mc,
+    GitHubW,
+    GitHubG,
+    LinkedIn,
+    Globe,
 };
