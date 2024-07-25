@@ -66,13 +66,13 @@ export const RESUME_DATA = {
     education: [
         {
             school: "Highbury Primary School",
-            degree: "Primary School Education",
+            degree: "Media Team Captain, 'Year 7 2020 Graduation Video' creator",
             start: "2012",
             end: "2020",
         },
         {
             school: "Murray Bridge High School",
-            degree: "South Australian Certificate of Education (SACE), Multi-year Dux",
+            degree: "Multi-year Dux, FIRST® Tech Challenge Student Robotics Club Captain",
             start: "2021",
             end: "2025",
         },
@@ -98,17 +98,22 @@ export const RESUME_DATA = {
     ],
     skills: [
         "Java",
-        "Object-Oriented Programming",
+        "Multi-Paradigm Programming",
         "React",
-        "Next.js",
-        "TypeScript",
+        "Next.js 14",
+        "TypeScript/JavaScript",
         "Robotics",
         "Unity",
         "C#",
         "Web Development",
+        "Tailwind CSS",
         "Python",
+        "Flask",
+        "TeX",
         "Linux",
         "Photoshop",
+        "Vercel",
+        "Firebase"
     ],
     projects: [
         {

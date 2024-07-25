@@ -22,7 +22,7 @@ export const CommandMenu = ({ links }: Props) => {
 
     useEffect(() => {
         const down = (e: KeyboardEvent) => {
-            if (e.key === "x" && (e.metaKey || e.ctrlKey)) {
+            if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
                 e.preventDefault();
                 setOpen((open) => !open);
             }
@@ -40,7 +40,7 @@ export const CommandMenu = ({ links }: Props) => {
                     className="pointer-events-auto z-40 inline-flex h-5 select-none items-center gap-1 rounded border border-gray-800 bg-gray-800 px-1.5 text-[10px] font-medium text-muted-foreground opacity-100 hover:cursor-pointer"
                     onClick={() => setOpen((o) => !o)}
                 >
-                    <span className="text-xs">Ctrl X</span>
+                    <span className="text-xs">Ctrl K</span>
                 </kbd>{" "}
                 to open the command menu
             </p>
