@@ -20,6 +20,7 @@ import GitHubG from "./githubg.svg";
 import GitHubW from "./githubw.svg";
 import LinkedIn from "./linkedin.svg";
 import Globe from "./globe.svg";
+import Unity from "./unity.png";
 
 export {
     Kennewell,
@@ -44,4 +45,5 @@ export {
     GitHubG,
     LinkedIn,
     Globe,
+    Unity,
 };

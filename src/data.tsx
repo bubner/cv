@@ -20,6 +20,7 @@ import {
     GitHubG,
     LinkedIn,
     Globe,
+    Unity,
 } from "@/images";
 
 /**
@@ -187,6 +188,17 @@ export const RESUME_DATA = {
             link: {
                 label: "Fusion Chess",
                 href: "https://serve.bubner.me/fusionchess",
+            },
+        },
+        {
+            title: "Clusterbyte",
+            techStack: ["Unity", "Game Development", "C#", "3D", "WebGL Build"],
+            description:
+                "3D rouge-lite tower defense game with 5 levels, 4 weapons, and 5 enemies",
+            logo: Unity,
+            link: {
+                label: "Clusterbyte",
+                href: "https://serve.bubner.me/unity/clusterbyte",
             },
         },
         {
