@@ -23,7 +23,7 @@ export default function Page() {
     return (
         <div className="glow-capture">
             <main className="animate__animated animate__fadeIn animate__slower print:light dark container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16">
-                <section className="glow mx-auto w-full max-w-2xl space-y-8 rounded-2xl bg-black p-8 glow:border-glow glow:bg-glow/[.25] glow:ring-1 glow:ring-glow print:space-y-6">
+                <section className="glow mx-auto w-full max-w-3xl space-y-8 rounded-2xl bg-black p-8 glow:border-glow glow:bg-glow/[.25] glow:ring-1 glow:ring-glow print:space-y-6">
                     <div className="flex items-center justify-between">
                         <div className="flex-1 space-y-1.5">
                             <h1 className="text-2xl font-bold text-white glow:text-glow/[.15] print:text-black">
@@ -149,9 +149,42 @@ export default function Page() {
                         <h2 className="text-xl font-bold text-white glow:text-glow/[.15] print:text-black">
                             About
                         </h2>
-                        <p className="text-pretty text-sm text-muted-foreground">
-                            {RESUME_DATA.summary}
-                        </p>
+                        <p
+                            className="text-pretty text-sm text-muted-foreground"
+                            dangerouslySetInnerHTML={{
+                                __html: RESUME_DATA.summary,
+                            }}
+                        />
+                    </Section>
+                    <Section>
+                        <h2 className="text-xl font-bold text-white glow:text-glow/[.15] print:text-black">
+                            Qualifications
+                        </h2>
+                        {RESUME_DATA.education.map((education) => {
+                            return (
+                                <Card
+                                    key={education.school}
+                                    className="glow glow:border-glow glow:bg-glow/[.25] glow:ring-1 glow:ring-glow"
+                                >
+                                    <CardHeader>
+                                        <div className="flex flex-col justify-between gap-x-2 text-base md:flex-row">
+                                            <h3 className="font-semibold leading-none glow:text-glow/[.15]">
+                                                {education.degree}
+                                            </h3>
+                                            <div className="text-nowrap text-sm tabular-nums text-gray-500">
+                                                {education.start}{" "}
+                                                {education.end
+                                                    ? `- ${education.end}`
+                                                    : ""}
+                                            </div>
+                                        </div>
+                                    </CardHeader>
+                                    <CardContent className="mt-1">
+                                        {education.school}
+                                    </CardContent>
+                                </Card>
+                            );
+                        })}
                     </Section>
                     <Section>
                         <h2 className="text-xl font-bold text-white glow:text-glow/[.15] print:text-black">
@@ -213,38 +246,22 @@ export default function Page() {
                     </Section>
                     <Section>
                         <h2 className="text-xl font-bold text-white glow:text-glow/[.15] print:text-black">
-                            Education
-                        </h2>
-                        {RESUME_DATA.education.map((education) => {
-                            return (
-                                <Card
-                                    key={education.school}
-                                    className="glow glow:border-glow glow:bg-glow/[.25] glow:ring-1 glow:ring-glow"
-                                >
-                                    <CardHeader>
-                                        <div className="flex items-center justify-between gap-x-2 text-base">
-                                            <h3 className="font-semibold leading-none glow:text-glow/[.15]">
-                                                {education.school}
-                                            </h3>
-                                            <div className="text-nowrap text-sm tabular-nums text-gray-500">
-                                                {education.start}{" "}
-                                                {education.end
-                                                    ? `- ${education.end}`
-                                                    : ""}
-                                            </div>
-                                        </div>
-                                    </CardHeader>
-                                    <CardContent className="mt-2">
-                                        {education.degree}
-                                    </CardContent>
-                                </Card>
-                            );
-                        })}
-                    </Section>
-                    <Section>
-                        <h2 className="text-xl font-bold text-white glow:text-glow/[.15] print:text-black">
                             Skills
                         </h2>
+                        <div className="flex flex-wrap">
+                            <div className="w-1/2 border p-4">
+                                Placeholder 1
+                            </div>
+                            <div className="w-1/2 border p-4">
+                                Placeholder 2
+                            </div>
+                            <div className="w-1/2 border p-4">
+                                Placeholder 3
+                            </div>
+                            <div className="w-1/2 border p-4">
+                                Placeholder 4
+                            </div>
+                        </div>
                         <div className="flex flex-wrap gap-1">
                             {RESUME_DATA.skills.map((skill) => {
                                 return (

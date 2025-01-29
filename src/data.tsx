@@ -41,7 +41,7 @@ export const RESUME_DATA = {
         "https://www.google.com/maps/place/Adelaide+Metropolitan+Area,+SA/@-34.9816918,138.6440441,10z/data=!3m1!4b1!4m6!3m5!1s0x6ab0ced5a8ad9dcb:0x2ee6722d74deb41e!8m2!3d-34.9536465!4d138.598804!16s%2Fg%2F11c1tb7m8s?entry=ttu",
     about: "A young self-driven academic student and software developer.",
     summary:
-        "Distinguished at a national level at the 2023 AIIA iAwards, I am a software developer that takes strides into the unknown for personal growth and professional improvement. Passioniate in the fields of robotics, web development, Unity game development, and engineering, I develop software solutions to tackle real-world problems, advocating and promoting technical skills used in the workforce.",
+        "Distinguished at a national level at the 2023 AIIA iAwards and captain of a FIRST® robotics club, I am a software developer that takes strides into the unknown for personal growth and professional improvement.<br /><br />Demonstrating passion in the fields of robotics, web development, Unity game development, and software engineering, I develop software solutions to tackle real-world problems, advocating and promoting modern technical skills used in the workforce.",
     website: "https://bubner.me",
     contact: {
         email: "bubner@proton.me",
@@ -64,24 +64,30 @@ export const RESUME_DATA = {
             },
         ],
     },
-    education: [
+    education: [ // TODO: logo for educations
+        // {
+        //     school: "Highbury Primary School",
+        //     degree: "Media Team Captain, 'Year 7 2020 Graduation Video' creator",
+        //     start: "2012",
+        //     end: "2020",
+        // },
         {
-            school: "Highbury Primary School",
-            degree: "Media Team Captain, 'Year 7 2020 Graduation Video' creator",
-            start: "2012",
-            end: "2020",
-        },
-        {
-            school: "Murray Bridge High School",
-            degree: "Multi-year Dux, FIRST® Tech Challenge Student Robotics Club Captain",
-            start: "2021",
-            end: "2025",
+            school: "Academy of Interactive Entertainment",
+            degree: "ICT30120: Certificate III in Information Technology",
+            start: "Jan 2024",
+            end: "Dec 2024",
         },
         {
             school: "EdX - Harvard Online",
             degree: "CS50's Introduction to Computer Science Certificate",
-            start: "2022",
-            end: null,
+            start: "Jan 2022",
+            end: "Dec 2022",
+        },
+        {
+            school: "Murray Bridge High School; Year 11 GPA average: A+ (14.9/15.0)",
+            degree: "South Australian Certificate of Education (Expected completion: 12/2025)",
+            start: "Jan 2021",
+            end: "Dec 2025",
         },
     ],
     work: [
@@ -91,10 +97,32 @@ export const RESUME_DATA = {
             badges: ["Experience", "Onsite"],
             title: "Subsidiary Web Developer",
             logo: Kennewell,
-            start: "2023",
-            end: null,
+            start: "Dec 2023",
+            end: "Dec 2023",
             description:
                 "Worked on backend and frontend implementations of a subsidiary Shopify store through upgrades with improved images, graphics, visual user experience, and Fusion360 CAD animations to boost sales. Performed as Student Work Experience as part of Murray Bridge High School.",
+        },
+    ],
+    descriptive_skills: [
+        {
+            skill: "Java",
+            icon: null,// TODO
+            description: "TODO"
+        },
+        {
+            skill: "Javaa",
+            icon: null,// TODO
+            description: "TODO"
+        },
+        {
+            skill: "Javaaa",
+            icon: null,// TODO
+            description: "TODO"
+        },
+        {
+            skill: "Javaaaa",
+            icon: null,// TODO
+            description: "TODO"
         },
     ],
     skills: [
@@ -114,7 +142,7 @@ export const RESUME_DATA = {
         "Linux",
         "Photoshop",
         "Vercel",
-        "Firebase"
+        "Firebase",
     ],
     projects: [
         {
@@ -127,7 +155,7 @@ export const RESUME_DATA = {
                 "Computer Vision",
             ],
             description:
-                "A free & open-source powerful FIRST Tech Challenge utility library",
+                "A free & open-source powerful FIRST® Tech Challenge utility library",
             link: {
                 label: "BunyipsLib",
                 href: "https://git.bubner.me/BunyipsLib",

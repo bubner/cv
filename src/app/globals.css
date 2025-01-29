@@ -104,7 +104,13 @@
     }
     body {
         @apply bg-background text-foreground;
+        margin: 0;
     }
+}
+
+@page {
+    size: auto;
+    margin: 0mm 0mm 0mm 0mm;
 }
 
 .print-force-new-page {
