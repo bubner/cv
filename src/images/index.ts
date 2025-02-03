@@ -21,6 +21,13 @@ import GitHubW from "./githubw.svg";
 import LinkedIn from "./linkedin.svg";
 import Globe from "./globe.svg";
 import Unity from "./unity.png";
+import AtBubner from "./atbubner.png";
+import AIE from "./aie.png";
+import MBHS from "./mbhs.png";
+import Star from "./star.svg";
+import Bars from "./bar.png";
+import Code from "./scr.svg";
+import Hat from "./aca.png";
 
 export {
     Kennewell,
@@ -46,4 +53,11 @@ export {
     LinkedIn,
     Globe,
     Unity,
+    AtBubner,
+    AIE,
+    MBHS,
+    Star,
+    Bars,
+    Code,
+    Hat
 };
