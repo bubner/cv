@@ -11,7 +11,7 @@ import Image from "next/image";
 
 import "animate.css";
 import Glow from "../components/glow";
-import { GitHubW } from "@/images";
+import { Bubner, GitHubW } from "@/images";
 
 export const metadata: Metadata = {
     title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -248,19 +248,29 @@ export default function Page() {
                         <h2 className="text-xl font-bold text-white glow:text-glow/[.15] print:text-black">
                             Skills
                         </h2>
-                        <div className="flex flex-wrap">
-                            <div className="w-1/2 border p-4">
-                                Placeholder 1
-                            </div>
-                            <div className="w-1/2 border p-4">
-                                Placeholder 2
-                            </div>
-                            <div className="w-1/2 border p-4">
-                                Placeholder 3
-                            </div>
-                            <div className="w-1/2 border p-4">
-                                Placeholder 4
-                            </div>
+                        <div className="flex flex-wrap text-white">
+                            {RESUME_DATA.descriptive_skills.map((_, skill) => {
+                                return (
+                                    <div
+                                        className="flex w-1/2 flex-col pb-2 glow:text-glow/[.15] print:text-black"
+                                        key={skill}
+                                    >
+                                        <div className="inline-flex flex-row gap-1 items-center align-middle">
+                                            <Image
+                                                height={40}
+                                                width={40}
+                                                src={Bubner} // TODO
+                                                className="h-6 w-6"
+                                                alt={"TODO"}
+                                            />
+                                            <h1 className="self-start text-[18px] font-bold">
+                                                Hello
+                                            </h1>
+                                        </div>
+                                        <p className="mt-1">hello</p>
+                                    </div>
+                                );
+                            })}
                         </div>
                         <div className="flex flex-wrap gap-1">
                             {RESUME_DATA.skills.map((skill) => {
