@@ -92,7 +92,7 @@ export const RESUME_DATA = {
         // },
         {
             school: "Murray Bridge High School; Year 8, 9 Dux; Year 11 GPA average: A+ (14.9/15.0)",
-            degree: "South Australian Certificate of Education (Expected completion: 12/2025)",
+            degree: "South Australian Certificate of Education (Expected)",
             start: "Jan 2021",
             end: "Dec 2025",
             logo: MBHS
