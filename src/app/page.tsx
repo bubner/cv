@@ -214,21 +214,23 @@ export default function Page() {
                                 >
                                     <CardHeader>
                                         <div className="flex flex-col justify-between gap-x-2 text-base md:flex-row md:items-center">
-                                            <h3 className="inline-flex items-center gap-x-1 font-semibold leading-none md:justify-center">
-                                                <Image
-                                                    height={40}
-                                                    width={40}
-                                                    src={work.logo}
-                                                    className="h-6 w-6"
-                                                    alt={work.company}
-                                                />
-                                                <a
-                                                    className="hover:underline glow:text-glow/[.15]"
-                                                    href={work.link}
-                                                >
-                                                    {work.company}
-                                                </a>
-                                                <span className="flex gap-x-1">
+                                            <h3 className="flex flex-col md:flex-row gap-1 font-semibold leading-none md:justify-center">
+                                                <div className="inline-flex items-center">
+                                                    <Image
+                                                        height={40}
+                                                        width={40}
+                                                        src={work.logo}
+                                                        className="h-6 w-6"
+                                                        alt={work.company}
+                                                    />
+                                                    <a
+                                                        className="hover:underline glow:text-glow/[.15]"
+                                                        href={work.link}
+                                                    >
+                                                        {work.company}
+                                                    </a>
+                                                </div>
+                                                <span className="flex flex-wrap gap-1">
                                                     {work.badges.map(
                                                         (badge) => (
                                                             <Badge
@@ -268,7 +270,7 @@ export default function Page() {
                             {RESUME_DATA.descriptive_skills.map((skill, i) => {
                                 return (
                                     <div
-                                        className="flex w-1/2 flex-col pb-2 print:text-black"
+                                        className="flex w-full flex-col pb-2 print:text-black md:w-1/2"
                                         key={i}
                                     >
                                         <Card className="glow w-fit p-2 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow">
@@ -338,7 +340,7 @@ export default function Page() {
                             target="_blank"
                             className="inline-flex flex-row items-center justify-center gap-2 text-white glow:text-glow/[.15] print:hidden"
                         >
-                            <span className="text-sm text-muted-foreground">
+                            <span className="text-center text-sm text-muted-foreground">
                                 View more projects on GitHub:{" "}
                             </span>
                             <Image
