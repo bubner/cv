@@ -39,7 +39,7 @@ export const RESUME_DATA = {
     location: "Greater Adelaide Area, South Australia, Australia",
     locationLink:
         "https://www.google.com/maps/place/Adelaide+Metropolitan+Area,+SA/@-34.9816918,138.6440441,10z/data=!3m1!4b1!4m6!3m5!1s0x6ab0ced5a8ad9dcb:0x2ee6722d74deb41e!8m2!3d-34.9536465!4d138.598804!16s%2Fg%2F11c1tb7m8s?entry=ttu",
-    about: "A young self-driven academic student and software developer.",
+    about: "A nationally recognised STEM ambassador and software developer.",
     summary:
         "Distinguished at a national level at the 2023 AIIA iAwards and captain of a FIRST® robotics club, I am a software developer that takes strides into the unknown for personal growth and professional improvement.<br /><br />Demonstrating passion in the fields of robotics, web development, Unity game development, and software engineering, I develop software solutions to tackle real-world problems, advocating and promoting modern technical skills used in the workforce.",
     website: "https://bubner.me",
@@ -64,7 +64,8 @@ export const RESUME_DATA = {
             },
         ],
     },
-    education: [ // TODO: logo for educations
+    education: [
+        // TODO: logo for educations
         // {
         //     school: "Highbury Primary School",
         //     degree: "Media Team Captain, 'Year 7 2020 Graduation Video' creator",
@@ -77,14 +78,14 @@ export const RESUME_DATA = {
             start: "Jan 2024",
             end: "Dec 2024",
         },
+        // {
+        //     school: "EdX - Harvard Online",
+        //     degree: "CS50's Introduction to Computer Science Certificate",
+        //     start: "Jan 2022",
+        //     end: "Dec 2022",
+        // },
         {
-            school: "EdX - Harvard Online",
-            degree: "CS50's Introduction to Computer Science Certificate",
-            start: "Jan 2022",
-            end: "Dec 2022",
-        },
-        {
-            school: "Murray Bridge High School; Year 11 GPA average: A+ (14.9/15.0)",
+            school: "Murray Bridge High School; Year 8, 9 Dux; Year 11 GPA average: A+ (14.9/15.0)",
             degree: "South Australian Certificate of Education (Expected completion: 12/2025)",
             start: "Jan 2021",
             end: "Dec 2025",
@@ -105,40 +106,45 @@ export const RESUME_DATA = {
     ],
     descriptive_skills: [
         {
-            skill: "Java",
-            icon: null,// TODO
-            description: "TODO"
+            skill: "Leadership",
+            icon: Bubner, // TODO
+            description:
+                "Serving as a 4-year captain of a 12-member FIRST® Tech Challenge Robotics club, leading as an advocate and enabler of STEM in rural Australia. Recognised by FIRST® as a Dean's List Finalist.",
         },
         {
-            skill: "Javaa",
-            icon: null,// TODO
-            description: "TODO"
+            skill: "Problem Solving",
+            icon: Bubner, // TODO
+            description:
+                "Led the Bunyip Bellower project, a proof-of-concept initiative posed at student communication within school social clubs. Nationally recognised by the Australian Industry Association Industry.",
         },
         {
-            skill: "Javaaa",
-            icon: null,// TODO
-            description: "TODO"
+            skill: "Software Engineering",
+            icon: Bubner, // TODO
+            description:
+                "Developed 25+ independent open-source projects. Proficient software developer in over 5 languages with a passion in several software fields, including web & game development, robotics, and low-level.",
         },
         {
-            skill: "Javaaaa",
-            icon: null,// TODO
-            description: "TODO"
+            skill: "Organisation",
+            icon: Bubner, // TODO // TODO: awards // TODO:
+            description:
+                "Stays time organised by balancing high academic achievements while maintaining 4-hour daily programming schedule. Made 2466 GitHub commits in 2024 with 2400+ programming hours.",
         },
     ],
     skills: [
         "Java",
-        "Multi-Paradigm Programming",
+        "Robotics",
+        "Kotlin",
+        "Web Development",
         "React",
         "Next.js 14",
-        "TypeScript/JavaScript",
-        "Robotics",
+        "TypeScript",
+        "Game Development",
         "Unity",
         "C#",
-        "Web Development",
-        "Tailwind CSS",
+        "Tailwind",
         "Python",
         "Flask",
-        "TeX",
+        "LaTeX",
         "Linux",
         "Photoshop",
         "Vercel",
@@ -209,7 +215,7 @@ export const RESUME_DATA = {
             },
         },
         {
-            title: "Fusion Chess",
+            title: "Fusion Chess", // TODO: more info here!
             techStack: ["Web Game", "React", "chess.js", "stockfish.js"],
             description: "A custom chess variant which involves fusing pieces",
             logo: FusionChess,
@@ -257,29 +263,28 @@ export const RESUME_DATA = {
                 href: "https://serve.bubner.me/unity/bezier",
             },
         },
-
-        {
-            title: "mp3yt",
-            techStack: ["Flask", "Web App", "Python", "yt-dlp", "ffmpeg"],
-            description:
-                "yt-dlp wrapper for downloading YouTube videos through a simple web app",
-            logo: MP3,
-            // link: {
-            //     label: "mp3yt",
-            //     href: "https://github.com/bubner/mp3yt",
-            // },
-        },
-        {
-            title: "MinesweeperAI",
-            techStack: ["Python", "AI", "Pygame", "Proof of Concept"],
-            description:
-                "Minesweeper game implemented in Pygame with an AI search algorithm",
-            logo: Mine,
-            // link: {
-            //     label: "MinesweeperAI",
-            //     href: "https://github.com/bubner/MinesweeperAI",
-            // },
-        },
+        // {
+        //     title: "mp3yt",
+        //     techStack: ["Flask", "Web App", "Python", "yt-dlp", "ffmpeg"],
+        //     description:
+        //         "yt-dlp wrapper for downloading YouTube videos through a simple web app",
+        //     logo: MP3,
+        //     // link: {
+        //     //     label: "mp3yt",
+        //     //     href: "https://github.com/bubner/mp3yt",
+        //     // },
+        // },
+        // {
+        //     title: "MinesweeperAI",
+        //     techStack: ["Python", "AI", "Pygame", "Proof of Concept"],
+        //     description:
+        //         "Minesweeper game implemented in Pygame with an AI search algorithm",
+        //     logo: Mine,
+        //     // link: {
+        //     //     label: "MinesweeperAI",
+        //     //     href: "https://github.com/bubner/MinesweeperAI",
+        //     // },
+        // },
         {
             title: "Serve",
             techStack: ["Next.js", "Personal Project", "React", "Vercel"],
@@ -291,70 +296,67 @@ export const RESUME_DATA = {
                 href: "https://serve.bubner.me",
             },
         },
-
-        {
-            title: "Cookie Clicker",
-            techStack: ["Arduino", "C++", "LCD", "Proof of Concept"],
-            description:
-                "Simple cookie clicker game for an Arduino with a 16x2 LCD screen",
-            logo: Cookie,
-            // link: {
-            //     label: "Cookie Clicker",
-            //     href: "https://github.com/bubner/Arduino-CookieClicker",
-            // },
-        },
-        {
-            title: "Calculator",
-            techStack: ["Python", "Tkinter", "Math", "Proof of Concept"],
-            description: "Scientific/graphing/trig. calculator in Tkinter",
-            logo: Calc,
-            // link: {
-            //     label: "TkinterCalculator",
-            //     href: "https://github.com/bubner/TkinterCalculator",
-            // },
-        },
-
-        {
-            title: "UltimateTTT",
-            techStack: ["Python", "CLI", "Minimax", "AI", "Proof of Concept"],
-            description:
-                "0-2 player CLI Ultimate Tic-Tac-Toe with a concept AI",
-            logo: TTT,
-            // link: {
-            //     label: "UltimateTicTacToe",
-            //     href: "https://github.com/bubner/UltimateTicTacToe/"
-            // }
-        },
-        {
-            title: "Minecraft Forge",
-            techStack: ["Java", "Minecraft", "Modding", "Mini Projects"],
-            description:
-                "Various quality-of-life Forge mods for Hypixel SkyBlock Minecraft 1.8.9",
-            logo: Mc,
-        },
-
-        {
-            title: "Mind",
-            techStack: ["Python", "Flask", "JavaScript", "Web Game"],
-            description: "GUI-based autosave adventure web game",
-            logo: Mind,
-        },
-        {
-            title: "DosGames",
-            techStack: ["HTML", "Emulation", "js-dos"],
-            description: "Replit award-winning DOS games emulator",
-            logo: DosGames,
-            link: {
-                label: "DosGames",
-                href: "https://serve.bubner.me/dosgames",
-            },
-        },
-        {
-            title: "Plus more",
-            techStack: [],
-            logo: ThreeDots,
-            description:
-                "I'm always working on something new to benefit my learning and programming skills.",
-        },
+        // {
+        //     title: "Cookie Clicker",
+        //     techStack: ["Arduino", "C++", "LCD", "Proof of Concept"],
+        //     description:
+        //         "Simple cookie clicker game for an Arduino with a 16x2 LCD screen",
+        //     logo: Cookie,
+        //     // link: {
+        //     //     label: "Cookie Clicker",
+        //     //     href: "https://github.com/bubner/Arduino-CookieClicker",
+        //     // },
+        // },
+        // {
+        //     title: "Calculator",
+        //     techStack: ["Python", "Tkinter", "Math", "Proof of Concept"],
+        //     description: "Scientific/graphing/trig. calculator in Tkinter",
+        //     logo: Calc,
+        //     // link: {
+        //     //     label: "TkinterCalculator",
+        //     //     href: "https://github.com/bubner/TkinterCalculator",
+        //     // },
+        // },
+        // {
+        //     title: "UltimateTTT",
+        //     techStack: ["Python", "CLI", "Minimax", "AI", "Proof of Concept"],
+        //     description:
+        //         "0-2 player CLI Ultimate Tic-Tac-Toe with a concept AI",
+        //     logo: TTT,
+        //     // link: {
+        //     //     label: "UltimateTicTacToe",
+        //     //     href: "https://github.com/bubner/UltimateTicTacToe/"
+        //     // }
+        // },
+        // {
+        //     title: "Minecraft Forge",
+        //     techStack: ["Java", "Minecraft", "Modding", "Mini Projects"],
+        //     description:
+        //         "Various quality-of-life Forge mods for Hypixel SkyBlock Minecraft 1.8.9",
+        //     logo: Mc,
+        // },
+        // {
+        //     title: "Mind",
+        //     techStack: ["Python", "Flask", "JavaScript", "Web Game"],
+        //     description: "GUI-based autosave adventure web game",
+        //     logo: Mind,
+        // },
+        // {
+        //     title: "DosGames",
+        //     techStack: ["HTML", "Emulation", "js-dos"],
+        //     description: "Replit award-winning DOS games emulator",
+        //     logo: DosGames,
+        //     link: {
+        //         label: "DosGames",
+        //         href: "https://serve.bubner.me/dosgames",
+        //     },
+        // },
+        // {
+        //     title: "Plus more",
+        //     techStack: [],
+        //     logo: ThreeDots,
+        //     description:
+        //         "I'm always working on something new to benefit my learning and programming skills.",
+        // },
     ],
 } as const;

@@ -11,7 +11,7 @@ import Image from "next/image";
 
 import "animate.css";
 import Glow from "../components/glow";
-import { Bubner, GitHubW } from "@/images";
+import { AtBubner, Bubner, GitHubW } from "@/images";
 
 export const metadata: Metadata = {
     title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -25,7 +25,7 @@ export default function Page() {
             <main className="animate__animated animate__fadeIn animate__slower print:light dark container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16">
                 <section className="glow mx-auto w-full max-w-3xl space-y-8 rounded-2xl bg-black p-8 glow:border-glow glow:bg-glow/[.25] glow:ring-1 glow:ring-glow print:space-y-6">
                     <div className="flex items-center justify-between">
-                        <div className="flex-1 space-y-1.5">
+                        <div className="flex-1 space-y-1.5 print:space-y-0.5">
                             <h1 className="text-2xl font-bold text-white glow:text-glow/[.15] print:text-black">
                                 {RESUME_DATA.name}
                             </h1>
@@ -111,6 +111,7 @@ export default function Page() {
                                         </span>
                                     </a>
                                 ) : null}
+                                <span className="text-[12px]">References available on request.</span>
                             </div>
                         </div>
                         <a href={RESUME_DATA.website} target="_blank">
@@ -160,7 +161,7 @@ export default function Page() {
                         <h2 className="text-xl font-bold text-white glow:text-glow/[.15] print:text-black">
                             Qualifications
                         </h2>
-                        {RESUME_DATA.education.map((education) => {
+                        {RESUME_DATA.education.map((education, i) => {
                             return (
                                 <Card
                                     key={education.school}
@@ -179,7 +180,11 @@ export default function Page() {
                                             </div>
                                         </div>
                                     </CardHeader>
-                                    <CardContent className="mt-1">
+                                    <CardContent
+                                        className={`mt-1 print:mt-0 ${
+                                            i == 0 ? "print:mb-2" : ""
+                                        }`}
+                                    >
                                         {education.school}
                                     </CardContent>
                                 </Card>
@@ -249,25 +254,29 @@ export default function Page() {
                             Skills
                         </h2>
                         <div className="flex flex-wrap text-white">
-                            {RESUME_DATA.descriptive_skills.map((_, skill) => {
+                            {RESUME_DATA.descriptive_skills.map((skill, i) => {
                                 return (
                                     <div
-                                        className="flex w-1/2 flex-col pb-2 glow:text-glow/[.15] print:text-black"
-                                        key={skill}
+                                        className="flex w-1/2 flex-col pb-2 print:text-black"
+                                        key={i}
                                     >
-                                        <div className="inline-flex flex-row gap-1 items-center align-middle">
-                                            <Image
-                                                height={40}
-                                                width={40}
-                                                src={Bubner} // TODO
-                                                className="h-6 w-6"
-                                                alt={"TODO"}
-                                            />
-                                            <h1 className="self-start text-[18px] font-bold">
-                                                Hello
-                                            </h1>
-                                        </div>
-                                        <p className="mt-1">hello</p>
+                                        <Card className="glow w-fit p-2 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow">
+                                            <div className="inline-flex flex-row items-center justify-center gap-2 align-middle">
+                                                <Image
+                                                    height={40}
+                                                    width={40}
+                                                    src={skill.icon}
+                                                    className="h-6 w-6"
+                                                    alt={skill.skill}
+                                                />
+                                                <h1 className="self-start text-[17px] font-bold glow:text-glow/[.15]">
+                                                    {skill.skill}
+                                                </h1>
+                                            </div>
+                                        </Card>
+                                        <p className="mr-3 mt-1 text-sm text-muted-foreground print:text-[13px]">
+                                            {skill.description}
+                                        </p>
                                     </div>
                                 );
                             })}
@@ -285,30 +294,15 @@ export default function Page() {
                             })}
                         </div>
                     </Section>
-                    <Section className="print-force-new-page scroll-mb-16">
+                    <Section className="print-force-new-page scroll-mb-16 print:py-8">
                         <h2 className="text-xl font-bold text-white print:text-black">
                             <span className="glow:text-glow/[.15]">
-                                Projects
+                                Key Projects
                             </span>
-                            &nbsp;
-                            <Button
-                                className="size-8 print:hidden"
-                                variant="outline"
-                                size="icon"
-                                asChild
-                            >
-                                <a
-                                    href={`https://github.com/${RESUME_DATA.githubName}?tab=repositories`}
-                                    target="_blank"
-                                >
-                                    <Image
-                                        src={GitHubW}
-                                        alt="GitHub"
-                                        className="z-10 size-4"
-                                    />
-                                </a>
-                            </Button>
                         </h2>
+                        <div className="hidden print:block underline">
+                            https://github.com/bubner
+                        </div>
                         <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
                             {RESUME_DATA.projects.map((project) => {
                                 return (
@@ -328,6 +322,20 @@ export default function Page() {
                                 );
                             })}
                         </div>
+                        <a
+                            href={`https://github.com/${RESUME_DATA.githubName}?tab=repositories`}
+                            target="_blank"
+                            className="inline-flex flex-row items-center justify-center gap-2 text-white glow:text-glow/[.15] print:hidden"
+                        >
+                            <span className="text-sm text-muted-foreground">
+                                View more projects on GitHub:{" "}
+                            </span>
+                            <Image
+                                src={AtBubner}
+                                alt="View more projects on Lucas Bubner's GitHub"
+                                className="z-10 h-6 w-auto rounded"
+                            />
+                        </a>
                     </Section>
                 </section>
             </main>

@@ -21,6 +21,7 @@ import GitHubW from "./githubw.svg";
 import LinkedIn from "./linkedin.svg";
 import Globe from "./globe.svg";
 import Unity from "./unity.png";
+import AtBubner from "./atbubner.png";
 
 export {
     Kennewell,
@@ -46,4 +47,5 @@ export {
     LinkedIn,
     Globe,
     Unity,
+    AtBubner
 };
