@@ -111,7 +111,9 @@ export default function Page() {
                                         </span>
                                     </a>
                                 ) : null}
-                                <span className="text-[12px]">References available on request.</span>
+                                <span className="text-[12px]">
+                                    References available on request.
+                                </span>
                             </div>
                         </div>
                         <a href={RESUME_DATA.website} target="_blank">
@@ -185,7 +187,16 @@ export default function Page() {
                                             i == 0 ? "print:mb-2" : ""
                                         }`}
                                     >
-                                        {education.school}
+                                        <div className="inline-flex items-center gap-2">
+                                            <Image
+                                                height={40}
+                                                width={40}
+                                                src={education.logo}
+                                                className="h-6 w-6"
+                                                alt={education.school}
+                                            />
+                                            {education.school}
+                                        </div>
                                     </CardContent>
                                 </Card>
                             );
@@ -300,8 +311,8 @@ export default function Page() {
                                 Key Projects
                             </span>
                         </h2>
-                        <div className="hidden print:block underline">
-                            https://github.com/bubner
+                        <div className="hidden underline print:block">
+                            https://github.com/{RESUME_DATA.githubName}
                         </div>
                         <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
                             {RESUME_DATA.projects.map((project) => {
@@ -332,7 +343,7 @@ export default function Page() {
                             </span>
                             <Image
                                 src={AtBubner}
-                                alt="View more projects on Lucas Bubner's GitHub"
+                                alt={`View more projects on ${RESUME_DATA.name}'s GitHub`}
                                 className="z-10 h-6 w-auto rounded"
                             />
                         </a>

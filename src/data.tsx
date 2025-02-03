@@ -21,12 +21,18 @@ import {
     LinkedIn,
     Globe,
     Unity,
+    AIE,
+    MBHS,
+    Star,
+    Bars,
+    Code,
+    Hat,
 } from "@/images";
 
 /**
  * Data.
  *
- * @author Lucas Bubner, 2024
+ * @author Lucas Bubner, 2025
  */
 export const RESUME_DATA = {
     name: "Lucas Bubner",
@@ -65,7 +71,6 @@ export const RESUME_DATA = {
         ],
     },
     education: [
-        // TODO: logo for educations
         // {
         //     school: "Highbury Primary School",
         //     degree: "Media Team Captain, 'Year 7 2020 Graduation Video' creator",
@@ -77,6 +82,7 @@ export const RESUME_DATA = {
             degree: "ICT30120: Certificate III in Information Technology",
             start: "Jan 2024",
             end: "Dec 2024",
+            logo: AIE
         },
         // {
         //     school: "EdX - Harvard Online",
@@ -89,6 +95,7 @@ export const RESUME_DATA = {
             degree: "South Australian Certificate of Education (Expected completion: 12/2025)",
             start: "Jan 2021",
             end: "Dec 2025",
+            logo: MBHS
         },
     ],
     work: [
@@ -107,25 +114,25 @@ export const RESUME_DATA = {
     descriptive_skills: [
         {
             skill: "Leadership",
-            icon: Bubner, // TODO
+            icon: Star,
             description:
                 "Serving as a 4-year captain of a 12-member FIRST® Tech Challenge Robotics club, leading as an advocate and enabler of STEM in rural Australia. Recognised by FIRST® as a Dean's List Finalist.",
         },
         {
             skill: "Problem Solving",
-            icon: Bubner, // TODO
+            icon: Hat,
             description:
                 "Led the Bunyip Bellower project, a proof-of-concept initiative posed at student communication within school social clubs. Nationally recognised by the Australian Industry Association Industry.",
         },
         {
             skill: "Software Engineering",
-            icon: Bubner, // TODO
+            icon: Code,
             description:
                 "Developed 25+ independent open-source projects. Proficient software developer in over 5 languages with a passion in several software fields, including web & game development, robotics, and low-level.",
         },
         {
             skill: "Organisation",
-            icon: Bubner, // TODO // TODO: awards // TODO:
+            icon: Bars,
             description:
                 "Stays time organised by balancing high academic achievements while maintaining 4-hour daily programming schedule. Made 2466 GitHub commits in 2024 with 2400+ programming hours.",
         },
@@ -150,6 +157,9 @@ export const RESUME_DATA = {
         "Vercel",
         "Firebase",
     ],
+    awards: [
+        // TODO
+    ],
     projects: [
         {
             title: "BunyipsLib",
@@ -161,7 +171,7 @@ export const RESUME_DATA = {
                 "Computer Vision",
             ],
             description:
-                "A free & open-source powerful FIRST® Tech Challenge utility library",
+                "A free & open-source powerful FIRST® Tech Challenge utility library. Solo-developed 17,000+ lines of code with over 1000+ commits.",
             link: {
                 label: "BunyipsLib",
                 href: "https://git.bubner.me/BunyipsLib",
@@ -178,7 +188,7 @@ export const RESUME_DATA = {
                 "TypeScript",
             ],
             description:
-                "Web chat application designed for school-based social clubs",
+                "Web chat application designed for school-based social clubs. Project pitched to iAwards judges to a competing standard with several national universities.",
             logo: Bellower,
         },
         {
@@ -191,7 +201,7 @@ export const RESUME_DATA = {
                 "Flask",
             ],
             description:
-                "An automated registry for recording FIRST scrimmage attendance",
+                "An automated registry for recording FIRST scrimmage attendance. Deployed and used at Science Alive in 2023 by the SA Student Robotics Club (RoboRoos).",
             logo: RoboRegistry,
             link: {
                 label: "RoboRegistry",
@@ -207,7 +217,7 @@ export const RESUME_DATA = {
                 "React",
                 "Vercel",
             ],
-            description: "My personal portfolio website",
+            description: "My personal portfolio website. Self-managed domain using industry-standard technologies and practices.",
             logo: Bubner,
             link: {
                 label: "bubner.me",
@@ -215,9 +225,9 @@ export const RESUME_DATA = {
             },
         },
         {
-            title: "Fusion Chess", // TODO: more info here!
+            title: "Fusion Chess",
             techStack: ["Web Game", "React", "chess.js", "stockfish.js"],
-            description: "A custom chess variant which involves fusing pieces",
+            description: "A custom chess variant which involves fusing pieces. Culminated over 1200 search impressions and 190 clicks through Google Search.",
             logo: FusionChess,
             link: {
                 label: "Fusion Chess",
@@ -228,7 +238,7 @@ export const RESUME_DATA = {
             title: "Clusterbyte",
             techStack: ["Unity", "Game Development", "C#", "3D", "WebGL Build"],
             description:
-                "3D rouge-lite tower defense game with 5 levels, 4 weapons, and 5 enemies",
+                "3D rouge-lite tower defense game with 5 levels, 4 weapons, and 5 enemies. Designed in Unity as an independent AIE project.",
             logo: Unity,
             link: {
                 label: "Clusterbyte",
@@ -239,7 +249,7 @@ export const RESUME_DATA = {
             title: "Tanks",
             techStack: ["Unity", "Game Development", "C#", "3D", "WebGL Build"],
             description:
-                "3D tank game in Unity with high scores, radar, and SFX",
+                "3D tank game in Unity with high scores, radar, and SFX. Designed in Unity as an independent AIE project.",
             logo: Tank,
             link: {
                 label: "Tanks!",
@@ -256,7 +266,7 @@ export const RESUME_DATA = {
                 "WebGL Build",
             ],
             description:
-                "Educational Unity app to visualise Bézier curve construction",
+                "Educational Unity app to visualise Bézier curve construction. Designed in Unity as a specialist mathematics supplement.",
             logo: Bezier,
             link: {
                 label: "Bezier",
@@ -289,7 +299,7 @@ export const RESUME_DATA = {
             title: "Serve",
             techStack: ["Next.js", "Personal Project", "React", "Vercel"],
             description:
-                "A collection of web pages for use in my personal projects",
+                "A collection of web pages for use in my personal projects. Self-managed for small projects and general link services.",
             logo: Serve,
             link: {
                 label: "Serve",
