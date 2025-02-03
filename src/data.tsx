@@ -156,6 +156,7 @@ export const RESUME_DATA = {
         "Photoshop",
         "Vercel",
         "Firebase",
+        "CAD"
     ],
     awards: [
         // TODO
