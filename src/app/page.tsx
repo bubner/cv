@@ -313,8 +313,8 @@ export default function Page() {
                                 Key Projects
                             </span>
                         </h2>
-                        <div className="hidden underline print:block">
-                            https://github.com/{RESUME_DATA.githubName}
+                        <div className="hidden print:block">
+                            View more projects: <span class name="underline">https://github.com/{RESUME_DATA.githubName}</span>
                         </div>
                         <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
                             {RESUME_DATA.projects.map((project) => {
