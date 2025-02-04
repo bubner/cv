@@ -158,9 +158,6 @@ export const RESUME_DATA = {
         "Firebase",
         "CAD"
     ],
-    awards: [
-        // TODO
-    ],
     projects: [
         {
             title: "BunyipsLib",
