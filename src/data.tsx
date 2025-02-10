@@ -153,7 +153,6 @@ export const RESUME_DATA = {
         "Flask",
         "LaTeX",
         "Linux",
-        "Photoshop",
         "Vercel",
         "Firebase",
         "CAD"
