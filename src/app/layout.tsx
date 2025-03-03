@@ -2,6 +2,14 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 import { ReactNode } from "react";
+import { StandardData } from "@/data/standard-data";
+
+export const metadata = {
+    title: `${StandardData.name} | ${StandardData.about}`,
+    description: StandardData.summary, // note: these are shared since the title and desc.
+                                       // for html doesn't matter with multifacilitation
+    icons: ["./favicon.ico"],
+};
 
 const inter = Inter({
     subsets: ["latin"],

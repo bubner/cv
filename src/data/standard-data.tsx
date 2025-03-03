@@ -3,20 +3,11 @@ import {
     Bubner,
     RoboRegistry,
     Serve,
-    DosGames,
     FusionChess,
-    Mind,
     Bellower,
     Bunyips,
-    ThreeDots,
-    MP3,
-    Mine,
-    Cookie,
-    Calc,
-    TTT,
     Bezier,
     Tank,
-    Mc,
     GitHubG,
     LinkedIn,
     Globe,
@@ -28,20 +19,22 @@ import {
     Code,
     Hat,
 } from "@/images";
+import ViewMore, { ViewMorePrint } from "../components/custom/view-more";
+import ResumeData from "./data";
 
 /**
- * Data.
+ * Standard data.
  *
  * @author Lucas Bubner, 2025
  */
-export const RESUME_DATA = {
+export const StandardData: ResumeData = {
     name: "Lucas Bubner",
     initials: "LB",
     pfp: Bubner,
-    wakatimeName: "bubner",
-    wakatimeChart:
-        "https://wakatime.com/share/@bubner/5e5091a6-e447-4c50-88f8-0c7c9205ef93.png",
-    githubName: "bubner",
+    wakatime: {
+        name: "bubner",
+        chart: "https://wakatime.com/share/@bubner/5e5091a6-e447-4c50-88f8-0c7c9205ef93.png",
+    },
     location: "Greater Adelaide Area, South Australia, Australia",
     locationLink:
         "https://www.google.com/maps/place/Adelaide+Metropolitan+Area,+SA/@-34.9816918,138.6440441,10z/data=!3m1!4b1!4m6!3m5!1s0x6ab0ced5a8ad9dcb:0x2ee6722d74deb41e!8m2!3d-34.9536465!4d138.598804!16s%2Fg%2F11c1tb7m8s?entry=ttu",
@@ -71,31 +64,19 @@ export const RESUME_DATA = {
         ],
     },
     education: [
-        // {
-        //     school: "Highbury Primary School",
-        //     degree: "Media Team Captain, 'Year 7 2020 Graduation Video' creator",
-        //     start: "2012",
-        //     end: "2020",
-        // },
         {
             school: "Academy of Interactive Entertainment",
             degree: "ICT30120: Certificate III in Information Technology",
             start: "Jan 2024",
             end: "Dec 2024",
-            logo: AIE
+            logo: AIE,
         },
-        // {
-        //     school: "EdX - Harvard Online",
-        //     degree: "CS50's Introduction to Computer Science Certificate",
-        //     start: "Jan 2022",
-        //     end: "Dec 2022",
-        // },
         {
             school: "Murray Bridge High School; Year 8, 9 Dux; Year 11 GPA average: A+ (14.9/15.0)",
             degree: "South Australian Certificate of Education (Expected)",
             start: "Jan 2021",
             end: "Dec 2025",
-            logo: MBHS
+            logo: MBHS,
         },
     ],
     work: [
@@ -155,8 +136,9 @@ export const RESUME_DATA = {
         "Linux",
         "Vercel",
         "Firebase",
-        "CAD"
+        "CAD",
     ],
+    pre_projects: <ViewMorePrint />,
     projects: [
         {
             title: "BunyipsLib",
@@ -214,7 +196,8 @@ export const RESUME_DATA = {
                 "React",
                 "Vercel",
             ],
-            description: "My personal portfolio website. Self-managed domain using industry-standard technologies and practices.",
+            description:
+                "My personal portfolio website. Self-managed domain using industry-standard technologies and practices.",
             logo: Bubner,
             link: {
                 label: "bubner.me",
@@ -224,7 +207,8 @@ export const RESUME_DATA = {
         {
             title: "Fusion Chess",
             techStack: ["Web Game", "React", "chess.js", "stockfish.js"],
-            description: "A custom chess variant which involves fusing pieces. Culminated over 1200 search impressions and 190 clicks through Google Search.",
+            description:
+                "A custom chess variant which involves fusing pieces. Culminated over 1200 search impressions and 190 clicks through Google Search.",
             logo: FusionChess,
             link: {
                 label: "Fusion Chess",
@@ -270,28 +254,6 @@ export const RESUME_DATA = {
                 href: "https://serve.bubner.me/unity/bezier",
             },
         },
-        // {
-        //     title: "mp3yt",
-        //     techStack: ["Flask", "Web App", "Python", "yt-dlp", "ffmpeg"],
-        //     description:
-        //         "yt-dlp wrapper for downloading YouTube videos through a simple web app",
-        //     logo: MP3,
-        //     // link: {
-        //     //     label: "mp3yt",
-        //     //     href: "https://github.com/bubner/mp3yt",
-        //     // },
-        // },
-        // {
-        //     title: "MinesweeperAI",
-        //     techStack: ["Python", "AI", "Pygame", "Proof of Concept"],
-        //     description:
-        //         "Minesweeper game implemented in Pygame with an AI search algorithm",
-        //     logo: Mine,
-        //     // link: {
-        //     //     label: "MinesweeperAI",
-        //     //     href: "https://github.com/bubner/MinesweeperAI",
-        //     // },
-        // },
         {
             title: "Serve",
             techStack: ["Next.js", "Personal Project", "React", "Vercel"],
@@ -303,67 +265,6 @@ export const RESUME_DATA = {
                 href: "https://serve.bubner.me",
             },
         },
-        // {
-        //     title: "Cookie Clicker",
-        //     techStack: ["Arduino", "C++", "LCD", "Proof of Concept"],
-        //     description:
-        //         "Simple cookie clicker game for an Arduino with a 16x2 LCD screen",
-        //     logo: Cookie,
-        //     // link: {
-        //     //     label: "Cookie Clicker",
-        //     //     href: "https://github.com/bubner/Arduino-CookieClicker",
-        //     // },
-        // },
-        // {
-        //     title: "Calculator",
-        //     techStack: ["Python", "Tkinter", "Math", "Proof of Concept"],
-        //     description: "Scientific/graphing/trig. calculator in Tkinter",
-        //     logo: Calc,
-        //     // link: {
-        //     //     label: "TkinterCalculator",
-        //     //     href: "https://github.com/bubner/TkinterCalculator",
-        //     // },
-        // },
-        // {
-        //     title: "UltimateTTT",
-        //     techStack: ["Python", "CLI", "Minimax", "AI", "Proof of Concept"],
-        //     description:
-        //         "0-2 player CLI Ultimate Tic-Tac-Toe with a concept AI",
-        //     logo: TTT,
-        //     // link: {
-        //     //     label: "UltimateTicTacToe",
-        //     //     href: "https://github.com/bubner/UltimateTicTacToe/"
-        //     // }
-        // },
-        // {
-        //     title: "Minecraft Forge",
-        //     techStack: ["Java", "Minecraft", "Modding", "Mini Projects"],
-        //     description:
-        //         "Various quality-of-life Forge mods for Hypixel SkyBlock Minecraft 1.8.9",
-        //     logo: Mc,
-        // },
-        // {
-        //     title: "Mind",
-        //     techStack: ["Python", "Flask", "JavaScript", "Web Game"],
-        //     description: "GUI-based autosave adventure web game",
-        //     logo: Mind,
-        // },
-        // {
-        //     title: "DosGames",
-        //     techStack: ["HTML", "Emulation", "js-dos"],
-        //     description: "Replit award-winning DOS games emulator",
-        //     logo: DosGames,
-        //     link: {
-        //         label: "DosGames",
-        //         href: "https://serve.bubner.me/dosgames",
-        //     },
-        // },
-        // {
-        //     title: "Plus more",
-        //     techStack: [],
-        //     logo: ThreeDots,
-        //     description:
-        //         "I'm always working on something new to benefit my learning and programming skills.",
-        // },
     ],
-} as const;
+    post_projects: <ViewMore />,
+};
