@@ -13,7 +13,7 @@ interface Props {
     description: string;
     tags: readonly string[];
     link?: string;
-    logo: any;
+    logo?: any;
     className?: string;
 }
 
@@ -35,11 +35,13 @@ export function ProjectCard({
             <CardHeader className="print:p-3">
                 <div className="space-y-1">
                     <div className="flex items-center gap-2">
-                        <Image
-                            className="w-8 rounded-md"
-                            alt={title}
-                            src={logo}
-                        />
+                        {logo && (
+                            <Image
+                                className="w-8 rounded-md"
+                                alt={title}
+                                src={logo}
+                            />
+                        )}
                         <CardTitle className="text-base">
                             {link ? (
                                 <a

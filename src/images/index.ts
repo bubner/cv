@@ -28,6 +28,7 @@ import Star from "./star.svg";
 import Bars from "./bar.png";
 import Code from "./scr.svg";
 import Hat from "./aca.png";
+import BubnerReal from "./bubner.jpg";
 
 export {
     Kennewell,
@@ -59,5 +60,6 @@ export {
     Star,
     Bars,
     Code,
-    Hat
+    Hat,
+    BubnerReal
 };

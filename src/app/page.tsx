@@ -13,10 +13,12 @@ import "animate.css";
 import Glow from "../components/glow";
 import { StandardData } from "@/data/standard-data";
 import { usePathname } from "next/navigation";
+import { LiteData } from "@/data/lite-data";
 
 const mapping = {
     "/": StandardData,
-}
+    "/lite": LiteData,
+};
 
 export default function Page() {
     const data = mapping[usePathname() as keyof typeof mapping] || StandardData;
@@ -44,7 +46,7 @@ export default function Page() {
                                 </a>
                             </p>
                             <div className="flex gap-x-1 pt-1 text-sm text-muted-foreground print:hidden">
-                                {data.contact.email ? (
+                                {data.contact.email && (
                                     <Button
                                         className="size-8"
                                         variant="outline"
@@ -57,21 +59,19 @@ export default function Page() {
                                             <MailIcon className="size-4 text-[#9CA3AF]" />
                                         </a>
                                     </Button>
-                                ) : null}
-                                {data.contact.tel ? (
+                                )}
+                                {data.contact.tel && (
                                     <Button
                                         className="size-8"
                                         variant="outline"
                                         size="icon"
                                         asChild
                                     >
-                                        <a
-                                            href={`tel:${data.contact.tel}`}
-                                        >
+                                        <a href={`tel:${data.contact.tel}`}>
                                             <PhoneIcon className="size-4" />
                                         </a>
                                     </Button>
-                                ) : null}
+                                )}
                                 {data.contact.social.map((social) => (
                                     <Button
                                         key={social.name}
@@ -81,11 +81,13 @@ export default function Page() {
                                         asChild
                                     >
                                         <a href={social.url}>
-                                            <Image
-                                                src={social.icon}
-                                                alt={social.name}
-                                                className="size-4"
-                                            />
+                                            {social.icon && (
+                                                <Image
+                                                    src={social.icon}
+                                                    alt={social.name}
+                                                    className="size-4"
+                                                />
+                                            )}
                                         </a>
                                     </Button>
                                 ))}
@@ -96,36 +98,46 @@ export default function Page() {
                                         {data.website}
                                     </span>
                                 </a>
-                                {data.contact.email ? (
-                                    <a
-                                        href={`mailto:${data.contact.email}`}
-                                    >
+                                {data.contact.email && (
+                                    <a href={`mailto:${data.contact.email}`}>
                                         <span className="underline">
                                             {data.contact.email}
                                         </span>
                                     </a>
-                                ) : null}
-                                {data.contact.tel ? (
+                                )}
+                                {data.contact.tel && (
                                     <a href={`tel:${data.contact.tel}`}>
                                         <span className="underline">
                                             {data.contact.tel}
                                         </span>
                                     </a>
-                                ) : null}
+                                )}
                                 <span className="text-[12px]">
                                     References available on request.
                                 </span>
                             </div>
                         </div>
                         <a href={data.website} target="_blank">
-                            <Image
-                                className="h-30 w-30 animate__animated animate__fadeIn glow relative flex shrink-0 overflow-hidden rounded-[50%] border-2 hover:cursor-pointer glow:border-glow/[.33]"
-                                alt={data.name}
-                                src={data.pfp}
-                                width={100}
-                                height={100}
-                                priority
-                            />
+                            {data.pfpPrint && (
+                                <Image
+                                    className="relative hidden h-[7.5rem] w-[7.5rem] shrink-0 overflow-hidden rounded-[50%] border-2 print:flex"
+                                    alt={data.name}
+                                    src={data.pfpPrint}
+                                    width={100}
+                                    height={100}
+                                    priority
+                                />
+                            )}
+                            {data.pfp && (
+                                <Image
+                                    className="h-30 w-30 animate__animated animate__fadeIn glow relative flex shrink-0 overflow-hidden rounded-[50%] border-2 hover:cursor-pointer glow:border-glow/[.33] print:hidden"
+                                    alt={data.name}
+                                    src={data.pfp}
+                                    width={100}
+                                    height={100}
+                                    priority
+                                />
+                            )}
                         </a>
                     </div>
                     {data.wakatime && (
@@ -164,7 +176,7 @@ export default function Page() {
                     </Section>
                     <Section>
                         <h2 className="text-xl font-bold text-white glow:text-glow/[.15] print:text-black">
-                            Qualifications
+                            Education & Qualifications
                         </h2>
                         {data.education.map((education, i) => {
                             return (
@@ -191,13 +203,15 @@ export default function Page() {
                                         }`}
                                     >
                                         <div className="inline-flex items-center gap-2">
-                                            <Image
-                                                height={40}
-                                                width={40}
-                                                src={education.logo}
-                                                className="h-6 w-6"
-                                                alt={education.school}
-                                            />
+                                            {education.logo && (
+                                                <Image
+                                                    height={40}
+                                                    width={40}
+                                                    src={education.logo}
+                                                    className="h-6 w-6"
+                                                    alt={education.school}
+                                                />
+                                            )}
                                             {education.school}
                                         </div>
                                     </CardContent>
@@ -207,7 +221,7 @@ export default function Page() {
                     </Section>
                     <Section>
                         <h2 className="text-xl font-bold text-white glow:text-glow/[.15] print:text-black">
-                            Work Experience
+                            Professional Experience
                         </h2>
                         {data.work.map((work) => {
                             return (
@@ -219,13 +233,15 @@ export default function Page() {
                                         <div className="flex flex-col justify-between gap-x-2 text-base print:flex-row md:flex-row md:items-center">
                                             <h3 className="flex flex-col gap-1 font-semibold leading-none print:flex-row md:flex-row md:justify-center">
                                                 <div className="inline-flex items-center">
-                                                    <Image
-                                                        height={40}
-                                                        width={40}
-                                                        src={work.logo}
-                                                        className="h-6 w-6"
-                                                        alt={work.company}
-                                                    />
+                                                    {work.logo && (
+                                                        <Image
+                                                            height={40}
+                                                            width={40}
+                                                            src={work.logo}
+                                                            className="h-6 w-6"
+                                                            alt={work.company}
+                                                        />
+                                                    )}
                                                     <a
                                                         className="hover:underline glow:text-glow/[.15]"
                                                         href={work.link}
@@ -259,7 +275,11 @@ export default function Page() {
                                         </h4>
                                     </CardHeader>
                                     <CardContent className="mt-2 text-xs">
-                                        {work.description}
+                                        <p
+                                            dangerouslySetInnerHTML={{
+                                                __html: work.description,
+                                            }}
+                                        />
                                     </CardContent>
                                 </Card>
                             );
@@ -267,7 +287,7 @@ export default function Page() {
                     </Section>
                     <Section>
                         <h2 className="text-xl font-bold text-white glow:text-glow/[.15] print:text-black">
-                            Skills
+                            Skills {/* TODO: this section needs a rewrite */}
                         </h2>
                         <div className="flex flex-wrap text-white">
                             {data.descriptive_skills.map((skill, i) => {
@@ -278,13 +298,15 @@ export default function Page() {
                                     >
                                         <Card className="glow w-fit p-2 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow">
                                             <div className="inline-flex flex-row items-center justify-center gap-2 align-middle">
-                                                <Image
-                                                    height={40}
-                                                    width={40}
-                                                    src={skill.icon}
-                                                    className="h-6 w-6"
-                                                    alt={skill.skill}
-                                                />
+                                                {skill.icon && (
+                                                    <Image
+                                                        height={40}
+                                                        width={40}
+                                                        src={skill.icon}
+                                                        className="h-6 w-6"
+                                                        alt={skill.skill}
+                                                    />
+                                                )}
                                                 <h1 className="self-start text-[17px] font-bold glow:text-glow/[.15]">
                                                     {skill.skill}
                                                 </h1>

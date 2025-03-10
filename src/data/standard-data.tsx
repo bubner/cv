@@ -18,6 +18,7 @@ import {
     Bars,
     Code,
     Hat,
+    BubnerReal,
 } from "@/images";
 import ViewMore, { ViewMorePrint } from "../components/custom/view-more";
 import ResumeData from "./data";
@@ -31,6 +32,7 @@ export const StandardData: ResumeData = {
     name: "Lucas Bubner",
     initials: "LB",
     pfp: Bubner,
+    pfpPrint: BubnerReal,
     wakatime: {
         name: "bubner",
         chart: "https://wakatime.com/share/@bubner/5e5091a6-e447-4c50-88f8-0c7c9205ef93.png",
@@ -38,9 +40,9 @@ export const StandardData: ResumeData = {
     location: "Greater Adelaide Area, South Australia, Australia",
     locationLink:
         "https://www.google.com/maps/place/Adelaide+Metropolitan+Area,+SA/@-34.9816918,138.6440441,10z/data=!3m1!4b1!4m6!3m5!1s0x6ab0ced5a8ad9dcb:0x2ee6722d74deb41e!8m2!3d-34.9536465!4d138.598804!16s%2Fg%2F11c1tb7m8s?entry=ttu",
-    about: "A nationally recognised STEM ambassador and software developer.",
+    about: "Software Developer | STEM Advocate",
     summary:
-        "Distinguished at a national level at the 2023 AIIA iAwards and captain of a FIRST® robotics club, I am a software developer that takes strides into the unknown for personal growth and professional improvement.<br /><br />Demonstrating passion in the fields of robotics, web development, Unity game development, and software engineering, I develop software solutions to tackle real-world problems, advocating and promoting modern technical skills used in the workforce.",
+        "Highly motivated software developer and STEM advocate, nationally recognised at 2023 Australian Industry Information Association iAwards. As the captain of a FIRST® robotics club, I lead technical projects, mentor peers, and promote STEM engagement in rural Australia.<br><br>Passionate about robotics, web and game development, and software engineering, I create innovative software solutions to real-world problems while continuously expanding my technical experience. Strong analytical thinker, problem solver, and communicator with experience in project management and STEM advocacy.",
     website: "https://bubner.me",
     contact: {
         email: "bubner@proton.me",
@@ -72,7 +74,7 @@ export const StandardData: ResumeData = {
             logo: AIE,
         },
         {
-            school: "Murray Bridge High School; Year 8, 9 Dux; Year 11 GPA average: A+ (14.9/15.0)",
+            school: "Murray Bridge High School; Year 8 & 9 Dux; Year 10 & 11 GPA: A+ (14.8/15.0, 14.9/15.0)",
             degree: "South Australian Certificate of Education (Expected)",
             start: "Jan 2021",
             end: "Dec 2025",
@@ -83,13 +85,13 @@ export const StandardData: ResumeData = {
         {
             company: "Kennewell",
             link: "https://oldmatedesigns.com/",
-            badges: ["Experience", "Onsite"],
+            badges: ["Work Experience", "Onsite"],
             title: "Subsidiary Web Developer",
             logo: Kennewell,
             start: "Dec 2023",
             end: "Dec 2023",
             description:
-                "Worked on backend and frontend implementations of a subsidiary Shopify store through upgrades with improved images, graphics, visual user experience, and Fusion360 CAD animations to boost sales. Performed as Student Work Experience as part of Murray Bridge High School.",
+                "Enhanced the frontend of a Shopify store, improving user experience and sales.<br>Developed Fusion 360 CAD animations to showcase products."
         },
     ],
     descriptive_skills: [

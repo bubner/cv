@@ -1,14 +1,17 @@
 import { StaticImageData } from "next/image";
 
+import type { JSX } from "react";
+
 /**
  * Common data struct for resume data.
  *
- * @author Lucas Bubner, 2024
+ * @author Lucas Bubner, 2025
  */
 export default interface ResumeData {
     name: string;
     initials: string;
-    pfp: StaticImageData;
+    pfp?: StaticImageData;
+    pfpPrint?: StaticImageData;
     wakatime?: {
         name: string;
         chart: string;
@@ -21,28 +24,28 @@ export default interface ResumeData {
     contact: {
         email: string;
         tel: string;
-        social: { name: string; url: string; icon: StaticImageData }[];
+        social: { name: string; url: string; icon?: StaticImageData }[];
     };
     education: {
         school: string;
         degree: string;
         start: string;
         end: string;
-        logo: StaticImageData;
+        logo?: StaticImageData;
     }[];
     work: {
         company: string;
         link: string;
         badges: string[];
         title: string;
-        logo: StaticImageData;
+        logo?: StaticImageData;
         start: string;
         end: string;
         description: string;
     }[];
     descriptive_skills: {
         skill: string;
-        icon: StaticImageData;
+        icon?: StaticImageData;
         description: string;
     }[];
     skills: string[];
@@ -55,7 +58,7 @@ export default interface ResumeData {
             label: string;
             href: string;
         };
-        logo: StaticImageData;
+        logo?: StaticImageData;
     }[];
     post_projects?: JSX.Element;
 }

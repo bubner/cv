@@ -12,12 +12,15 @@ import {
 import { Button } from "./ui/button";
 import { CommandIcon } from "lucide-react";
 import { useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 interface Props {
     links: { url: string; title: string }[];
 }
 
 export const CommandMenu = ({ links }: Props) => {
+    const router = useRouter();
+    const pathname = usePathname();
     const [open, setOpen] = useState(false);
 
     useEffect(() => {
@@ -64,6 +67,15 @@ export const CommandMenu = ({ links }: Props) => {
                             }}
                         >
                             <span>Print</span>
+                        </CommandItem>
+                        <CommandItem
+                            onSelect={() => {
+                                setOpen(false);
+                                router.push(pathname === "/lite" ? "/" : "/lite");
+                                window.location.reload();
+                            }}
+                        >
+                            <span>View {pathname === "/lite" ? "with" : "without"} images</span>
                         </CommandItem>
                     </CommandGroup>
                     <CommandGroup heading="Links">
