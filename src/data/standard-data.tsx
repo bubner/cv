@@ -42,7 +42,7 @@ export const StandardData: ResumeData = {
         "https://www.google.com/maps/place/Adelaide+Metropolitan+Area,+SA/@-34.9816918,138.6440441,10z/data=!3m1!4b1!4m6!3m5!1s0x6ab0ced5a8ad9dcb:0x2ee6722d74deb41e!8m2!3d-34.9536465!4d138.598804!16s%2Fg%2F11c1tb7m8s?entry=ttu",
     about: "Software Developer | STEM Advocate",
     summary:
-        "Highly motivated software developer and STEM advocate, nationally recognised at 2023 Australian Industry Information Association iAwards. As the captain of a FIRST® robotics club, I lead technical projects, mentor peers, and promote STEM engagement in rural Australia.<br><br>Passionate about robotics, web and game development, and software engineering, I create innovative software solutions to real-world problems while continuously expanding my technical experience. Strong analytical thinker, problem solver, and communicator with experience in project management and STEM advocacy.",
+        "Highly motivated software developer and STEM advocate, nationally recognised at the 2023 Australian Industry Information Association iAwards. As captain of a FIRST® robotics club, I lead technical projects and mentor peers with a clear vision, strong communication skills, and a commitment to collaboration, accountability, and resilience, promoting STEM in rural Australia. Passionate about robotics, web/game development, and software engineering, I create innovative solutions to real-world problems while continuously expanding my technical expertise.",
     website: "https://bubner.me",
     contact: {
         email: "bubner@proton.me",
@@ -91,7 +91,7 @@ export const StandardData: ResumeData = {
             start: "Dec 2023",
             end: "Dec 2023",
             description:
-                "Enhanced the frontend of a Shopify store, improving user experience and sales.<br>Developed Fusion 360 CAD animations to showcase products."
+                "Enhanced the frontend of a Shopify store, improving user experience and sales. Developed Fusion 360 CAD animations to showcase products."
         },
     ],
     descriptive_skills: [

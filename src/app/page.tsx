@@ -10,10 +10,12 @@ import { ProjectCard } from "@/components/project-card";
 import Image from "next/image";
 
 import "animate.css";
-import Glow from "../components/glow";
+import Glow from "../components/custom/glow";
 import { StandardData } from "@/data/standard-data";
 import { usePathname } from "next/navigation";
 import { LiteData } from "@/data/lite-data";
+import { Bubner } from "@/images";
+import ListItem from "@/components/custom/list-item";
 
 const mapping = {
     "/": StandardData,
@@ -26,7 +28,7 @@ export default function Page() {
     return (
         <div className="glow-capture">
             <main className="animate__animated animate__fadeIn animate__slower print:light dark container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16">
-                <section className="glow mx-auto w-full max-w-3xl space-y-8 rounded-2xl bg-black p-8 glow:border-glow glow:bg-glow/[.25] glow:ring-1 glow:ring-glow print:space-y-6">
+                <section className="glow mx-auto w-full max-w-3xl space-y-8 rounded-2xl bg-black p-8 glow:border-glow glow:bg-glow/[.25] glow:ring-1 glow:ring-glow print:space-y-3">
                     <div className="flex items-center justify-between">
                         <div className="flex-1 space-y-1.5 print:space-y-0.5">
                             <h1 className="text-2xl font-bold text-white glow:text-glow/[.15] print:text-black">
@@ -284,55 +286,220 @@ export default function Page() {
                                 </Card>
                             );
                         })}
-                    </Section>
-                    <Section>
-                        <h2 className="text-xl font-bold text-white glow:text-glow/[.15] print:text-black">
-                            Skills {/* TODO: this section needs a rewrite */}
-                        </h2>
+                        <div className="print:my-1" />
                         <div className="flex flex-wrap text-white">
-                            {data.descriptive_skills.map((skill, i) => {
-                                return (
-                                    <div
-                                        className="flex w-full flex-col pb-2 print:w-1/2 print:text-black md:w-1/2"
-                                        key={i}
-                                    >
-                                        <Card className="glow w-fit p-2 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow">
-                                            <div className="inline-flex flex-row items-center justify-center gap-2 align-middle">
-                                                {skill.icon && (
-                                                    <Image
-                                                        height={40}
-                                                        width={40}
-                                                        src={skill.icon}
-                                                        className="h-6 w-6"
-                                                        alt={skill.skill}
-                                                    />
-                                                )}
-                                                <h1 className="self-start text-[17px] font-bold glow:text-glow/[.15]">
-                                                    {skill.skill}
-                                                </h1>
-                                            </div>
-                                        </Card>
-                                        <p className="mr-3 mt-1 text-sm text-muted-foreground print:text-[13px]">
-                                            {skill.description}
-                                        </p>
-                                    </div>
-                                );
-                            })}
-                        </div>
-                        <div className="flex flex-wrap gap-1">
-                            {data.skills.map((skill) => {
-                                return (
-                                    <Badge
-                                        className="glow glow:ring-1 glow:ring-glow"
-                                        key={skill}
-                                    >
-                                        {skill}
-                                    </Badge>
-                                );
-                            })}
+                            {/* TODO: use resume data structure when done */}
+                            <Card className="glow m-1 w-[calc(50%-0.5rem)] p-3 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow">
+                                <h2 className="mb-2 ml-1 text-lg font-bold glow:text-glow/[.15] print:ml-0 print:text-black">
+                                    Skills & Achievements
+                                </h2>
+                                <ListItem image={Bubner}>
+                                    {/* TODO: allocate better images */}
+                                    {/* TODO: bold specific words */}
+                                    FIRST® Robotics Leadership
+                                </ListItem>
+                                <ListItem image={Bubner} tabbed={true}>
+                                    4-year captain of 15-member FIRST® Tech
+                                    Challenge robotics club, mentoring teammates
+                                    and expanding participation.
+                                </ListItem>
+                                <ListItem image={Bubner} tabbed={true}>
+                                    Guided five teams (two in 2023, three in
+                                    2024) to the National FTC Competition in
+                                    Sydney, achieving high performance ranking
+                                    8th at Nationals qualification.
+                                </ListItem>
+                                <ListItem image={Bubner} tabbed={true}>
+                                    Dean’s List Finalist recognised for
+                                    leadership, advocacy and impact in STEM
+                                    across FIRST® Australia.
+                                </ListItem>
+                                <ListItem image={Bubner}>
+                                    STEM Advocacy & Community Engagement
+                                </ListItem>
+                                <ListItem image={Bubner} tabbed={true}>
+                                    Presented technical projects to iAwards
+                                    judges, FIRST® robotics panels, and
+                                    industry professionals.
+                                </ListItem>
+                                <ListItem image={Bubner} tabbed={true}>
+                                    Addressed Rotary Club ($4,000 funding
+                                    student travel) and Masonic Charities
+                                    ($20,000 for regional robotics expansion).
+                                </ListItem>
+                                <ListItem image={Bubner} tabbed={true}>
+                                    Published STEM-focused articles on
+                                    robotics through social media, radio
+                                    interviews, and school.
+                                </ListItem>
+                            </Card>
+                            <Card className="glow m-1 w-[calc(50%-0.5rem)] p-3 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow">
+                                <h2 className="mb-2 ml-1 text-lg font-bold glow:text-glow/[.15] print:ml-0 print:text-black">
+                                    Technical Capabilities
+                                </h2>
+                                <ListItem image={Bubner}>
+                                    Programming Languages
+                                </ListItem>
+                                <div className="flex flex-wrap">
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        Java
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        Kotlin
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        Python
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        C#
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        TypeScript & JavaScript
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        HTML/CSS
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        Jinja
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        LaTeX
+                                    </ListItem>
+                                </div>
+                                <ListItem image={Bubner}>
+                                    Software Frameworks & Tools
+                                </ListItem>
+                                <div className="flex flex-wrap">
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        React
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        Next.js
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        Tailwind CSS
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        Firebase
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        Vercel
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        Flask
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        Unity
+                                    </ListItem>
+                                </div>
+                                <ListItem image={Bubner}>
+                                    Cloud & DevOps
+                                </ListItem>
+                                <div className="flex flex-wrap">
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        Linux
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        Git
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        GitHub
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        Event management systems (RoboRegistry)
+                                    </ListItem>
+                                </div>
+                                <ListItem image={Bubner}>
+                                    Robotics & Embedded Systems
+                                </ListItem>
+                                <div className="flex flex-wrap">
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        FIRST® Tech Challenge Robotics Club (4
+                                        years)
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        Open-source robotics library
+                                        (BunyipsLib)
+                                    </ListItem>
+                                    <ListItem image={Bubner} tabbed={true}>
+                                        CAD and hardware for robotics automation
+                                    </ListItem>
+                                </div>
+                            </Card>
+                            <Card className="glow m-1 w-[calc(50%-0.5rem)] p-3 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow print:mt-[90px]">
+                                <h2 className="mb-2 ml-1 text-lg font-bold glow:text-glow/[.15] print:ml-0 print:text-black">
+                                    Problem Solving & Innovation
+                                </h2>
+                                <ListItem image={Bubner}>
+                                    Analytical Thinking & Troubleshooting
+                                </ListItem>
+                                <ListItem tabbed={true}>
+                                    Strong problem-solving skills in software
+                                    debugging, robotics, and system
+                                    optimisation.
+                                </ListItem>
+                                <ListItem tabbed={true}>
+                                    Ability to diagnose challenges and implement
+                                    efficient, scalable solutions.
+                                </ListItem>
+                                <ListItem image={Bubner}>
+                                    Adaptability & Continuous Learning
+                                </ListItem>
+                                <ListItem tabbed={true}>
+                                    Self-driven learner, staying ahead in
+                                    emerging technologies and best practices.
+                                </ListItem>
+                                <ListItem tabbed={true}>
+                                    Quick to adapt to new challenges, applying
+                                    technical knowledge in real-world scenarios.
+                                </ListItem>
+                                <ListItem image={Bubner}>
+                                    Conflict Resolution & Composure
+                                </ListItem>
+                                <ListItem tabbed={true}>
+                                    Maintains composure under pressure,
+                                    effectively resolving disputes and ensuring
+                                    smooth collaboration in challenging
+                                    situations.
+                                </ListItem>
+                            </Card>
+                            <Card className="glow m-1 w-[calc(50%-0.5rem)] p-3 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow print:mt-[90px]">
+                                <h2 className="mb-2 ml-1 text-lg font-bold glow:text-glow/[.15] print:ml-0 print:text-black">
+                                    Personal Attributes
+                                </h2>
+                                <ListItem image={Bubner}>
+                                    Innovative & Analytical Problem Solver
+                                </ListItem>
+                                <ListItem tabbed={true}>
+                                    Develops creative, effective solutions to
+                                    complex technical challenges, with strong
+                                    skills in debugging, optimisation, and
+                                    scalable system design.
+                                </ListItem>
+
+                                <ListItem image={Bubner}>
+                                    Self-Motivated & Adaptable Learner
+                                </ListItem>
+                                <ListItem tabbed={true}>
+                                    Dedicated to continuous skill development,
+                                    staying ahead in emerging technologies, and
+                                    applying knowledge to diverse real-world
+                                    scenarios.
+                                </ListItem>
+
+                                <ListItem image={Bubner}>
+                                    Organised & Collaborative Leader
+                                </ListItem>
+                                <ListItem tabbed={true}>
+                                    Balances academic excellence with intensive
+                                    programming schedules, mentors teams, drives
+                                    STEM outreach, and fosters effective
+                                    teamwork.
+                                </ListItem>
+                            </Card>
                         </div>
                     </Section>
-                    <Section className="print-force-new-page scroll-mb-16 print:py-8">
+                    <Section className="scroll-mb-16">
                         <h2 className="text-xl font-bold text-white print:text-black">
                             <span className="glow:text-glow/[.15]">
                                 Key Projects
