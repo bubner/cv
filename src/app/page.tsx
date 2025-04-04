@@ -35,9 +35,12 @@ export default function Page() {
                             <h1 className="text-2xl font-bold text-white glow:text-glow/[.15] print:text-black">
                                 {data.name}
                             </h1>
-                            <p className="max-w-md text-pretty text-sm text-muted-foreground">
-                                {data.about}
-                            </p>
+                            <p
+                                className="max-w-md text-pretty text-sm text-muted-foreground"
+                                dangerouslySetInnerHTML={{
+                                    __html: data.about,
+                                }}
+                            />
                             <p className="max-w-md items-center text-pretty text-xs text-muted-foreground">
                                 <a
                                     className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
@@ -178,7 +181,7 @@ export default function Page() {
                         />
                     </Section>
                     <Section>
-                        <h2 className="text-xl font-bold text-white glow:text-glow/[.15] print:text-black print:mb-1">
+                        <h2 className="text-xl font-bold text-white glow:text-glow/[.15] print:mb-1 print:text-black">
                             Education & Qualifications
                         </h2>
                         {data.education.map((education, i) => {
@@ -215,7 +218,11 @@ export default function Page() {
                                                     alt={education.school}
                                                 />
                                             )}
-                                            {education.school}
+                                            <span
+                                                dangerouslySetInnerHTML={{
+                                                    __html: education.school,
+                                                }}
+                                            />
                                         </div>
                                     </CardContent>
                                 </Card>
@@ -241,7 +248,7 @@ export default function Page() {
                                                             height={40}
                                                             width={40}
                                                             src={work.logo}
-                                                            className="h-6 w-6 mr-1"
+                                                            className="mr-1 h-6 w-6"
                                                             alt={work.company}
                                                         />
                                                     )}
@@ -273,9 +280,12 @@ export default function Page() {
                                                     : ""}
                                             </div>
                                         </div>
-                                        <h4 className="text-sm leading-none">
-                                            {work.title}
-                                        </h4>
+                                        <h4
+                                            className="text-sm leading-none"
+                                            dangerouslySetInnerHTML={{
+                                                __html: work.title,
+                                            }}
+                                        />
                                     </CardHeader>
                                     <CardContent className="mt-2 text-xs">
                                         <p
@@ -287,7 +297,7 @@ export default function Page() {
                                 </Card>
                             );
                         })}
-                        <div className="flex flex-wrap text-white print:mt-2 gap-3">
+                        <div className="flex flex-wrap gap-3 text-white print:mt-2">
                             {data.skills.map((skill, i) => (
                                 <Card
                                     className={`glow w-[calc(50%-0.5rem)] p-3 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow${
@@ -297,9 +307,12 @@ export default function Page() {
                                     }`}
                                     key={i}
                                 >
-                                    <h2 className="mb-2 ml-1 text-lg font-bold glow:text-glow/[.15] print:ml-0 print:text-black">
-                                        {skill.header}
-                                    </h2>
+                                    <h2
+                                        className="mb-2 ml-1 text-lg font-bold glow:text-glow/[.15] print:ml-0 print:text-black"
+                                        dangerouslySetInnerHTML={{
+                                            __html: skill.header,
+                                        }}
+                                    />
                                     {skill.info.reduce((acc, item, idx) => {
                                         if (!item.grouped) {
                                             // Render directly
@@ -308,9 +321,8 @@ export default function Page() {
                                                     key={idx}
                                                     image={item.icon}
                                                     indented={item.indented}
-                                                >
-                                                    {item.text}
-                                                </ListItem>,
+                                                    text={item.text}
+                                                />,
                                             );
                                         } else {
                                             // Check last accumulation to see if we're in a flex-wrap
@@ -335,9 +347,8 @@ export default function Page() {
                                                             indented={
                                                                 item.indented
                                                             }
-                                                        >
-                                                            {item.text}
-                                                        </ListItem>
+                                                            text={item.text}
+                                                        />
                                                     </div>,
                                                 );
                                             } else {
@@ -352,9 +363,8 @@ export default function Page() {
                                                         key={idx}
                                                         image={item.icon}
                                                         indented={item.indented}
-                                                    >
-                                                        {item.text}
-                                                    </ListItem>,
+                                                        text={item.text}
+                                                    />,
                                                 );
                                                 acc[acc.length - 1] =
                                                     cloneElement(lastElement, {

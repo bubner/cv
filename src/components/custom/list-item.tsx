@@ -2,11 +2,11 @@ import { StaticImageData } from "next/image";
 import Image from "next/image";
 
 export default function ListItem({
-    children,
+    text,
     image,
     indented = false,
 }: {
-    children: React.ReactNode;
+    text: string;
     image?: StaticImageData;
     indented?: boolean;
 }) {
@@ -21,9 +21,14 @@ export default function ListItem({
             ) : (
                 <div className={`min-w-6 min-h-5${indented ? " ml-3" : ""}`} />
             )}
-            <p className={`text-pretty text-[12px] text-muted-foreground${!indented ? " font-bold text-[13px] glow:text-glow/[.15] text-white" : ""}`}>
-                {children}
-            </p>
+            <p
+                className={`text-pretty text-[12px] text-muted-foreground${
+                    !indented
+                        ? " text-[13px] font-bold text-white glow:text-glow/[.15]"
+                        : ""
+                }`}
+                dangerouslySetInnerHTML={{ __html: text }}
+            />
         </div>
     );
 }

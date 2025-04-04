@@ -7,7 +7,6 @@ import type { JSX } from "react";
  *
  * @author Lucas Bubner, 2025
  */
-// TODO: add functionality to bold certain words
 export default interface ResumeData {
     name: string;
     initials: string;

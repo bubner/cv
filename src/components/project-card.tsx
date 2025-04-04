@@ -62,9 +62,10 @@ export function ProjectCard({
                     <div className="hidden text-xs underline print:block">
                         {link?.replace("https://", "").replace("www.", "")}
                     </div>
-                    <CardDescription className="text-xs">
-                        {description}
-                    </CardDescription>
+                    <CardDescription
+                        className="text-xs"
+                        dangerouslySetInnerHTML={{ __html: description }}
+                    />
                 </div>
             </CardHeader>
             <CardContent className="mt-auto flex print:p-3">

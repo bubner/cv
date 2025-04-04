@@ -24,6 +24,7 @@ import ResumeData from "./data";
  *
  * @author Lucas Bubner, 2025
  */
+// TODO: add <b> bold on keywords
 export const StandardData: ResumeData = {
     name: "Lucas Bubner",
     initials: "LB",
