@@ -98,40 +98,40 @@ export const StandardData: ResumeData = {
             info: [
                 {
                     text: "FIRST® Robotics Leadership",
-                    icon: Bubner,
+                    icon: undefined,
                 },
                 {
                     text: "4-year captain of 15-member FIRST® Tech Challenge robotics club, mentoring teammates and expanding participation.",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                 },
                 {
                     text: "Guided five teams (two in 2023, three in 2024) to the National FTC Competition in Sydney, achieving high performance ranking 8th at Nationals qualification.",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                 },
                 {
                     text: "Dean’s List Finalist recognised for leadership, advocacy and impact in STEM across FIRST® Australia.",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                 },
                 {
                     text: "STEM Advocacy & Community Engagement",
-                    icon: Bubner,
+                    icon: undefined,
                 },
                 {
                     text: "Presented technical projects to iAwards judges, FIRST® robotics panels, and industry professionals.",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                 },
                 {
                     text: "Addressed Rotary Club ($4,000 funding student travel) and Masonic Charities ($20,000 for regional robotics expansion).",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                 },
                 {
                     text: "Published STEM-focused articles on robotics through social media, radio interviews, and school.",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                 },
             ],
@@ -141,149 +141,149 @@ export const StandardData: ResumeData = {
             info: [
                 {
                     text: "Programming Languages",
-                    icon: Bubner,
+                    icon: undefined,
                 },
                 {
                     text: "Java",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Kotlin",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Python",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "C#",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "TypeScript & JavaScript",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "HTML/CSS",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Jinja",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "LaTeX",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Software Frameworks & Tools",
-                    icon: Bubner,
+                    icon: undefined,
                 },
                 {
                     text: "React",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Next.js",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Tailwind CSS",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Firebase",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Vercel",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Flask",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Unity",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Cloud & DevOps",
-                    icon: Bubner,
+                    icon: undefined,
                 },
                 {
                     text: "Linux",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Git",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "GitHub",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Event management systems (RoboRegistry)",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Robotics & Embedded Systems",
-                    icon: Bubner,
+                    icon: undefined,
                 },
                 {
                     text: "FIRST® Tech Challenge Robotics Club (4 years)",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Open-source robotics library (BunyipsLib)",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "CAD and hardware for robotics automation",
-                    icon: Bubner,
+                    icon: undefined,
                     indented: true,
                     grouped: true,
                 },
@@ -295,7 +295,7 @@ export const StandardData: ResumeData = {
             info: [
                 {
                     text: "Analytical Thinking & Troubleshooting",
-                    icon: Bubner,
+                    icon: undefined,
                 },
                 {
                     text: "Strong problem-solving skills in software debugging, robotics, and system optimisation.",
@@ -307,7 +307,7 @@ export const StandardData: ResumeData = {
                 },
                 {
                     text: "Adaptability & Continuous Learning",
-                    icon: Bubner,
+                    icon: undefined,
                 },
                 {
                     text: "Self-driven learner, staying ahead in emerging technologies and best practices.",
@@ -319,7 +319,7 @@ export const StandardData: ResumeData = {
                 },
                 {
                     text: "Conflict Resolution & Composure",
-                    icon: Bubner,
+                    icon: undefined,
                 },
                 {
                     text: "Maintains composure under pressure, effectively resolving disputes and ensuring smooth collaboration in challenging situations.",
@@ -333,7 +333,7 @@ export const StandardData: ResumeData = {
             info: [
                 {
                     text: "Innovative & Analytical Problem Solver",
-                    icon: Bubner,
+                    icon: undefined,
                 },
                 {
                     text: "Develops creative, effective solutions to complex technical challenges, with strong skills in debugging, optimisation, and scalable system design.",
@@ -341,7 +341,7 @@ export const StandardData: ResumeData = {
                 },
                 {
                     text: "Self-Motivated & Adaptable Learner",
-                    icon: Bubner,
+                    icon: undefined,
                 },
                 {
                     text: "Dedicated to continuous skill development, staying ahead in emerging technologies, and applying knowledge to diverse real-world scenarios.",
@@ -349,7 +349,7 @@ export const StandardData: ResumeData = {
                 },
                 {
                     text: "Organised & Collaborative Leader",
-                    icon: Bubner,
+                    icon: undefined,
                 },
                 {
                     text: "Balances academic excellence with intensive programming schedules, mentors teams, drives STEM outreach, and fosters effective teamwork.",
