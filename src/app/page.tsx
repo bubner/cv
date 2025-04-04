@@ -14,9 +14,14 @@ import Glow from "../components/custom/glow";
 import { StandardData } from "@/data/standard-data";
 import { usePathname } from "next/navigation";
 import { LiteData } from "@/data/lite-data";
-import { Bubner } from "@/images";
 import ListItem from "@/components/custom/list-item";
-import { Children, cloneElement, ReactElement, ReactNode } from "react";
+import {
+    Children,
+    cloneElement,
+    ReactElement,
+    useEffect,
+    useState,
+} from "react";
 
 const mapping = {
     "/": StandardData,
@@ -25,6 +30,12 @@ const mapping = {
 
 export default function Page() {
     const data = mapping[usePathname() as keyof typeof mapping] || StandardData;
+    const [isChrome, setIsChrome] = useState(false);
+
+    useEffect(() => {
+        // Have to use a state otherwise the DOM won't get updated once the user agent is processed
+        setIsChrome(navigator.userAgent.indexOf("Chrome") !== -1);
+    }, []);
 
     return (
         <div className="glow-capture">
@@ -297,10 +308,10 @@ export default function Page() {
                                 </Card>
                             );
                         })}
-                        <div className="flex flex-wrap gap-3 text-white print:mt-2">
+                        <div className="flex flex-col md:flex-row print:flex-row flex-wrap gap-3 text-white print:mt-2">
                             {data.skills.map((skill, i) => (
                                 <Card
-                                    className={`glow w-[calc(50%-0.5rem)] p-3 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow${
+                                    className={`glow w-full md:w-[calc(50%-0.5rem)] print:w-[calc(50%-0.5rem)] p-3 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow${
                                         skill.custom_card_props
                                             ? " " + skill.custom_card_props
                                             : ""
@@ -379,7 +390,12 @@ export default function Page() {
                             ))}
                         </div>
                     </Section>
-                    <Section className="scroll-mb-16">
+                    <Section
+                        className={`scroll-mb-16 ${
+                            // To combat margin misalignment issues in Chrome for some reason
+                            isChrome ? "print:!mt-[-80px]" : "print:!mt-[30px]"
+                        }`}
+                    >
                         <h2 className="text-xl font-bold text-white print:text-black">
                             <span className="glow:text-glow/[.15]">
                                 Key Projects
