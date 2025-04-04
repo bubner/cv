@@ -8,16 +8,12 @@ import {
     Bunyips,
     Bezier,
     Tank,
-    GitHubG,
+    GitHub,
     LinkedIn,
     Globe,
     Unity,
     AIE,
     MBHS,
-    Star,
-    Bars,
-    Code,
-    Hat,
     BubnerReal,
 } from "@/images";
 import ViewMore, { ViewMorePrint } from "../components/custom/view-more";
@@ -32,13 +28,13 @@ export const StandardData: ResumeData = {
     name: "Lucas Bubner",
     initials: "LB",
     pfp: Bubner,
-    pfpPrint: BubnerReal,
+    pfp_print: BubnerReal,
     wakatime: {
         name: "bubner",
         chart: "https://wakatime.com/share/@bubner/5e5091a6-e447-4c50-88f8-0c7c9205ef93.png",
     },
     location: "Greater Adelaide Area, South Australia, Australia",
-    locationLink:
+    location_link:
         "https://www.google.com/maps/place/Adelaide+Metropolitan+Area,+SA/@-34.9816918,138.6440441,10z/data=!3m1!4b1!4m6!3m5!1s0x6ab0ced5a8ad9dcb:0x2ee6722d74deb41e!8m2!3d-34.9536465!4d138.598804!16s%2Fg%2F11c1tb7m8s?entry=ttu",
     about: "Software Developer | STEM Advocate",
     summary:
@@ -56,7 +52,7 @@ export const StandardData: ResumeData = {
             {
                 name: "GitHub",
                 url: "https://github.com/bubner",
-                icon: GitHubG,
+                icon: GitHub,
             },
             {
                 name: "LinkedIn",
@@ -91,60 +87,281 @@ export const StandardData: ResumeData = {
             start: "Dec 2023",
             end: "Dec 2023",
             description:
-                "Enhanced the frontend of a Shopify store, improving user experience and sales. Developed Fusion 360 CAD animations to showcase products."
-        },
-    ],
-    descriptive_skills: [
-        {
-            skill: "Leadership",
-            icon: Star,
-            description:
-                "Serving as a 4-year captain of a 12-member FIRST® Tech Challenge Robotics club, leading as an advocate and enabler of STEM in rural Australia. Recognised by FIRST® as a Dean's List Finalist.",
-        },
-        {
-            skill: "Problem Solving",
-            icon: Hat,
-            description:
-                "Led the Bunyip Bellower project, a proof-of-concept initiative posed at student communication within school social clubs. Nationally recognised by the Australian Industry Association Industry.",
-        },
-        {
-            skill: "Software Engineering",
-            icon: Code,
-            description:
-                "Developed 25+ independent open-source projects. Proficient software developer in over 5 languages with a passion in several software fields, including web & game development, robotics, and low-level.",
-        },
-        {
-            skill: "Organisation",
-            icon: Bars,
-            description:
-                "Stays time organised by balancing high academic achievements while maintaining 4-hour daily programming schedule. Made 2466 GitHub commits in 2024 with 2400+ programming hours.",
+                "Enhanced the frontend of a Shopify store, improving user experience and sales. Developed Fusion 360 CAD animations to showcase products.",
         },
     ],
     skills: [
-        "Java",
-        "Robotics",
-        "Kotlin",
-        "Web Development",
-        "React",
-        "Next.js 14",
-        "TypeScript",
-        "Game Development",
-        "Unity",
-        "C#",
-        "Tailwind",
-        "Python",
-        "Flask",
-        "LaTeX",
-        "Linux",
-        "Vercel",
-        "Firebase",
-        "CAD",
+        // TODO: allocate actual images
+        {
+            header: "Skills & Achievements",
+            info: [
+                {
+                    text: "FIRST® Robotics Leadership",
+                    icon: Bubner,
+                },
+                {
+                    text: "4-year captain of 15-member FIRST® Tech Challenge robotics club, mentoring teammates and expanding participation.",
+                    icon: Bubner,
+                    indented: true,
+                },
+                {
+                    text: "Guided five teams (two in 2023, three in 2024) to the National FTC Competition in Sydney, achieving high performance ranking 8th at Nationals qualification.",
+                    icon: Bubner,
+                    indented: true,
+                },
+                {
+                    text: "Dean’s List Finalist recognised for leadership, advocacy and impact in STEM across FIRST® Australia.",
+                    icon: Bubner,
+                    indented: true,
+                },
+                {
+                    text: "STEM Advocacy & Community Engagement",
+                    icon: Bubner,
+                },
+                {
+                    text: "Presented technical projects to iAwards judges, FIRST® robotics panels, and industry professionals.",
+                    icon: Bubner,
+                    indented: true,
+                },
+                {
+                    text: "Addressed Rotary Club ($4,000 funding student travel) and Masonic Charities ($20,000 for regional robotics expansion).",
+                    icon: Bubner,
+                    indented: true,
+                },
+                {
+                    text: "Published STEM-focused articles on robotics through social media, radio interviews, and school.",
+                    icon: Bubner,
+                    indented: true,
+                },
+            ],
+        },
+        {
+            header: "Technical Capabilities",
+            info: [
+                {
+                    text: "Programming Languages",
+                    icon: Bubner,
+                },
+                {
+                    text: "Java",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Kotlin",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Python",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "C#",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "TypeScript & JavaScript",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "HTML/CSS",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Jinja",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "LaTeX",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Software Frameworks & Tools",
+                    icon: Bubner,
+                },
+                {
+                    text: "React",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Next.js",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Tailwind CSS",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Firebase",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Vercel",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Flask",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Unity",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Cloud & DevOps",
+                    icon: Bubner,
+                },
+                {
+                    text: "Linux",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Git",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "GitHub",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Event management systems (RoboRegistry)",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Robotics & Embedded Systems",
+                    icon: Bubner,
+                },
+                {
+                    text: "FIRST® Tech Challenge Robotics Club (4 years)",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "Open-source robotics library (BunyipsLib)",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+                {
+                    text: "CAD and hardware for robotics automation",
+                    icon: Bubner,
+                    indented: true,
+                    grouped: true,
+                },
+            ],
+        },
+        {
+            header: "Problem Solving & Innovation",
+            custom_card_props: "print:mt-[90px]",
+            info: [
+                {
+                    text: "Analytical Thinking & Troubleshooting",
+                    icon: Bubner,
+                },
+                {
+                    text: "Strong problem-solving skills in software debugging, robotics, and system optimisation.",
+                    indented: true,
+                },
+                {
+                    text: "Ability to diagnose challenges and implement efficient, scalable solutions.",
+                    indented: true,
+                },
+                {
+                    text: "Adaptability & Continuous Learning",
+                    icon: Bubner,
+                },
+                {
+                    text: "Self-driven learner, staying ahead in emerging technologies and best practices.",
+                    indented: true,
+                },
+                {
+                    text: "Quick to adapt to new challenges, applying technical knowledge in real-world scenarios.",
+                    indented: true,
+                },
+                {
+                    text: "Conflict Resolution & Composure",
+                    icon: Bubner,
+                },
+                {
+                    text: "Maintains composure under pressure, effectively resolving disputes and ensuring smooth collaboration in challenging situations.",
+                    indented: true,
+                },
+            ],
+        },
+        {
+            header: "Personal Attributes",
+            custom_card_props: "print:mt-[90px]",
+            info: [
+                {
+                    text: "Innovative & Analytical Problem Solver",
+                    icon: Bubner,
+                },
+                {
+                    text: "Develops creative, effective solutions to complex technical challenges, with strong skills in debugging, optimisation, and scalable system design.",
+                    indented: true,
+                },
+                {
+                    text: "Self-Motivated & Adaptable Learner",
+                    icon: Bubner,
+                },
+                {
+                    text: "Dedicated to continuous skill development, staying ahead in emerging technologies, and applying knowledge to diverse real-world scenarios.",
+                    indented: true,
+                },
+                {
+                    text: "Organised & Collaborative Leader",
+                    icon: Bubner,
+                },
+                {
+                    text: "Balances academic excellence with intensive programming schedules, mentors teams, drives STEM outreach, and fosters effective teamwork.",
+                    indented: true,
+                },
+            ],
+        },
     ],
     pre_projects: <ViewMorePrint />,
     projects: [
         {
             title: "BunyipsLib",
-            techStack: [
+            tech_stack: [
                 "Java",
                 "Kotlin",
                 "Library",
@@ -161,7 +378,7 @@ export const StandardData: ResumeData = {
         },
         {
             title: "Bunyip Bellower",
-            techStack: [
+            tech_stack: [
                 "Realtime Chat",
                 "iAwards Winner",
                 "React",
@@ -174,7 +391,7 @@ export const StandardData: ResumeData = {
         },
         {
             title: "RoboRegistry",
-            techStack: [
+            tech_stack: [
                 "Robotics",
                 "Web Development",
                 "Python",
@@ -191,7 +408,7 @@ export const StandardData: ResumeData = {
         },
         {
             title: "bubner.me",
-            techStack: [
+            tech_stack: [
                 "Portfolio",
                 "Personal Project",
                 "TypeScript",
@@ -208,7 +425,7 @@ export const StandardData: ResumeData = {
         },
         {
             title: "Fusion Chess",
-            techStack: ["Web Game", "React", "chess.js", "stockfish.js"],
+            tech_stack: ["Web Game", "React", "chess.js", "stockfish.js"],
             description:
                 "A custom chess variant which involves fusing pieces. Culminated over 1200 search impressions and 190 clicks through Google Search.",
             logo: FusionChess,
@@ -219,7 +436,7 @@ export const StandardData: ResumeData = {
         },
         {
             title: "Clusterbyte",
-            techStack: ["Unity", "Game Development", "C#", "3D", "WebGL Build"],
+            tech_stack: ["Unity", "Game Development", "C#", "3D", "WebGL Build"],
             description:
                 "3D rouge-lite tower defense game with 5 levels, 4 weapons, and 5 enemies. Designed in Unity as an independent AIE project.",
             logo: Unity,
@@ -230,7 +447,7 @@ export const StandardData: ResumeData = {
         },
         {
             title: "Tanks",
-            techStack: ["Unity", "Game Development", "C#", "3D", "WebGL Build"],
+            tech_stack: ["Unity", "Game Development", "C#", "3D", "WebGL Build"],
             description:
                 "3D tank game in Unity with high scores, radar, and SFX. Designed in Unity as an independent AIE project.",
             logo: Tank,
@@ -241,7 +458,7 @@ export const StandardData: ResumeData = {
         },
         {
             title: "Bezier",
-            techStack: [
+            tech_stack: [
                 "Unity",
                 "Specialist Mathematics",
                 "2D",
@@ -258,7 +475,7 @@ export const StandardData: ResumeData = {
         },
         {
             title: "Serve",
-            techStack: ["Next.js", "Personal Project", "React", "Vercel"],
+            tech_stack: ["Next.js", "Personal Project", "React", "Vercel"],
             description:
                 "A collection of web pages for use in my personal projects. Self-managed for small projects and general link services.",
             logo: Serve,

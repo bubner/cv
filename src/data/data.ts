@@ -7,17 +7,18 @@ import type { JSX } from "react";
  *
  * @author Lucas Bubner, 2025
  */
+// TODO: add functionality to bold certain words
 export default interface ResumeData {
     name: string;
     initials: string;
     pfp?: StaticImageData;
-    pfpPrint?: StaticImageData;
+    pfp_print?: StaticImageData;
     wakatime?: {
         name: string;
         chart: string;
     };
     location: string;
-    locationLink: string;
+    location_link: string;
     about: string;
     summary: string;
     website: string;
@@ -43,16 +44,20 @@ export default interface ResumeData {
         end: string;
         description: string;
     }[];
-    descriptive_skills: {
-        skill: string;
-        icon?: StaticImageData;
-        description: string;
+    skills: {
+        header: string;
+        custom_card_props?: string;
+        info: {
+            text: string;
+            icon?: StaticImageData;
+            indented?: boolean;
+            grouped?: boolean;
+        }[];
     }[];
-    skills: string[];
     pre_projects?: JSX.Element;
     projects: {
         title: string;
-        techStack: string[];
+        tech_stack: string[];
         description: string;
         link?: {
             label: string;

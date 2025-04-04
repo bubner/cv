@@ -1,4 +1,4 @@
-import { Bubner, BubnerReal, GitHubG, Globe, LinkedIn } from "@/images";
+import { Bubner, BubnerReal, GitHub, Globe, LinkedIn } from "@/images";
 import ResumeData from "./data";
 import { StandardData } from "./standard-data";
 
@@ -25,7 +25,7 @@ export const LiteData: ResumeData = {
     // We re-add images where needed for full optimisation
     // TODO: continue optimising by adding back some more
     pfp: Bubner,
-    pfpPrint: BubnerReal,
+    pfp_print: BubnerReal,
     contact: {
         email: "bubner@proton.me",
         tel: "",
@@ -38,7 +38,7 @@ export const LiteData: ResumeData = {
             {
                 name: "GitHub",
                 url: "https://github.com/bubner",
-                icon: GitHubG,
+                icon: GitHub,
             },
             {
                 name: "LinkedIn",
