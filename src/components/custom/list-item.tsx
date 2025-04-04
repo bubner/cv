@@ -19,7 +19,7 @@ export default function ListItem({
                     className={`w-5 h-5${indented ? " ml-3" : ""}`}
                 />
             ) : (
-                <div className={`min-w-6 min-h-5${indented ? " ml-3" : ""}`} />
+                <div className={`min-w-5 min-h-5${indented ? " ml-3" : ""}`} />
             )}
             <p
                 className={`text-pretty text-[12px] text-muted-foreground${
