@@ -1,4 +1,4 @@
-import { Bubner, BubnerReal, GitHub, Globe, LinkedIn } from "@/images";
+import { Bubner, BubnerReal, Dot, GitHub, Globe, LinkedIn } from "@/images";
 import ResumeData from "./data";
 import { StandardData } from "./standard-data";
 
@@ -8,7 +8,14 @@ function removeStaticImageData(obj: any): any {
     } else if (obj && typeof obj === "object") {
         const newObj: any = {};
         for (const key in obj) {
-            if (obj[key] && typeof obj[key] === "object" && 'src' in obj[key] && 'height' in obj[key] && 'width' in obj[key] && 'blurDataURL' in obj[key]) {
+            if (
+                obj[key] &&
+                typeof obj[key] === "object" &&
+                "src" in obj[key] &&
+                "height" in obj[key] &&
+                "width" in obj[key] &&
+                "blurDataURL" in obj[key]
+            ) {
                 // Recursively remove all StaticImageData instances
                 newObj[key] = null;
             } else {
@@ -20,10 +27,35 @@ function removeStaticImageData(obj: any): any {
     return obj;
 }
 
-export const LiteData: ResumeData = {
+function addSkillsIndentedPoints(obj: any): any {
+    if (Array.isArray(obj)) {
+        return obj.map(addSkillsIndentedPoints);
+    } else if (obj && typeof obj === "object") {
+        const newObj: any = {};
+        for (const key in obj) {
+            if (key === "info" && Array.isArray(obj[key])) {
+                newObj[key] = obj[key].map((item: any) => {
+                    // Re-add a custom lite image for dot points so we don't have strange indents
+                    if (item.indented && !item.grouped) {
+                        return {
+                            ...item,
+                            icon: Dot,
+                        };
+                    }
+                    return item;
+                });
+            } else {
+                newObj[key] = addSkillsIndentedPoints(obj[key]);
+            }
+        }
+        return newObj;
+    }
+    return obj;
+}
+
+export const LiteData: ResumeData = addSkillsIndentedPoints({
     ...removeStaticImageData(StandardData),
     // We re-add images where needed for full optimisation
-    // TODO: continue optimising by adding back some more
     pfp: Bubner,
     pfp_print: BubnerReal,
     contact: {
@@ -47,4 +79,4 @@ export const LiteData: ResumeData = {
             },
         ],
     },
-};
+});

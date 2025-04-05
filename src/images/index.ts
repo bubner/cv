@@ -45,6 +45,7 @@ import EmptyStar from "./emptystar.png";
 import Tux from "./tux.png";
 import Git from "./git.png";
 import Onshape from "./onshape.png";
+import Dot from "./dot.png";
 
 export {
     Kennewell,
@@ -93,5 +94,6 @@ export {
     EmptyStar,
     Tux,
     Git,
-    Onshape
+    Onshape,
+    Dot
 };
