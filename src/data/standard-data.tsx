@@ -30,6 +30,21 @@ import {
     Jinja,
     LaTeX,
     Tag,
+    Bars,
+    Time,
+    Trend,
+    ReactJS,
+    NextJS,
+    Tailwind,
+    Firebase,
+    Vercel,
+    Flask,
+    Link,
+    Lambda,
+    EmptyStar,
+    Tux,
+    Git,
+    Onshape,
 } from "@/images";
 import ViewMore, { ViewMorePrint } from "../components/custom/view-more";
 import ResumeData from "./data";
@@ -206,97 +221,97 @@ export const StandardData: ResumeData = {
                 },
                 {
                     text: "Software Frameworks & Tools",
-                    icon: undefined,
+                    icon: EmptyStar,
                 },
                 {
                     text: "React",
-                    icon: undefined,
+                    icon: ReactJS,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Next.js",
-                    icon: undefined,
+                    icon: NextJS,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Tailwind",
-                    icon: undefined,
+                    icon: Tailwind,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Firebase",
-                    icon: undefined,
+                    icon: Firebase,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Vercel",
-                    icon: undefined,
+                    icon: Vercel,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Flask",
-                    icon: undefined,
+                    icon: Flask,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Unity",
-                    icon: undefined,
+                    icon: Unity,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Cloud & DevOps",
-                    icon: undefined,
+                    icon: Link,
                 },
                 {
                     text: "Linux",
-                    icon: undefined,
+                    icon: Tux,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Git",
-                    icon: undefined,
+                    icon: Git,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "GitHub",
-                    icon: undefined,
+                    icon: GitHub,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Event management systems (<b>RoboRegistry</b>)",
-                    icon: undefined,
+                    icon: RoboRegistry,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Robotics & Embedded Systems",
-                    icon: undefined,
+                    icon: Lambda,
                 },
                 {
                     text: "<b>FIRST®</b> Tech Challenge Robotics Club (<b>4 years</b>)",
-                    icon: undefined,
+                    icon: FIRST,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "<b>Open-source</b> robotics library (<b>BunyipsLib</b>)",
-                    icon: undefined,
+                    icon: Bunyips,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "<b>CAD</b> and hardware for <b>robotics automation</b>",
-                    icon: undefined,
+                    icon: Onshape,
                     indented: true,
                     grouped: true,
                 },
@@ -304,11 +319,11 @@ export const StandardData: ResumeData = {
         },
         {
             header: "Problem Solving & Innovation",
-            custom_card_props: "print:mt-[90px]",
+            custom_card_props: "print:mt-[95px]",
             info: [
                 {
                     text: "Analytical Thinking & Troubleshooting",
-                    icon: undefined,
+                    icon: Bars,
                 },
                 {
                     text: "<b>Strong problem-solving skills</b> in software <b>debugging</b>, <b>robotics</b>, and system <b>optimisation</b>.",
@@ -322,7 +337,7 @@ export const StandardData: ResumeData = {
                 },
                 {
                     text: "Adaptability & Continuous Learning",
-                    icon: undefined,
+                    icon: Trend,
                 },
                 {
                     text: "<b>Self-driven</b> learner, staying ahead in <b>emerging technologies</b> and <b>best practices</b>.",
@@ -336,7 +351,7 @@ export const StandardData: ResumeData = {
                 },
                 {
                     text: "Conflict Resolution & Composure",
-                    icon: undefined,
+                    icon: Time,
                 },
                 {
                     text: "Maintains composure <b>under pressure</b>, effectively <b>resolving disputes</b> and ensuring <b>smooth collaboration</b> in <b>challenging</b> situations.",
@@ -347,7 +362,7 @@ export const StandardData: ResumeData = {
         },
         {
             header: "Personal Attributes",
-            custom_card_props: "print:mt-[90px]",
+            custom_card_props: "print:mt-[95px]",
             info: [
                 {
                     text: "Innovative & Analytical Problem Solver",

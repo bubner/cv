@@ -60,9 +60,9 @@ export function ProjectCard({
                             )}
                         </CardTitle>
                     </div>
-                    <div className="hidden text-xs underline print:block">
+                    <a href={link} className="hidden text-xs underline print:block">
                         {link?.replace("https://", "").replace("www.", "")}
-                    </div>
+                    </a>
                     <CardDescription
                         className="text-xs"
                         dangerouslySetInnerHTML={{ __html: description }}

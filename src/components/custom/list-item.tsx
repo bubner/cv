@@ -20,7 +20,7 @@ export default function ListItem({
                     draggable={false}
                 />
             ) : (
-                <div className={`min-w-5 min-h-5${indented ? " ml-3" : ""}`} />
+                <div className={`min-w-5 min-h-[22px]${indented ? " ml-3" : ""}`} />
             )}
             <p
                 className={`text-pretty text-[12px] text-muted-foreground${

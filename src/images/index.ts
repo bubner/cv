@@ -7,7 +7,7 @@ import Bellower from "./bellower.png";
 import Bunyips from "./bunyipst.png";
 import Bezier from "./bezier.png";
 import Tank from "./tank.png";
-import GitHub from "./github.svg";
+import GitHub from "./github.png";
 import LinkedIn from "./linkedin.svg";
 import Globe from "./globe.svg";
 import Unity from "./unity.png";
@@ -30,6 +30,21 @@ import HTML from "./html.png";
 import Jinja from "./jinja.png";
 import LaTeX from "./latex.png";
 import Tag from "./tag.png";
+import Bars from "./bars.png";
+import Time from "./time.png";
+import Trend from "./trend.png";
+import ReactJS from "./react.png";
+import NextJS from "./nextjs.png";
+import Tailwind from "./tailwind.png";
+import Firebase from "./firebase.png";
+import Vercel from "./vercel.png";
+import Flask from "./flask.png";
+import Link from "./link.png";
+import Lambda from "./lambda.png";
+import EmptyStar from "./emptystar.png";
+import Tux from "./tux.png";
+import Git from "./git.png";
+import Onshape from "./onshape.png";
 
 export {
     Kennewell,
@@ -63,5 +78,20 @@ export {
     HTML,
     Jinja,
     LaTeX,
-    Tag
+    Tag,
+    Bars,
+    Time,
+    Trend,
+    ReactJS,
+    NextJS,
+    Tailwind,
+    Firebase,
+    Vercel,
+    Flask,
+    Link,
+    Lambda,
+    EmptyStar,
+    Tux,
+    Git,
+    Onshape
 };
