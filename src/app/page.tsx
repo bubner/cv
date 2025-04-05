@@ -103,6 +103,7 @@ export default function Page() {
                                                     src={social.icon}
                                                     alt={social.name}
                                                     className="size-4"
+                                                    draggable={false}
                                                 />
                                             )}
                                         </a>
@@ -143,6 +144,7 @@ export default function Page() {
                                     width={100}
                                     height={100}
                                     priority
+                                    draggable={false}
                                 />
                             )}
                             {data.pfp && (
@@ -153,6 +155,7 @@ export default function Page() {
                                     width={100}
                                     height={100}
                                     priority
+                                    draggable={false}
                                 />
                             )}
                         </a>
@@ -176,6 +179,7 @@ export default function Page() {
                                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
                                     priority
                                     src={data.wakatime.chart}
+                                    draggable={false}
                                 />
                             </a>
                         </Section>
@@ -227,6 +231,7 @@ export default function Page() {
                                                     src={education.logo}
                                                     className="h-6 w-6"
                                                     alt={education.school}
+                                                    draggable={false}
                                                 />
                                             )}
                                             <span
@@ -261,6 +266,7 @@ export default function Page() {
                                                             src={work.logo}
                                                             className="mr-1 h-6 w-6"
                                                             alt={work.company}
+                                                            draggable={false}
                                                         />
                                                     )}
                                                     <a
@@ -308,10 +314,10 @@ export default function Page() {
                                 </Card>
                             );
                         })}
-                        <div className="flex flex-col md:flex-row print:flex-row flex-wrap gap-3 text-white print:mt-2">
+                        <div className="flex flex-col flex-wrap gap-3 text-white print:mt-4 print:flex-row md:flex-row">
                             {data.skills.map((skill, i) => (
                                 <Card
-                                    className={`glow w-full md:w-[calc(50%-0.5rem)] print:w-[calc(50%-0.5rem)] p-3 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow${
+                                    className={`glow w-full p-3 glow:border-glow glow:bg-glow/[.15] glow:ring-1 print:w-[calc(50%-0.5rem)] md:w-[calc(50%-0.5rem)] glow:ring-glow${
                                         skill.custom_card_props
                                             ? " " + skill.custom_card_props
                                             : ""

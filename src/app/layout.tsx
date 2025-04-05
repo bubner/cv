@@ -11,14 +11,9 @@ export const metadata = {
     icons: ["./favicon.ico"],
 };
 
-const inter = Inter({
-    subsets: ["latin"],
-    display: "swap",
-});
-
 export default function RootLayout({ children }: { children: ReactNode }) {
     return (
-        <html lang="en" className={inter.className}>
+        <html lang="en" className="font-sans" style={{ fontFamily: "Arial" }}>
             <head>
                 <meta name="darkreader-lock" />
             </head>

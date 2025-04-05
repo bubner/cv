@@ -15,6 +15,21 @@ import {
     AIE,
     MBHS,
     BubnerReal,
+    RightArrow,
+    FIRST,
+    Star,
+    iAwards,
+    Masons,
+    PowerFM,
+    Java,
+    Kotlin,
+    Python,
+    CSharp,
+    TypeScript,
+    HTML,
+    Jinja,
+    LaTeX,
+    Tag,
 } from "@/images";
 import ViewMore, { ViewMorePrint } from "../components/custom/view-more";
 import ResumeData from "./data";
@@ -91,46 +106,45 @@ export const StandardData: ResumeData = {
         },
     ],
     skills: [
-        // TODO: allocate actual images
         {
             header: "Skills & Achievements",
             info: [
                 {
                     text: "FIRST® Robotics Leadership",
-                    icon: undefined,
+                    icon: FIRST,
                 },
                 {
                     text: "<b>4-year captain</b> of 15-member <b>FIRST® Tech Challenge robotics club</b>, <b>mentoring</b> teammates and <b>expanding</b> participation.",
-                    icon: undefined,
+                    icon: RightArrow,
                     indented: true,
                 },
                 {
                     text: "Guided <b>five teams</b> (<b>two</b> in 2023, <b>three</b> in 2024) to the <b>National FTC Championship in Sydney</b>, achieving <b>high performance ranking 8th</b> at a <b>national level</b>.",
-                    icon: undefined,
+                    icon: RightArrow,
                     indented: true,
                 },
                 {
                     text: "<b>Dean’s List Finalist</b> recognised for <b>leadership</b>, <b>advocacy</b> and <b>impact in STEM</b> across <b>FIRST® Australia</b>.",
-                    icon: undefined,
+                    icon: RightArrow,
                     indented: true,
                 },
                 {
                     text: "STEM Advocacy & Community Engagement",
-                    icon: undefined,
+                    icon: Star,
                 },
                 {
                     text: "Presented <b>technical projects</b> to <b>iAwards</b> judges, <b>FIRST® robotics</b> panels, and <b>industry professionals</b>.",
-                    icon: undefined,
+                    icon: iAwards,
                     indented: true,
                 },
                 {
                     text: "Addressed <b>Rotary Club</b> (<b>$4,000</b> funding student travel) and <b>Masonic Charities</b> (<b>$20,000</b> for <b>regional robotics expansion</b>).",
-                    icon: undefined,
+                    icon: Masons,
                     indented: true,
                 },
                 {
                     text: "Published <b>STEM-focused</b> robotics articles via <b>social media</b>, <b>radio</b>, and <b>school events</b>.",
-                    icon: undefined,
+                    icon: PowerFM,
                     indented: true,
                 },
             ],
@@ -140,53 +154,53 @@ export const StandardData: ResumeData = {
             info: [
                 {
                     text: "Programming Languages",
-                    icon: undefined,
+                    icon: Tag,
                 },
                 {
                     text: "Java",
-                    icon: undefined,
+                    icon: Java,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Kotlin",
-                    icon: undefined,
+                    icon: Kotlin,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Python",
-                    icon: undefined,
+                    icon: Python,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "C#",
-                    icon: undefined,
+                    icon: CSharp,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "TypeScript & JavaScript",
-                    icon: undefined,
+                    icon: TypeScript,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "HTML/CSS",
-                    icon: undefined,
+                    icon: HTML,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "Jinja",
-                    icon: undefined,
+                    icon: Jinja,
                     indented: true,
                     grouped: true,
                 },
                 {
                     text: "LaTeX",
-                    icon: undefined,
+                    icon: LaTeX,
                     indented: true,
                     grouped: true,
                 },
@@ -290,7 +304,7 @@ export const StandardData: ResumeData = {
         },
         {
             header: "Problem Solving & Innovation",
-            custom_card_props: "print:mt-[80px]",
+            custom_card_props: "print:mt-[90px]",
             info: [
                 {
                     text: "Analytical Thinking & Troubleshooting",
@@ -298,10 +312,12 @@ export const StandardData: ResumeData = {
                 },
                 {
                     text: "<b>Strong problem-solving skills</b> in software <b>debugging</b>, <b>robotics</b>, and system <b>optimisation</b>.",
+                    icon: RightArrow,
                     indented: true,
                 },
                 {
                     text: "Ability to <b>diagnose challenges</b> and implement <b>efficient</b>, <b>scalable solutions</b>.",
+                    icon: RightArrow,
                     indented: true,
                 },
                 {
@@ -310,10 +326,12 @@ export const StandardData: ResumeData = {
                 },
                 {
                     text: "<b>Self-driven</b> learner, staying ahead in <b>emerging technologies</b> and <b>best practices</b>.",
+                    icon: RightArrow,
                     indented: true,
                 },
                 {
                     text: "<b>Quick to adapt</b> to <b>new challenges</b>, applying technical knowledge in <b>real-world scenarios</b>.",
+                    icon: RightArrow,
                     indented: true,
                 },
                 {
@@ -322,17 +340,18 @@ export const StandardData: ResumeData = {
                 },
                 {
                     text: "Maintains composure <b>under pressure</b>, effectively <b>resolving disputes</b> and ensuring <b>smooth collaboration</b> in <b>challenging</b> situations.",
+                    icon: RightArrow,
                     indented: true,
                 },
             ],
         },
         {
             header: "Personal Attributes",
-            custom_card_props: "print:mt-[80px]",
+            custom_card_props: "print:mt-[90px]",
             info: [
                 {
                     text: "Innovative & Analytical Problem Solver",
-                    icon: undefined,
+                    icon: RightArrow,
                 },
                 {
                     text: "Develops <b>creative</b>, <b>effective</b> solutions to <b>complex</b> technical <b>challenges</b>, with <b>strong skills</b> in <b>refactoring</b>, <b>optimisation</b>, and <b>scalable system design</b>.",
@@ -340,7 +359,7 @@ export const StandardData: ResumeData = {
                 },
                 {
                     text: "Self-Motivated & Adaptable Learner",
-                    icon: undefined,
+                    icon: RightArrow,
                 },
                 {
                     text: "<b>Dedicated</b> to <b>continuous skill development</b>, staying ahead in <b>emerging technologies</b>, and applying knowledge to <b>diverse real-world scenarios</b>.",
@@ -348,7 +367,7 @@ export const StandardData: ResumeData = {
                 },
                 {
                     text: "Organised & Collaborative Leader",
-                    icon: undefined,
+                    icon: RightArrow,
                 },
                 {
                     text: "<b>Balances</b> academic excellence with <b>intensive</b> personal programming schedules, <b>mentors</b> teams, <b>drives STEM outreach</b>, and <b>fosters effective teamwork</b>.",
@@ -427,7 +446,7 @@ export const StandardData: ResumeData = {
             title: "Fusion Chess",
             tech_stack: ["Web Game", "React", "chess.js", "stockfish.js"],
             description:
-                "A <b>custom chess variant</b> which involves fusing pieces. Culminated over <b>1200 search impressions and 190 clicks</b> through <b>Google Search</b>.",
+                "A <b>custom chess variant</b> which involves fusing pieces. Culminated over <b>1900 search impressions and 260 clicks</b> through <b>Google Search</b>.",
             logo: FusionChess,
             link: {
                 label: "Fusion Chess",

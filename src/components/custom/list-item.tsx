@@ -11,12 +11,13 @@ export default function ListItem({
     indented?: boolean;
 }) {
     return (
-        <div className="m-1 flex items-start gap-2">
+        <div className={`m-1 flex gap-2 ${indented ? "items-start" : "items-center"}`}>
             {image ? (
                 <Image
                     alt=""
                     src={image}
-                    className={`w-5 h-5${indented ? " ml-3" : ""}`}
+                    className={`w-5${indented ? " ml-3" : ""}`}
+                    draggable={false}
                 />
             ) : (
                 <div className={`min-w-5 min-h-5${indented ? " ml-3" : ""}`} />

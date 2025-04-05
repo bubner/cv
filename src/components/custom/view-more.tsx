@@ -16,6 +16,7 @@ export default function ViewMore() {
                 src={AtBubner}
                 alt={`View more projects on ${StandardData.name}'s GitHub`}
                 className="z-10 h-6 w-auto rounded"
+                draggable={false}
             />
         </a>
     );
@@ -25,9 +26,7 @@ export function ViewMorePrint() {
     return (
         <div className="hidden print:block">
             View more projects:{" "}
-            <span className="underline">
-                https://github.com/bubner
-            </span>
+            <span className="underline">https://github.com/bubner</span>
         </div>
     );
 }

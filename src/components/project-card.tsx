@@ -40,6 +40,7 @@ export function ProjectCard({
                                 className="w-8 rounded-md"
                                 alt={title}
                                 src={logo}
+                                draggable={false}
                             />
                         )}
                         <CardTitle className="text-base">
