@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
     return (
-        <html lang="en" style={{ fontFamily: "Arial, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';" }}>
+        <html lang="en">
             <head>
                 <meta name="darkreader-lock" />
             </head>
