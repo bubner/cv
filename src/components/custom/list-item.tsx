@@ -25,7 +25,7 @@ export default function ListItem({
             <p
                 className={`text-pretty text-[12px] text-muted-foreground${
                     !indented
-                        ? " text-[13px] font-bold text-white glow:text-glow/[.15]"
+                        ? " text-[13px] font-bold text-white print:text-black glow:text-glow/[.15]"
                         : ""
                 }`}
                 dangerouslySetInnerHTML={{ __html: text }}
