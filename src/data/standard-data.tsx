@@ -24,7 +24,6 @@ import ResumeData from "./data";
  *
  * @author Lucas Bubner, 2025
  */
-// TODO: add <b> bold on keywords
 export const StandardData: ResumeData = {
     name: "Lucas Bubner",
     initials: "LB",
@@ -39,7 +38,7 @@ export const StandardData: ResumeData = {
         "https://www.google.com/maps/place/Adelaide+Metropolitan+Area,+SA/@-34.9816918,138.6440441,10z/data=!3m1!4b1!4m6!3m5!1s0x6ab0ced5a8ad9dcb:0x2ee6722d74deb41e!8m2!3d-34.9536465!4d138.598804!16s%2Fg%2F11c1tb7m8s?entry=ttu",
     about: "Software Developer | STEM Advocate",
     summary:
-        "Highly motivated software developer and STEM advocate, nationally recognised at the 2023 Australian Industry Information Association iAwards. As captain of a FIRST® robotics club, I lead technical projects and mentor peers with a clear vision, strong communication skills, and a commitment to collaboration, accountability, and resilience, promoting STEM in rural Australia. Passionate about robotics, web/game development, and software engineering, I create innovative solutions to real-world problems while continuously expanding my technical expertise.",
+        "Highly <b>motivated</b> software developer and <b>STEM advocate</b>, <b>nationally recognised</b> at the 2023 <b>AIIA iAwards</b>. As <b>captain of a FIRST® robotics club</b>, I <b>lead</b> technical projects and <b>mentor</b> peers with a <b>clear vision</b>, <b>strong communication</b> skills, and a <b>commitment</b> to <b>collaboration</b>, <b>accountability</b>, and <b>resilience</b>, <b>promoting STEM in rural Australia</b>. <b>Passionate</b> about <b>robotics</b>, <b>web/game development</b>, and <b>software engineering</b>, I create <b>innovative</b> solutions to <b>real-world problems</b> while <b>continuously expanding</b> my technical expertise.",
     website: "https://bubner.me",
     contact: {
         email: "bubner@proton.me",
@@ -71,7 +70,7 @@ export const StandardData: ResumeData = {
             logo: AIE,
         },
         {
-            school: "Murray Bridge High School; Year 8 & 9 Dux; Year 10 & 11 GPA: A+ (14.8/15.0, 14.9/15.0)",
+            school: "Murray Bridge High School; Year 8 & 9 <b>Dux</b>; Year 10 & 11 GPA: <b>A+</b> (14.8/15.0, 14.9/15.0)",
             degree: "South Australian Certificate of Education (Expected)",
             start: "Jan 2021",
             end: "Dec 2025",
@@ -88,7 +87,7 @@ export const StandardData: ResumeData = {
             start: "Dec 2023",
             end: "Dec 2023",
             description:
-                "Enhanced the frontend of a Shopify store, improving user experience and sales. Developed Fusion 360 CAD animations to showcase products.",
+                "<b>Enhanced</b> the frontend of a <b>Shopify</b> store, <b>improving user experience and sales.</b> Developed <b>Fusion 360 CAD animations</b> to showcase products.",
         },
     ],
     skills: [
@@ -101,17 +100,17 @@ export const StandardData: ResumeData = {
                     icon: undefined,
                 },
                 {
-                    text: "4-year captain of 15-member FIRST® Tech Challenge robotics club, mentoring teammates and expanding participation.",
+                    text: "<b>4-year captain</b> of 15-member <b>FIRST® Tech Challenge robotics club</b>, <b>mentoring</b> teammates and <b>expanding</b> participation.",
                     icon: undefined,
                     indented: true,
                 },
                 {
-                    text: "Guided five teams (two in 2023, three in 2024) to the National FTC Competition in Sydney, achieving high performance ranking 8th at Nationals qualification.",
+                    text: "Guided <b>five teams</b> (<b>two</b> in 2023, <b>three</b> in 2024) to the <b>National FTC Championship in Sydney</b>, achieving <b>high performance ranking 8th</b> at a <b>national level</b>.",
                     icon: undefined,
                     indented: true,
                 },
                 {
-                    text: "Dean’s List Finalist recognised for leadership, advocacy and impact in STEM across FIRST® Australia.",
+                    text: "<b>Dean’s List Finalist</b> recognised for <b>leadership</b>, <b>advocacy</b> and <b>impact in STEM</b> across <b>FIRST® Australia</b>.",
                     icon: undefined,
                     indented: true,
                 },
@@ -120,17 +119,17 @@ export const StandardData: ResumeData = {
                     icon: undefined,
                 },
                 {
-                    text: "Presented technical projects to iAwards judges, FIRST® robotics panels, and industry professionals.",
+                    text: "Presented <b>technical projects</b> to <b>iAwards</b> judges, <b>FIRST® robotics</b> panels, and <b>industry professionals</b>.",
                     icon: undefined,
                     indented: true,
                 },
                 {
-                    text: "Addressed Rotary Club ($4,000 funding student travel) and Masonic Charities ($20,000 for regional robotics expansion).",
+                    text: "Addressed <b>Rotary Club</b> (<b>$4,000</b> funding student travel) and <b>Masonic Charities</b> (<b>$20,000</b> for <b>regional robotics expansion</b>).",
                     icon: undefined,
                     indented: true,
                 },
                 {
-                    text: "Published STEM-focused articles on robotics through social media, radio interviews, and school.",
+                    text: "Published <b>STEM-focused</b> robotics articles via <b>social media</b>, <b>radio</b>, and <b>school events</b>.",
                     icon: undefined,
                     indented: true,
                 },
@@ -208,7 +207,7 @@ export const StandardData: ResumeData = {
                     grouped: true,
                 },
                 {
-                    text: "Tailwind CSS",
+                    text: "Tailwind",
                     icon: undefined,
                     indented: true,
                     grouped: true,
@@ -260,7 +259,7 @@ export const StandardData: ResumeData = {
                     grouped: true,
                 },
                 {
-                    text: "Event management systems (RoboRegistry)",
+                    text: "Event management systems (<b>RoboRegistry</b>)",
                     icon: undefined,
                     indented: true,
                     grouped: true,
@@ -270,19 +269,19 @@ export const StandardData: ResumeData = {
                     icon: undefined,
                 },
                 {
-                    text: "FIRST® Tech Challenge Robotics Club (4 years)",
+                    text: "<b>FIRST®</b> Tech Challenge Robotics Club (<b>4 years</b>)",
                     icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
-                    text: "Open-source robotics library (BunyipsLib)",
+                    text: "<b>Open-source</b> robotics library (<b>BunyipsLib</b>)",
                     icon: undefined,
                     indented: true,
                     grouped: true,
                 },
                 {
-                    text: "CAD and hardware for robotics automation",
+                    text: "<b>CAD</b> and hardware for <b>robotics automation</b>",
                     icon: undefined,
                     indented: true,
                     grouped: true,
@@ -291,18 +290,18 @@ export const StandardData: ResumeData = {
         },
         {
             header: "Problem Solving & Innovation",
-            custom_card_props: "print:mt-[90px]",
+            custom_card_props: "print:mt-[80px]",
             info: [
                 {
                     text: "Analytical Thinking & Troubleshooting",
                     icon: undefined,
                 },
                 {
-                    text: "Strong problem-solving skills in software debugging, robotics, and system optimisation.",
+                    text: "<b>Strong problem-solving skills</b> in software <b>debugging</b>, <b>robotics</b>, and system <b>optimisation</b>.",
                     indented: true,
                 },
                 {
-                    text: "Ability to diagnose challenges and implement efficient, scalable solutions.",
+                    text: "Ability to <b>diagnose challenges</b> and implement <b>efficient</b>, <b>scalable solutions</b>.",
                     indented: true,
                 },
                 {
@@ -310,11 +309,11 @@ export const StandardData: ResumeData = {
                     icon: undefined,
                 },
                 {
-                    text: "Self-driven learner, staying ahead in emerging technologies and best practices.",
+                    text: "<b>Self-driven</b> learner, staying ahead in <b>emerging technologies</b> and <b>best practices</b>.",
                     indented: true,
                 },
                 {
-                    text: "Quick to adapt to new challenges, applying technical knowledge in real-world scenarios.",
+                    text: "<b>Quick to adapt</b> to <b>new challenges</b>, applying technical knowledge in <b>real-world scenarios</b>.",
                     indented: true,
                 },
                 {
@@ -322,21 +321,21 @@ export const StandardData: ResumeData = {
                     icon: undefined,
                 },
                 {
-                    text: "Maintains composure under pressure, effectively resolving disputes and ensuring smooth collaboration in challenging situations.",
+                    text: "Maintains composure <b>under pressure</b>, effectively <b>resolving disputes</b> and ensuring <b>smooth collaboration</b> in <b>challenging</b> situations.",
                     indented: true,
                 },
             ],
         },
         {
             header: "Personal Attributes",
-            custom_card_props: "print:mt-[90px]",
+            custom_card_props: "print:mt-[80px]",
             info: [
                 {
                     text: "Innovative & Analytical Problem Solver",
                     icon: undefined,
                 },
                 {
-                    text: "Develops creative, effective solutions to complex technical challenges, with strong skills in debugging, optimisation, and scalable system design.",
+                    text: "Develops <b>creative</b>, <b>effective</b> solutions to <b>complex</b> technical <b>challenges</b>, with <b>strong skills</b> in <b>refactoring</b>, <b>optimisation</b>, and <b>scalable system design</b>.",
                     indented: true,
                 },
                 {
@@ -344,7 +343,7 @@ export const StandardData: ResumeData = {
                     icon: undefined,
                 },
                 {
-                    text: "Dedicated to continuous skill development, staying ahead in emerging technologies, and applying knowledge to diverse real-world scenarios.",
+                    text: "<b>Dedicated</b> to <b>continuous skill development</b>, staying ahead in <b>emerging technologies</b>, and applying knowledge to <b>diverse real-world scenarios</b>.",
                     indented: true,
                 },
                 {
@@ -352,7 +351,7 @@ export const StandardData: ResumeData = {
                     icon: undefined,
                 },
                 {
-                    text: "Balances academic excellence with intensive programming schedules, mentors teams, drives STEM outreach, and fosters effective teamwork.",
+                    text: "<b>Balances</b> academic excellence with <b>intensive</b> personal programming schedules, <b>mentors</b> teams, <b>drives STEM outreach</b>, and <b>fosters effective teamwork</b>.",
                     indented: true,
                 },
             ],
@@ -370,7 +369,7 @@ export const StandardData: ResumeData = {
                 "Computer Vision",
             ],
             description:
-                "A free & open-source powerful FIRST® Tech Challenge utility library. Solo-developed 17,000+ lines of code with over 1000+ commits.",
+                "A <b>free & open-source</b> powerful <b>FIRST® Tech Challenge</b> framework & library. <b>Solo-developed</b> 18,000+ lines of code with over <b>1000+ commits</b>.",
             link: {
                 label: "BunyipsLib",
                 href: "https://git.bubner.me/BunyipsLib",
@@ -387,7 +386,7 @@ export const StandardData: ResumeData = {
                 "TypeScript",
             ],
             description:
-                "Web chat application designed for school-based social clubs. Project pitched to iAwards judges to a competing standard with several national universities.",
+                "Web chat application <b>designed for school-based social clubs</b>. Project <b>pitched to iAwards judges</b> to a <b>competing standard</b> with <b>several</b> national universities.",
             logo: Bellower,
         },
         {
@@ -400,7 +399,7 @@ export const StandardData: ResumeData = {
                 "Flask",
             ],
             description:
-                "An automated registry for recording FIRST scrimmage attendance. Deployed and used at Science Alive in 2023 by the SA Student Robotics Club (RoboRoos).",
+                "An <b>automated registry</b> for recording FIRST® scrimmage attendance. Deployed at <b>Science Alive!</b> in 2023 by the <b>SA Student Robotics Club</b> (RoboRoos).",
             logo: RoboRegistry,
             link: {
                 label: "RoboRegistry",
@@ -417,7 +416,7 @@ export const StandardData: ResumeData = {
                 "Vercel",
             ],
             description:
-                "My personal portfolio website. Self-managed domain using industry-standard technologies and practices.",
+                "My <b>personal portfolio</b> website. <b>Self-managed</b> domain using <b>industry-standard</b> technologies and practices.",
             logo: Bubner,
             link: {
                 label: "bubner.me",
@@ -428,7 +427,7 @@ export const StandardData: ResumeData = {
             title: "Fusion Chess",
             tech_stack: ["Web Game", "React", "chess.js", "stockfish.js"],
             description:
-                "A custom chess variant which involves fusing pieces. Culminated over 1200 search impressions and 190 clicks through Google Search.",
+                "A <b>custom chess variant</b> which involves fusing pieces. Culminated over <b>1200 search impressions and 190 clicks</b> through <b>Google Search</b>.",
             logo: FusionChess,
             link: {
                 label: "Fusion Chess",
@@ -437,9 +436,15 @@ export const StandardData: ResumeData = {
         },
         {
             title: "Clusterbyte",
-            tech_stack: ["Unity", "Game Development", "C#", "3D", "WebGL Build"],
+            tech_stack: [
+                "Unity",
+                "Game Development",
+                "C#",
+                "3D",
+                "WebGL Build",
+            ],
             description:
-                "3D rouge-lite tower defense game with 5 levels, 4 weapons, and 5 enemies. Designed in Unity as an independent AIE project.",
+                "3D rouge-lite <b>tower defense game</b> with 5 levels, 4 weapons, and 5 enemies. Designed in <b>Unity</b> as an independent <b>AIE project</b>.",
             logo: Unity,
             link: {
                 label: "Clusterbyte",
@@ -448,9 +453,15 @@ export const StandardData: ResumeData = {
         },
         {
             title: "Tanks",
-            tech_stack: ["Unity", "Game Development", "C#", "3D", "WebGL Build"],
+            tech_stack: [
+                "Unity",
+                "Game Development",
+                "C#",
+                "3D",
+                "WebGL Build",
+            ],
             description:
-                "3D tank game in Unity with high scores, radar, and SFX. Designed in Unity as an independent AIE project.",
+                "3D tank <b>game</b> in Unity with high scores, radar, and SFX. Designed in <b>Unity</b> as an independent <b>AIE project</b>.",
             logo: Tank,
             link: {
                 label: "Tanks!",
@@ -467,7 +478,7 @@ export const StandardData: ResumeData = {
                 "WebGL Build",
             ],
             description:
-                "Educational Unity app to visualise Bézier curve construction. Designed in Unity as a specialist mathematics supplement.",
+                "<b>Educational</b> Unity app to <b>visualise Bézier curves</b> construction. Designed in <b>Unity</b> as a <b>specialist mathematics</b> supplement.",
             logo: Bezier,
             link: {
                 label: "Bezier",
@@ -478,7 +489,7 @@ export const StandardData: ResumeData = {
             title: "Serve",
             tech_stack: ["Next.js", "Personal Project", "React", "Vercel"],
             description:
-                "A collection of web pages for use in my personal projects. Self-managed for small projects and general link services.",
+                "A <b>collection of web pages</b> for use in my <b>personal projects</b>. <b>Self-managed</b> for small projects and general link services.",
             logo: Serve,
             link: {
                 label: "Serve",
