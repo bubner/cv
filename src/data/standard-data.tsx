@@ -45,6 +45,7 @@ import {
     Tux,
     Git,
     Onshape,
+    Logbook,
 } from "@/images";
 import ViewMore, { ViewMorePrint } from "../components/custom/view-more";
 import ResumeData from "./data";
@@ -424,6 +425,23 @@ export const StandardData: ResumeData = {
             logo: Bellower,
         },
         {
+            title: "Bunyip Logbook",
+            tech_stack: [
+                "Next.js",
+                "Web Development",
+                "Google APIs",
+                "Automation",
+            ],
+            description:
+                "An <b>automated</b> Google Workspace app for developing <b>engineering documentation</b> skills in <b>young innovators</b>. <b>Finalist</b> at the 2025 SA/NT <b>iAwards</b> for Student & Education.",
+            logo: Logbook,
+            // TODO: not released yet
+            // link: {
+            //     label: "Bunyip Logbook",
+            //     href: "https://git.bubner.me/BunyipLogbook",
+            // },
+        },
+        {
             title: "RoboRegistry",
             tech_stack: [
                 "Robotics",
@@ -441,23 +459,6 @@ export const StandardData: ResumeData = {
             },
         },
         {
-            title: "bubner.me",
-            tech_stack: [
-                "Portfolio",
-                "Personal Project",
-                "TypeScript",
-                "React",
-                "Vercel",
-            ],
-            description:
-                "My <b>personal portfolio</b> website. <b>Self-managed</b> domain using <b>industry-standard</b> technologies and practices.",
-            logo: Bubner,
-            link: {
-                label: "bubner.me",
-                href: "https://bubner.me",
-            },
-        },
-        {
             title: "Fusion Chess",
             tech_stack: ["Web Game", "React", "chess.js", "stockfish.js"],
             description:
@@ -466,40 +467,6 @@ export const StandardData: ResumeData = {
             link: {
                 label: "Fusion Chess",
                 href: "https://serve.bubner.me/fusionchess",
-            },
-        },
-        {
-            title: "Clusterbyte",
-            tech_stack: [
-                "Unity",
-                "Game Development",
-                "C#",
-                "3D",
-                "WebGL Build",
-            ],
-            description:
-                "3D rouge-lite <b>tower defense game</b> with 5 levels, 4 weapons, and 5 enemies. Designed in <b>Unity</b> as an independent <b>AIE project</b>.",
-            logo: Unity,
-            link: {
-                label: "Clusterbyte",
-                href: "https://serve.bubner.me/unity/clusterbyte",
-            },
-        },
-        {
-            title: "Tanks",
-            tech_stack: [
-                "Unity",
-                "Game Development",
-                "C#",
-                "3D",
-                "WebGL Build",
-            ],
-            description:
-                "3D tank <b>game</b> in Unity with high scores, radar, and SFX. Designed in <b>Unity</b> as an independent <b>AIE project</b>.",
-            logo: Tank,
-            link: {
-                label: "Tanks!",
-                href: "https://serve.bubner.me/unity/tanks",
             },
         },
         {
@@ -520,16 +487,67 @@ export const StandardData: ResumeData = {
             },
         },
         {
-            title: "Serve",
-            tech_stack: ["Next.js", "Personal Project", "React", "Vercel"],
+            title: "Clusterbyte",
+            tech_stack: [
+                "Unity",
+                "Game Development",
+                "C#",
+                "3D",
+                "WebGL Build",
+            ],
             description:
-                "A <b>collection of web pages</b> for use in my <b>personal projects</b>. <b>Self-managed</b> for small projects and general link services.",
-            logo: Serve,
+                "3D rouge-lite <b>tower defense game</b> with 5 levels, 4 weapons, and 5 enemies. Designed in <b>Unity</b> as an independent <b>AIE project</b>.",
+            logo: Unity,
             link: {
-                label: "Serve",
-                href: "https://serve.bubner.me",
+                label: "Clusterbyte",
+                href: "https://serve.bubner.me/unity/clusterbyte",
             },
         },
+        {
+            title: "bubner.me",
+            tech_stack: [
+                "Portfolio",
+                "Personal Project",
+                "TypeScript",
+                "Next.js",
+                "Vercel",
+            ],
+            description:
+                "My <b>personal portfolio</b> website. <b>Self-managed</b> domain and webpages using <b>industry-standard</b> technologies and practices.",
+            logo: Bubner,
+            link: {
+                label: "bubner.me",
+                href: "https://bubner.me",
+            },
+        },
+        // {
+        //     title: "Tanks",
+        //     tech_stack: [
+        //         "Unity",
+        //         "Game Development",
+        //         "C#",
+        //         "3D",
+        //         "WebGL Build",
+        //     ],
+        //     description:
+        //         "3D tank <b>game</b> in Unity with high scores, radar, and SFX. Designed in <b>Unity</b> as an independent <b>AIE project</b>.",
+        //     logo: Tank,
+        //     link: {
+        //         label: "Tanks!",
+        //         href: "https://serve.bubner.me/unity/tanks",
+        //     },
+        // },
+        // {
+        //     title: "Serve",
+        //     tech_stack: ["Next.js", "Personal Project", "React", "Vercel"],
+        //     description:
+        //         "A <b>collection of web pages</b> for use in my <b>personal projects</b>. <b>Self-managed</b> for small projects and general link services.",
+        //     logo: Serve,
+        //     link: {
+        //         label: "Serve",
+        //         href: "https://serve.bubner.me",
+        //     },
+        // },
     ],
     post_projects: <ViewMore />,
 };

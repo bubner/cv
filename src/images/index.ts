@@ -6,7 +6,6 @@ import FusionChess from "./fchess.png";
 import Bellower from "./bellower.png";
 import Bunyips from "./bunyipst.png";
 import Bezier from "./bezier.png";
-import Tank from "./tank.png";
 import GitHub from "./github.png";
 import LinkedIn from "./linkedin.svg";
 import Globe from "./globe.svg";
@@ -46,6 +45,7 @@ import Tux from "./tux.png";
 import Git from "./git.png";
 import Onshape from "./onshape.png";
 import Dot from "./dot.png";
+import Logbook from "./logbook.png";
 
 export {
     Kennewell,
@@ -56,7 +56,6 @@ export {
     Bellower,
     Bunyips,
     Bezier,
-    Tank,
     GitHub,
     LinkedIn,
     Globe,
@@ -95,5 +94,6 @@ export {
     Tux,
     Git,
     Onshape,
-    Dot
+    Dot,
+    Logbook
 };
