@@ -1,7 +1,6 @@
 import Kennewell from "./kennewell.png";
 import Bubner from "./bubner.png";
 import RoboRegistry from "./rrfavicon.png";
-import Serve from "./bg.png";
 import FusionChess from "./fchess.png";
 import Bellower from "./bellower.png";
 import Bunyips from "./bunyipst.png";
@@ -51,7 +50,6 @@ export {
     Kennewell,
     Bubner,
     RoboRegistry,
-    Serve,
     FusionChess,
     Bellower,
     Bunyips,
