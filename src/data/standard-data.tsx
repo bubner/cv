@@ -402,7 +402,7 @@ export const StandardData: ResumeData = {
                 "Computer Vision",
             ],
             description:
-                "A <b>free & open-source</b> powerful <b>FIRST® Tech Challenge</b> framework & library. <b>Solo-developed</b> 18,000+ lines of code with over <b>1000+ commits</b>.",
+                "A <b>free & open-source</b> powerful <b>FIRST® Tech Challenge</b> framework & library. <b>Solo-developed</b> 22,000+ lines of code with over <b>1100+ commits</b>.",
             link: {
                 label: "BunyipsLib",
                 href: "https://git.bubner.me/BunyipsLib",
