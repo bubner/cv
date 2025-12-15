@@ -99,7 +99,7 @@ export const StandardData: ResumeData = {
             logo: AIE,
         },
         {
-            school: "Murray Bridge High School<br>Year 8 & 9 <b>Dux</b>, Year 10 & 11 <b>A+</b>, <b>Barker Shield</b> recipient, raw ATAR: <b>98.75</b>",
+            school: "Murray Bridge High School<br>Year 8, 9 & 12 <b>Dux</b>, Year 10 & 11 <b>A+</b>, <b>Barker Shield</b> recipient, raw ATAR: <b>98.75</b> (adj. <b>99.95</b>)",
             degree: "South Australian Certificate of Education",
             start: "Jan 2021",
             end: "Dec 2025",
