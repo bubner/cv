@@ -10,7 +10,7 @@ export default function ViewMore() {
             className="inline-flex flex-row items-center justify-center gap-2 text-white glow:text-glow/[.15] print:hidden"
         >
             <span className="text-center text-sm text-muted-foreground">
-                View more projects on GitHub:{" "}
+                View source code and more projects on GitHub:{" "}
             </span>
             <Image
                 src={AtBubner}
@@ -25,7 +25,7 @@ export default function ViewMore() {
 export function ViewMorePrint() {
     return (
         <div className="hidden print:block text-muted text-xs">
-            View more projects:{" "}
+            View source code and more projects on GitHub:{" "}
             <span className="underline">https://github.com/bubner</span>
         </div>
     );

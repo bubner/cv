@@ -45,6 +45,7 @@ import Git from "./git.png";
 import Onshape from "./onshape.png";
 import Dot from "./dot.png";
 import Logbook from "./logbook.png";
+import ZeusMonitor from "./zm.webp";
 
 export {
     Kennewell,
@@ -93,5 +94,6 @@ export {
     Git,
     Onshape,
     Dot,
-    Logbook
+    Logbook,
+    ZeusMonitor
 };
