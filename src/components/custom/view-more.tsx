@@ -24,7 +24,7 @@ export default function ViewMore() {
 
 export function ViewMorePrint() {
     return (
-        <div className="hidden print:block text-muted text-xs">
+        <div className="hidden text-xs text-muted print:block">
             View source code and more projects on GitHub:{" "}
             <span className="underline">https://github.com/bubner</span>
         </div>

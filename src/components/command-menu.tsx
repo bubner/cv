@@ -9,10 +9,10 @@ import {
     CommandList,
     CommandSeparator,
 } from "@/components/ui/command";
-import { Button } from "./ui/button";
 import { CommandIcon } from "lucide-react";
-import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { Button } from "./ui/button";
 
 interface Props {
     links: { url: string; title: string }[];

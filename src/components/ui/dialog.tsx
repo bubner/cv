@@ -1,11 +1,15 @@
 "use client";
 
-
 import * as DialogPrimitive from "@radix-ui/react-dialog";
-import { X } from "lucide-react";
 import clsx from "clsx";
+import { X } from "lucide-react";
+import {
+    ComponentPropsWithoutRef,
+    ElementRef,
+    HTMLAttributes,
+    forwardRef,
+} from "react";
 import { twMerge } from "tailwind-merge";
-import { ComponentPropsWithoutRef, ElementRef, HTMLAttributes, forwardRef } from "react";
 
 const Dialog = DialogPrimitive.Root;
 
@@ -120,14 +124,6 @@ const DialogDescription = forwardRef<
 DialogDescription.displayName = DialogPrimitive.Description.displayName;
 
 export {
-    Dialog,
-    DialogPortal,
-    DialogOverlay,
-    DialogClose,
-    DialogTrigger,
-    DialogContent,
-    DialogHeader,
-    DialogFooter,
-    DialogTitle,
-    DialogDescription,
+    Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogOverlay, DialogPortal, DialogTitle, DialogTrigger
 };
+

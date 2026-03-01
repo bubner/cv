@@ -1,5 +1,4 @@
-import { StaticImageData } from "next/image";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 export default function ListItem({
     text,
@@ -11,7 +10,11 @@ export default function ListItem({
     indented?: boolean;
 }) {
     return (
-        <div className={`m-1 flex gap-2 ${indented ? "items-start" : "items-center"}`}>
+        <div
+            className={`m-1 flex gap-2 ${
+                indented ? "items-start" : "items-center"
+            }`}
+        >
             {image ? (
                 <Image
                     alt=""
@@ -20,12 +23,14 @@ export default function ListItem({
                     draggable={false}
                 />
             ) : (
-                <div className={`min-w-5 min-h-[22px]${indented ? " ml-3" : ""}`} />
+                <div
+                    className={`min-w-5 min-h-[22px]${indented ? " ml-3" : ""}`}
+                />
             )}
             <p
                 className={`text-pretty text-[12px] text-muted-foreground${
                     !indented
-                        ? " text-[13px] font-bold text-white print:text-black glow:text-glow/[.15]"
+                        ? " text-[13px] font-bold text-white glow:text-glow/[.15] print:text-black"
                         : ""
                 }`}
                 dangerouslySetInnerHTML={{ __html: text }}

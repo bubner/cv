@@ -1,20 +1,19 @@
 "use client";
 
-import { Card, CardHeader, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
+import { ProjectCard } from "@/components/project-card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { ProjectCard } from "@/components/project-card";
 import Image from "next/image";
 
-import "animate.css";
-import Glow from "../components/custom/glow";
-import { StandardData } from "@/data/standard-data";
-import { usePathname } from "next/navigation";
-import { LiteData } from "@/data/lite-data";
 import ListItem from "@/components/custom/list-item";
+import { LiteData } from "@/data/lite-data";
+import { StandardData } from "@/data/standard-data";
+import "animate.css";
+import { usePathname } from "next/navigation";
 import {
     Children,
     cloneElement,
@@ -22,6 +21,7 @@ import {
     useEffect,
     useState,
 } from "react";
+import Glow from "../components/custom/glow";
 
 const mapping = {
     "/": StandardData,

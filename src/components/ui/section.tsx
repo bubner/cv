@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import React, { HTMLAttributes } from "react";
+import { HTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
 export interface BadgeProps extends HTMLAttributes<HTMLDivElement> {}

@@ -1,11 +1,10 @@
 "use client";
 
-
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
 
-import { twMerge } from "tailwind-merge";
 import clsx from "clsx";
 import { ComponentPropsWithoutRef, ElementRef, forwardRef } from "react";
+import { twMerge } from "tailwind-merge";
 
 const Avatar = forwardRef<
     ElementRef<typeof AvatarPrimitive.Root>,
@@ -53,4 +52,5 @@ const AvatarFallback = forwardRef<
 ));
 AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName;
 
-export { Avatar, AvatarImage, AvatarFallback };
+export { Avatar, AvatarFallback, AvatarImage };
+

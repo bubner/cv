@@ -1,12 +1,12 @@
+import Image from "next/image";
+import { Badge } from "./ui/badge";
 import {
     Card,
-    CardHeader,
     CardContent,
     CardDescription,
+    CardHeader,
     CardTitle,
 } from "./ui/card";
-import { Badge } from "./ui/badge";
-import Image from "next/image";
 
 interface Props {
     title: string;
@@ -60,7 +60,10 @@ export function ProjectCard({
                             )}
                         </CardTitle>
                     </div>
-                    <a href={link} className="hidden text-xs underline print:block">
+                    <a
+                        href={link}
+                        className="hidden text-xs underline print:block"
+                    >
                         {link?.replace("https://", "").replace("www.", "")}
                     </a>
                     <CardDescription

@@ -23,7 +23,6 @@ import {
     Jinja,
     Kennewell,
     Kotlin,
-    Lambda,
     LaTeX,
     Link,
     LinkedIn,
@@ -31,8 +30,6 @@ import {
     Masons,
     MBHS,
     NextJS,
-    Onshape,
-    PowerFM,
     Python,
     ReactJS,
     RightArrow,
@@ -46,7 +43,7 @@ import {
     TypeScript,
     Unity,
     Vercel,
-    ZeusMonitor,
+    ZeusMonitor
 } from "@/images";
 import ViewMore, { ViewMorePrint } from "../components/custom/view-more";
 import ResumeData from "./data";
