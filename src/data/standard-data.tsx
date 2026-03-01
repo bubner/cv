@@ -1,5 +1,7 @@
 import {
     AIE,
+    AU,
+    BAE,
     Bars,
     Bellower,
     Bezier,
@@ -66,9 +68,9 @@ export const StandardData: ResumeData = {
     location: "Greater Adelaide Area, South Australia, Australia",
     location_link:
         "https://www.google.com/maps/place/Adelaide+Metropolitan+Area,+SA/@-34.9816918,138.6440441,10z/data=!3m1!4b1!4m6!3m5!1s0x6ab0ced5a8ad9dcb:0x2ee6722d74deb41e!8m2!3d-34.9536465!4d138.598804!16s%2Fg%2F11c1tb7m8s?entry=ttu",
-    about: "Software Developer | STEM Advocate",
+    about: "Software Engineer • Degree Apprentice",
     summary:
-        "Highly <b>motivated</b> software developer and <b>STEM advocate</b>, <b>nationally recognised</b> at the 2023 <b>AIIA iAwards</b>. As <b>captain of a FIRST® robotics club</b>, I <b>lead</b> technical projects and <b>mentor</b> peers with a <b>clear vision</b>, <b>strong communication</b> skills, and a <b>commitment</b> to <b>collaboration</b>, <b>accountability</b>, and <b>resilience</b>, <b>promoting STEM in rural Australia</b>. <b>Passionate</b> about <b>robotics</b>, <b>web/game development</b>, and <b>software engineering</b>, I create <b>innovative</b> solutions to <b>real-world problems</b> while <b>continuously expanding</b> my technical expertise.",
+        "Highly <b>motivated</b> software developer and <b>STEM advocate</b>, <b>nationally recognised</b> at the 2023 <b>AIIA iAwards</b>. As a <b>captain of a FIRST® robotics club</b>, I <b>led</b> technical projects and <b>mentored</b> peers with a <b>clear vision</b>, <b>strong communication</b> skills, and a <b>commitment</b> to <b>collaboration</b>, <b>accountability</b>, and <b>resilience</b>, <b>promoting STEM in rural Australia</b>. <b>Passionate</b> about <b>robotics</b>, <b>web/game development</b>, and <b>software engineering</b>, I create <b>innovative</b> solutions to <b>real-world problems</b> while <b>expanding</b> my technical expertise.",
     website: "https://bubner.me",
     contact: {
         email: "bubner@proton.me",
@@ -93,6 +95,13 @@ export const StandardData: ResumeData = {
     },
     education: [
         {
+            school: "Adelaide University",
+            degree: "Bachelor of Software Engineering (Honours) (Apprenticeship)",
+            start: "Feb 2026",
+            end: "Feb 2031",
+            logo: AU,
+        },
+        {
             school: "Academy of Interactive Entertainment",
             degree: "ICT30120: Certificate III in Information Technology",
             start: "Jan 2024",
@@ -100,7 +109,7 @@ export const StandardData: ResumeData = {
             logo: AIE,
         },
         {
-            school: "Murray Bridge High School<br>Year 8, 9 & 12 <b>Dux</b>, Year 10 & 11 <b>A+</b>, <b>Barker Shield</b> recipient, raw ATAR: <b>98.75</b> (adj. <b>99.95</b>)",
+            school: "Murray Bridge High School<br>Year 8, 9 & 12 <b>Dux</b>, Year 10 & 11 <b>A+</b>, <b>Barker Shield</b> recipient, raw ATAR: <b>98.75</b>",
             degree: "South Australian Certificate of Education",
             start: "Jan 2021",
             end: "Dec 2025",
@@ -109,9 +118,19 @@ export const StandardData: ResumeData = {
     ],
     work: [
         {
+            company: "BAE Systems Australia",
+            link: "https://www.baesystems.com/en-aus/",
+            badges: ["Onsite", "Degree Apprentice"],
+            title: "Software Engineer",
+            logo: BAE,
+            start: "Feb 2026",
+            end: "Present",
+            description: "",
+        },
+        {
             company: "Kennewell",
             link: "https://oldmatedesigns.com/",
-            badges: ["Work Experience", "Onsite"],
+            badges: ["Onsite", "Work Experience"],
             title: "Subsidiary Web Developer",
             logo: Kennewell,
             start: "Dec 2023",
@@ -129,17 +148,17 @@ export const StandardData: ResumeData = {
                     icon: FIRST,
                 },
                 {
-                    text: "<b>4-year captain</b> of 15-member <b>FIRST® Tech Challenge robotics club</b>, <b>mentoring</b> teammates and <b>expanding</b> participation.",
+                    text: "<b>4-year captain</b> of a 15-member <b>FIRST® Tech Challenge robotics club</b>, <b>mentoring</b> peers and <b>growing</b> participation.",
                     icon: RightArrow,
                     indented: true,
                 },
                 {
-                    text: "Guided <b>five teams</b> (<b>two</b> in 2023, <b>three</b> in 2024) to the <b>National FTC Championship in Sydney</b>, achieving <b>high performance ranking 8th</b> at a <b>national level</b>.",
+                    text: "Led <b>five teams</b> (<b>two</b> in 2023, <b>three</b> in 2024) to the <b>Australia Championship in Sydney</b>, placing <b>8th nationally</b>.",
                     icon: RightArrow,
                     indented: true,
                 },
                 {
-                    text: "<b>Dean’s List Finalist</b> recognised for <b>leadership</b>, <b>advocacy</b> and <b>impact in STEM</b> across <b>FIRST® Australia</b>.",
+                    text: "<b>Dean’s List Finalist</b> recognised for <b>leadership</b>, <b>advocacy</b>, and <b>STEM impact</b> across <b>FIRST®</b>.",
                     icon: RightArrow,
                     indented: true,
                 },
@@ -153,13 +172,8 @@ export const StandardData: ResumeData = {
                     indented: true,
                 },
                 {
-                    text: "Addressed <b>Rotary Club</b> (<b>$4,000</b> funding student travel) and <b>Masonic Charities</b> (<b>$20,000</b> for <b>regional robotics expansion</b>).",
+                    text: "Secured funding by presenting to <b>Rotary Club</b> (<b>$4,000</b> for student travel) and <b>Masonic Charities</b> (<b>$20,000</b> for <b>regional robotics expansion</b>).",
                     icon: Masons,
-                    indented: true,
-                },
-                {
-                    text: "Published <b>STEM-focused</b> robotics articles via <b>social media</b>, <b>radio</b>, and <b>school events</b>.",
-                    icon: PowerFM,
                     indented: true,
                 },
             ],
@@ -266,7 +280,7 @@ export const StandardData: ResumeData = {
                     grouped: true,
                 },
                 {
-                    text: "Cloud & DevOps",
+                    text: "Systems",
                     icon: Link,
                 },
                 {
@@ -282,8 +296,8 @@ export const StandardData: ResumeData = {
                     grouped: true,
                 },
                 {
-                    text: "GitHub",
-                    icon: GitHub,
+                    text: "FTC",
+                    icon: FIRST,
                     indented: true,
                     grouped: true,
                 },
@@ -294,24 +308,8 @@ export const StandardData: ResumeData = {
                     grouped: true,
                 },
                 {
-                    text: "Robotics & Embedded Systems",
-                    icon: Lambda,
-                },
-                {
-                    text: "<b>FIRST®</b> Tech Challenge Robotics Club (<b>4 years</b>)",
-                    icon: FIRST,
-                    indented: true,
-                    grouped: true,
-                },
-                {
                     text: "<b>Open-source</b> robotics library (<b>BunyipsLib</b>)",
                     icon: Bunyips,
-                    indented: true,
-                    grouped: true,
-                },
-                {
-                    text: "<b>CAD</b> and hardware for <b>robotics automation</b>",
-                    icon: Onshape,
                     indented: true,
                     grouped: true,
                 },

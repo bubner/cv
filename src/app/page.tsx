@@ -229,7 +229,7 @@ export default function Page() {
                                                     height={40}
                                                     width={40}
                                                     src={education.logo}
-                                                    className="h-6 w-6"
+                                                    className="h-5 w-auto"
                                                     alt={education.school}
                                                     draggable={false}
                                                 />
@@ -253,7 +253,7 @@ export default function Page() {
                             return (
                                 <Card
                                     key={work.company}
-                                    className="glow glow:border-glow glow:bg-glow/[.25] glow:ring-1 glow:ring-glow"
+                                    className="glow glow:border-glow glow:bg-glow/[.25] glow:ring-1 glow:ring-glow print:mb-1"
                                 >
                                     <CardHeader>
                                         <div className="flex flex-col justify-between gap-x-2 text-base print:flex-row md:flex-row md:items-center">
@@ -304,17 +304,19 @@ export default function Page() {
                                             }}
                                         />
                                     </CardHeader>
-                                    <CardContent className="mt-2 text-xs">
-                                        <p
-                                            dangerouslySetInnerHTML={{
-                                                __html: work.description,
-                                            }}
-                                        />
-                                    </CardContent>
+                                    {work.description && (
+                                        <CardContent className="mt-2 text-xs">
+                                            <p
+                                                dangerouslySetInnerHTML={{
+                                                    __html: work.description,
+                                                }}
+                                            />
+                                        </CardContent>
+                                    )}
                                 </Card>
                             );
                         })}
-                        <div className="flex flex-col flex-wrap gap-3 text-white print:mt-4 print:flex-row md:flex-row">
+                        <div className="flex flex-col flex-wrap gap-3 text-white print:flex-row md:flex-row">
                             {data.skills.map((skill, i) => (
                                 <Card
                                     className={`glow w-full p-3 glow:border-glow glow:bg-glow/[.15] glow:ring-1 print:w-[calc(50%-0.5rem)] md:w-[calc(50%-0.5rem)] glow:ring-glow${
@@ -399,7 +401,7 @@ export default function Page() {
                     <Section
                         className={`scroll-mb-16 ${
                             // To combat margin misalignment issues in Chrome for some reason
-                            isChrome ? "print:!mt-[-80px]" : "print:!mt-[30px]"
+                            isChrome ? "print:!mt-[-110px]" : "print:!mt-[20px]"
                         }`}
                     >
                         <h2 className="text-xl font-bold text-white print:text-black">

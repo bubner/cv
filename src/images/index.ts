@@ -46,6 +46,8 @@ import Onshape from "./onshape.png";
 import Dot from "./dot.png";
 import Logbook from "./logbook.png";
 import ZeusMonitor from "./zm.webp";
+import BAE from "./bae.png";
+import AU from "./au.png";
 
 export {
     Kennewell,
@@ -95,5 +97,7 @@ export {
     Onshape,
     Dot,
     Logbook,
-    ZeusMonitor
+    ZeusMonitor,
+    BAE,
+    AU
 };
