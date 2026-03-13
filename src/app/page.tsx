@@ -264,7 +264,7 @@ export default function Page() {
                                                             height={40}
                                                             width={40}
                                                             src={work.logo}
-                                                            className="mr-1 h-6 w-6"
+                                                            className="mr-2 h-6 w-6"
                                                             alt={work.company}
                                                             draggable={false}
                                                         />

@@ -62,7 +62,7 @@ export const StandardData: ResumeData = {
         name: "bubner",
         chart: "https://wakatime.com/share/@bubner/5e5091a6-e447-4c50-88f8-0c7c9205ef93.png",
     },
-    location: "Greater Adelaide Area, South Australia, Australia",
+    location: "Adelaide, South Australia, Australia",
     location_link:
         "https://www.google.com/maps/place/Adelaide+Metropolitan+Area,+SA/@-34.9816918,138.6440441,10z/data=!3m1!4b1!4m6!3m5!1s0x6ab0ced5a8ad9dcb:0x2ee6722d74deb41e!8m2!3d-34.9536465!4d138.598804!16s%2Fg%2F11c1tb7m8s?entry=ttu",
     about: "Software Engineer • Degree Apprentice",
@@ -155,7 +155,7 @@ export const StandardData: ResumeData = {
                     indented: true,
                 },
                 {
-                    text: "<b>Dean’s List Finalist</b> recognised for <b>leadership</b>, <b>advocacy</b>, and <b>STEM impact</b> across <b>FIRST®</b>.",
+                    text: "<b>FIRST® Leadership Award</b> (f.k.a Dean's List Finalist) recognised for <b>advocacy</b> and <b>STEM leadership</b>.",
                     icon: RightArrow,
                     indented: true,
                 },
