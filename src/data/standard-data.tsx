@@ -70,7 +70,7 @@ export const StandardData: ResumeData = {
         "Highly <b>motivated</b> software developer and <b>STEM advocate</b>, <b>nationally recognised</b> at the 2023 <b>AIIA iAwards</b>. As a <b>captain of a FIRST® robotics club</b>, I <b>led</b> technical projects and <b>mentored</b> peers with a <b>clear vision</b>, <b>strong communication</b> skills, and a <b>commitment</b> to <b>collaboration</b>, <b>accountability</b>, and <b>resilience</b>, <b>promoting STEM in rural Australia</b>. <b>Passionate</b> about <b>robotics</b>, <b>web/game development</b>, and <b>software engineering</b>, I create <b>innovative</b> solutions to <b>real-world problems</b> while <b>expanding</b> my technical expertise.",
     website: "https://bubner.me",
     contact: {
-        email: "bubner@proton.me",
+        email: "lucas@bubner.me",
         tel: "",
         social: [
             {

@@ -59,7 +59,7 @@ export const LiteData: ResumeData = addSkillsIndentedPoints({
     pfp: Bubner,
     pfp_print: BubnerReal,
     contact: {
-        email: "bubner@proton.me",
+        email: "lucas@bubner.me",
         tel: "",
         social: [
             {
